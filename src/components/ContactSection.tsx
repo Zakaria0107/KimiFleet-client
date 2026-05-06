@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "../../node_modules/react-i18next";
 
 const ContactSection = () => {
   const { t } = useTranslation();
@@ -18,7 +18,7 @@ const ContactSection = () => {
   return (
     <section id="contact" className="py-32 bg-white relative">
       <div className="container mx-auto px-4 max-w-2xl text-center">
-        
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -33,7 +33,7 @@ const ContactSection = () => {
           </p>
         </motion.div>
 
-        <motion.form 
+        <motion.form
           onSubmit={handleSubmit}
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -44,18 +44,18 @@ const ContactSection = () => {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-2">
               <label className="text-sm font-semibold text-gray-900">{t("contact.name")}</label>
-              <input 
-                type="text" 
-                required 
+              <input
+                type="text"
+                required
                 className="w-full bg-gray-50 border border-gray-200 text-gray-900 px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-black transition-all"
                 placeholder="John Doe"
               />
             </div>
             <div className="space-y-2">
               <label className="text-sm font-semibold text-gray-900">{t("contact.email")}</label>
-              <input 
-                type="email" 
-                required 
+              <input
+                type="email"
+                required
                 className="w-full bg-gray-50 border border-gray-200 text-gray-900 px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-black transition-all"
                 placeholder="john@company.com"
               />
@@ -83,8 +83,8 @@ const ContactSection = () => {
             </select>
           </div>
 
-          <button 
-            type="submit" 
+          <button
+            type="submit"
             disabled={isSubmitting}
             className="w-full bg-black text-white px-8 py-4 rounded-lg font-body font-bold text-lg hover:bg-gray-800 transition-all mt-4 tracking-tight"
           >

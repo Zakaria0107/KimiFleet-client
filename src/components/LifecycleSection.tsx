@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Wrench, ShieldCheck, Activity } from "lucide-react";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "../../node_modules/react-i18next";
 import lifecycleImg from "@/assets/kimi_lifecycle.png";
 
 const LifecycleSection = () => {
@@ -9,7 +9,7 @@ const LifecycleSection = () => {
     <section id="fleet" className="py-32 bg-white text-gray-900 overflow-hidden relative">
       <div className="container mx-auto px-4 z-10 relative">
         <div className="grid lg:grid-cols-2 gap-16 items-center flex-col-reverse lg:flex-row">
-          
+
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -18,9 +18,9 @@ const LifecycleSection = () => {
             className="relative lg:order-1 order-2"
           >
             <div className="absolute inset-0 bg-blue-100 blur-[80px] rounded-full" />
-            <img 
-              src={lifecycleImg} 
-              alt="Lifecycle tracking progress ring" 
+            <img
+              src={lifecycleImg}
+              alt="Lifecycle tracking progress ring"
               className="relative z-10 w-full max-w-lg mx-auto rounded-3xl shadow-xl hover:scale-105 transition-transform duration-700"
             />
           </motion.div>
@@ -36,15 +36,15 @@ const LifecycleSection = () => {
               <Activity size={16} />
               <span>{t("fleet.badge")}</span>
             </div>
-            
+
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
               {t("fleet.title")}
             </h2>
-            
+
             <p className="text-xl text-gray-600 font-light leading-relaxed">
               {t("fleet.subtitle")}
             </p>
-            
+
             <div className="grid sm:grid-cols-2 gap-6 pt-6">
               <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
                 <Wrench className="text-blue-600 mb-4" size={24} />

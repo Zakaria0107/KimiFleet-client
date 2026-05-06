@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Users } from "lucide-react";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "../../node_modules/react-i18next";
 import heroImg from "@/assets/kimi_hero.png";
 
 const HeroSection = ({ onContactOpen }: { onContactOpen?: () => void }) => {
@@ -74,13 +74,13 @@ const HeroSection = ({ onContactOpen }: { onContactOpen?: () => void }) => {
           className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
         >
           <a
-            href="https://kimifleet.com:3000" target="_blank"
+            href="https://kimifleet.com/dahboard" target="_blank"
             className="bg-white text-black px-8 py-4 rounded-lg font-body font-bold text-base tracking-tight hover:bg-white/90 transition-all shadow-lg"
           >
             {t("hero.trial")}
           </a>
 
-          <a href="https://kimifleet.com:3000" target="_blank">
+          <a href="https://kimifleet.com/dahboard" target="_blank">
             <button
               // onClick={onContactOpen}
               className="bg-blue-600 text-white px-8 py-4 rounded-lg font-body font-bold text-lg hover:bg-blue-700 transition-all flex items-center justify-center gap-2 group shadow-xl"

@@ -1,16 +1,16 @@
 import { motion } from "framer-motion";
 import { Navigation, MapPin, Shield, Zap } from "lucide-react";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "../../node_modules/react-i18next";
 
 const MapExperienceSection = () => {
   const { t } = useTranslation();
   return (
     <section id="map" className="relative h-[80vh] min-h-[600px] flex items-center overflow-hidden bg-[#E5E7EB]">
       {/* Background Image: using a light silver map aesthetic */}
-      <div 
+      <div
         className="absolute inset-0 z-0 bg-[url('https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=2000')] bg-cover bg-center grayscale opacity-50"
       />
-      
+
       {/* Map Dots Overlay (Simulated Data) */}
       <div className="absolute inset-0 z-0 hidden lg:block">
         {[
@@ -21,7 +21,7 @@ const MapExperienceSection = () => {
           { top: '75%', left: '35%', delay: 0.8 },
         ].map((dot, i) => (
           <div key={i} className="absolute" style={{ top: dot.top, left: dot.left }}>
-            <motion.div 
+            <motion.div
               animate={{ scale: [1, 2, 1], opacity: [1, 0, 1] }}
               transition={{ repeat: Infinity, duration: 2, delay: dot.delay }}
               className="w-4 h-4 bg-blue-500 rounded-full"
@@ -47,11 +47,11 @@ const MapExperienceSection = () => {
             <MapPin size={16} className="text-blue-400" />
             <span>{t("map.badge")}</span>
           </div>
-          
+
           <h2 className="font-display text-4xl md:text-6xl font-bold leading-tight tracking-tight text-gray-900 mb-8">
             {t("map.title")}
           </h2>
-          
+
           <p className="text-xl text-gray-600 font-light leading-relaxed">
             {t("map.subtitle")}
           </p>

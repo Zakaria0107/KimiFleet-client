@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { AlertCircle, FileX, Clock, DollarSign } from "lucide-react";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "../../node_modules/react-i18next";
 
 const ProblemSection = () => {
   const { t } = useTranslation();
@@ -40,7 +40,7 @@ const ProblemSection = () => {
             <AlertCircle size={16} />
             <span>{t("problem.badge")}</span>
           </motion.div>
-          
+
           <h2 className="font-display text-4xl md:text-5xl font-bold leading-tight tracking-tight text-gray-900 mb-6">
             {t("problem.title")}
           </h2>

@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "../../node_modules/react-i18next";
 import { LanguageSelector } from "./LanguageSelector";
 import logo from "../assets/logo.png";
 
@@ -86,7 +86,7 @@ const Navbar = ({ onContactOpen }: { onContactOpen?: () => void }) => {
 
           <div className="hidden md:flex items-center gap-4">
             <LanguageSelector isWhite={shouldShowWhite} />
-            <a href="https://kimifleet.com:3000" target="_blank">
+            <a href="https://kimifleet.com/dahboard" target="_blank">
               <button
                 // onClick={onContactOpen}
                 className="bg-blue-600 text-white px-6 py-2.5 rounded-lg font-body text-sm font-medium tracking-tight hover:bg-blue-700 transition-all"

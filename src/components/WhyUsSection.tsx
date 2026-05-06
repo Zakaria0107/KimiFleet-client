@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Shield, Rocket, Target, Zap } from "lucide-react";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "../../node_modules/react-i18next";
 
 const WhyUsSection = () => {
   const { t } = useTranslation();

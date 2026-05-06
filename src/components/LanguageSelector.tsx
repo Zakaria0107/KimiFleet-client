@@ -1,5 +1,5 @@
 import { Languages, Check, ChevronDown } from "lucide-react";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "../../node_modules/react-i18next";
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -35,11 +35,10 @@ export const LanguageSelector = ({ isWhite = false }: { isWhite?: boolean }) => 
     <div className="relative" ref={langRef}>
       <button
         onClick={() => setIsLangOpen(!isLangOpen)}
-        className={`flex items-center gap-2 px-3 py-2 rounded-lg transition-colors ${
-          isWhite 
-            ? "hover:bg-gray-100 text-gray-700" 
+        className={`flex items-center gap-2 px-3 py-2 rounded-lg transition-colors ${isWhite
+            ? "hover:bg-gray-100 text-gray-700"
             : "hover:bg-white/10 text-white/90"
-        }`}
+          }`}
       >
         <Languages size={18} />
         <span className="text-sm font-medium uppercase tracking-wider">{currentLang.code}</span>

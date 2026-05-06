@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Car, Calendar, QrCode, TrendingUp } from "lucide-react";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "../../node_modules/react-i18next";
 
 const ServicesSection = () => {
   const { t } = useTranslation();

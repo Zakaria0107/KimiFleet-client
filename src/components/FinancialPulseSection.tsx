@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FileText, CheckCircle2, TrendingUp } from "lucide-react";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "../../node_modules/react-i18next";
 
 const FinancialPulseSection = () => {
   const { t } = useTranslation();
@@ -8,7 +8,7 @@ const FinancialPulseSection = () => {
     <section id="invoicing" className="py-32 bg-gray-50 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 xl:gap-24 items-center">
-          
+
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -20,11 +20,11 @@ const FinancialPulseSection = () => {
               <FileText size={16} />
               <span>{t("finance.badge")}</span>
             </div>
-            
+
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-gray-900">
               {t("finance.title")}
             </h2>
-            
+
             <p className="text-xl text-gray-600 font-light leading-relaxed">
               {t("finance.subtitle")}
             </p>
@@ -53,7 +53,7 @@ const FinancialPulseSection = () => {
                   <p className="font-display font-bold text-3xl text-black">8,420.50 {t("common.mad")}</p>
                 </div>
               </div>
-              
+
               <div className="space-y-6">
                 <div className="flex justify-between items-center text-sm">
                   <span className="text-gray-500">{t("finance.base_rental")}</span>
@@ -68,7 +68,7 @@ const FinancialPulseSection = () => {
                   <span className="font-medium text-gray-900">420.50 {t("common.mad")}</span>
                 </div>
               </div>
-              
+
               <div className="mt-8 pt-8 border-t border-gray-100 flex items-center justify-between">
                 <div className="flex items-center gap-2 text-green-600 bg-green-50 px-3 py-1.5 rounded-full text-xs font-semibold">
                   <CheckCircle2 size={14} />
@@ -79,7 +79,7 @@ const FinancialPulseSection = () => {
             </div>
 
             {/* Floating shadow element */}
-            <motion.div 
+            <motion.div
               animate={{ y: [0, -15, 0] }}
               transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
               className="absolute -bottom-8 -left-8 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 z-20"
