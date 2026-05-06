@@ -86,7 +86,7 @@ const Navbar = ({ onContactOpen }: { onContactOpen?: () => void }) => {
 
           <div className="hidden md:flex items-center gap-4">
             <LanguageSelector isWhite={shouldShowWhite} />
-            <a href="https://kimifleet.com/dahboard" target="_blank">
+            <a href="https://kimifleet.com/dashboard" target="_blank">
               <button
                 // onClick={onContactOpen}
                 className="bg-blue-600 text-white px-6 py-2.5 rounded-lg font-body text-sm font-medium tracking-tight hover:bg-blue-700 transition-all"
