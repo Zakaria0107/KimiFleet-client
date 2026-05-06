@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { ChevronDown, Users } from "lucide-react";
+import { ArrowRight, Users } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import heroImg from "@/assets/kimi_hero.png";
 
 const HeroSection = ({ onContactOpen }: { onContactOpen?: () => void }) => {
+  const { t } = useTranslation();
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -24,13 +26,13 @@ const HeroSection = ({ onContactOpen }: { onContactOpen?: () => void }) => {
   }, []);
 
   return (
-    <section id="accueil" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
         <img
           src={heroImg}
           alt="Vue aérienne de la côte d'Agadir"
           className="w-full h-full object-cover"
-          fetchPriority="high"
+          fetchpriority="high"
           decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-gray-950/80 via-gray-900/70 to-gray-950/90" />
@@ -44,29 +46,25 @@ const HeroSection = ({ onContactOpen }: { onContactOpen?: () => void }) => {
           className="inline-flex items-center gap-2 bg-blue-600/20 backdrop-blur-sm border border-blue-500/30 px-5 py-2 rounded-full mb-8"
         >
           <span className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></span>
-          <span className="text-blue-300 text-sm font-medium">Built for the Modern Owner</span>
+          <span className="text-blue-300 text-sm font-medium">{t("hero.badge")}</span>
         </motion.div>
 
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.8 }}
-          className="font-display text-5xl md:text-6xl lg:text-8xl font-bold text-white leading-tight mb-8 tracking-tight"
+          className="font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.1] tracking-tight text-white mb-8"
         >
-          Kimifleet.
-          <br />
-          <span className="text-white/90">
-            It’s your fleet.
-          </span>
+          {t("hero.title")}
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.6 }}
-          className="text-gray-300 text-lg md:text-2xl max-w-3xl mx-auto mb-10 font-body"
+          className="text-lg md:text-xl text-gray-300 font-light leading-relaxed max-w-2xl mx-auto mb-10"
         >
-          The most precise way to manage assets, automate maintenance, and scale multiple rental businesses.
+          {t("hero.subtitle")}
         </motion.p>
 
         <motion.div
@@ -79,13 +77,14 @@ const HeroSection = ({ onContactOpen }: { onContactOpen?: () => void }) => {
             href="#appartements"
             className="bg-white text-black px-8 py-4 rounded-lg font-body font-bold text-base tracking-tight hover:bg-white/90 transition-all shadow-lg"
           >
-            Request Access
+            {t("hero.trial")}
           </a>
           <button
             onClick={onContactOpen}
-            className="border border-white/30 text-white px-8 py-4 rounded-lg font-body font-medium text-base tracking-tight hover:bg-white/10 transition-all backdrop-blur-sm"
+            className="bg-blue-600 text-white px-8 py-4 rounded-lg font-body font-bold text-lg hover:bg-blue-700 transition-all flex items-center justify-center gap-2 group shadow-xl"
           >
-            Request Expert Demo
+            {t("hero.cta")}
+            <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
           </button>
         </motion.div>
 

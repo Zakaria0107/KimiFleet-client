@@ -31,7 +31,7 @@ const CtaSection = ({ onContactOpen }: { onContactOpen?: () => void }) => (
             Request Expert Demo
           </button>
           <a
-            href="https://wa.me/212667959143"
+            href="https://wa.me/212641800086"
             target="_blank"
             rel="noopener noreferrer"
             className="border border-white/30 text-white px-8 py-4 rounded-lg font-body font-medium text-base tracking-tight hover:bg-white/10 transition-all backdrop-blur-sm"

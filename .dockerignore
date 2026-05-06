@@ -1,0 +1,31 @@
+# Dependencies
+node_modules
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Source control
+.git
+.gitignore
+
+
+
+# Development
+.vscode
+.idea
+*.md
+docker-compose*
+
+# Testing
+coverage
+test
+jest*
+*.spec.ts
+*.test.ts
+
+# Build output
+
+
+# Misc
+.DS_Store
+*.log

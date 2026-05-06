@@ -36,7 +36,7 @@ const ApartmentDetailModal = ({ apartment, onClose }: Props) => {
 
   const handleWhatsApp = () => {
     const message = `Bonjour Immobaz.Kima !%0A%0AJe suis intéressé(e) par le bien :%0A${apartment.title}%0ARéférence : ${apartment.id}%0ALocation : ${apartment.location}%0A%0APrix de vente : ${apartment.priceForSale?.toLocaleString()} DH%0A${apartment.pricePerMonth ? `Loyer mensuel : ${apartment.pricePerMonth.toLocaleString()} DH` : ''}`;
-    window.open(`https://wa.me/212667959143?text=${message}`, "_blank");
+    window.open(`https://wa.me/212641800086?text=${message}`, "_blank");
   };
 
   return (
@@ -72,7 +72,7 @@ const ApartmentDetailModal = ({ apartment, onClose }: Props) => {
                     transition={{ duration: 0.3 }}
                   />
                 </AnimatePresence>
-                
+
                 {hasMultipleImages && (
                   <>
                     <button
@@ -89,17 +89,16 @@ const ApartmentDetailModal = ({ apartment, onClose }: Props) => {
                     >
                       <ChevronRight size={20} />
                     </button>
-                    
+
                     <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5">
                       {images.map((_, idx) => (
                         <button
                           key={idx}
                           onClick={() => setCurrentImageIndex(idx)}
-                          className={`w-2 h-2 rounded-full transition-all ${
-                            idx === currentImageIndex 
-                              ? "bg-blue-600 w-4" 
+                          className={`w-2 h-2 rounded-full transition-all ${idx === currentImageIndex
+                              ? "bg-blue-600 w-4"
                               : "bg-white/80 hover:bg-white"
-                          }`}
+                            }`}
                           aria-label={`Aller à l'image ${idx + 1}`}
                         />
                       ))}
@@ -107,7 +106,7 @@ const ApartmentDetailModal = ({ apartment, onClose }: Props) => {
                   </>
                 )}
               </div>
-              
+
               <button
                 onClick={handleClose}
                 className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-gray-900 w-10 h-10 rounded-full flex items-center justify-center hover:bg-white transition-colors shadow-lg z-10"
@@ -125,7 +124,7 @@ const ApartmentDetailModal = ({ apartment, onClose }: Props) => {
               <div className="mb-2">
                 <span className="text-xs text-blue-600 font-medium uppercase tracking-wide">Immobaz.Kima</span>
               </div>
-              
+
               <h2 className="font-display text-xl md:text-2xl font-semibold text-gray-900 mb-4 tracking-tight">{apartment.title}</h2>
 
               <div className="flex items-center gap-2 text-gray-500 text-sm mb-6">

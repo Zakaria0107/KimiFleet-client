@@ -1,0 +1,164 @@
+{
+  "common": {
+    "mad": "MAD"
+  },
+  "navbar": {
+    "home": "Accueil",
+    "solution": "Notre Solution",
+    "fleet": "Flotte",
+    "how_it_works": "Comment ça marche",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "get_started": "Commencer"
+  },
+  "hero": {
+    "badge": "Conçu pour le propriétaire d'agence moderne",
+    "title": "Développez votre flotte avec précision.",
+    "subtitle": "Le système d'exploitation complet pour les agences de location de voitures. Gérez votre espace de travail, automatisez les contrats avec des signatures QR et suivez vos actifs en temps réel.",
+    "cta": "Moderniser ma flotte",
+    "trial": "Commencer mon essai gratuit"
+  },
+  "problem": {
+    "badge": "Inefficacité opérationnelle",
+    "title": "Le chaos de la gestion manuelle vous coûte cher.",
+    "subtitle": "Les feuilles de calcul et les contrats papier freinent votre entreprise. Chaque saisie manuelle est un risque ; chaque papier perdu est une responsabilité.",
+    "fatigue_title": "Fatigue des feuilles de calcul",
+    "fatigue_desc": "Les silos de données et les erreurs de saisie manuelle entraînent des conflits de calendrier et des véhicules réservés en double.",
+    "paperwork_title": "Goulots d'étranglement administratifs",
+    "paperwork_desc": "Attendre les signatures et classer les contrats physiques fait perdre des heures et crée des risques de responsabilité.",
+    "maintenance_title": "Incertitude sur la maintenance",
+    "maintenance_desc": "Les vidanges manquées et les oublis de compteur diminuent la valeur des actifs et causent des pannes.",
+    "revenue_title": "Fuite de revenus",
+    "revenue_desc": "Les paiements partiels non suivis et les factures perdues nuisent à votre rentabilité et à votre trésorerie."
+  },
+  "solution": {
+    "badge": "L'espace de travail KimiFleet",
+    "title": "Centre de commandement unifié pour plusieurs agences.",
+    "subtitle": "Gérez tous vos sites, véhicules et membres d'équipe à partir d'un tableau de bord performant. Contrôle total, clarté absolue.",
+    "multi_tenant_title": "Architecture multi-tenant",
+    "multi_tenant_desc": "Gardez vos entités commerciales isolées et sécurisées avec une séparation des données de niveau professionnel.",
+    "real_time_title": "Synchronisation en temps réel",
+    "real_time_desc": "Synchronisez instantanément les réservations et les mises à jour de statut dans toutes vos agences opérationnelles.",
+    "feature_1": "Administration centralisée de l'agence.",
+    "feature_2": "Visibilité opérationnelle en temps réel.",
+    "feature_3": "Isolation des données multi-agences."
+  },
+  "fleet": {
+    "badge": "Gestion de flotte et d'actifs",
+    "title": "Maintenance prédictive et cycle de vie des actifs.",
+    "subtitle": "Suivez chaque véhicule de l'immatriculation à la cession. Recevez des alertes automatisées basées sur les lectures du compteur en temps réel pour maintenir votre flotte en parfait état.",
+    "odometer_title": "Suivi intelligent du compteur",
+    "odometer_desc": "Les mises à jour automatisées garantissent que vous ne manquez jamais un intervalle d'entretien critique.",
+    "alerts_title": "Alertes prédictives",
+    "alerts_desc": "Planification de la maintenance basée sur l'IA selon les modèles d'utilisation historiques.",
+    "resale_title": "Stratégie de revente",
+    "resale_desc": "L'historique d'entretien documenté garantit une valeur de revente plus élevée pour chaque véhicule."
+  },
+  "hardware": {
+    "badge": "Télémétrie GPS intégrée",
+    "title": "Suivi de flotte natif.",
+    "subtitle": "L'intégration profonde avec du matériel GPS professionnel garantit une visibilité en temps réel. Surveillez l'emplacement, la vitesse et l'état du moteur de chaque véhicule directement depuis votre centre de commandement.",
+    "monitoring": "Surveillance 24/7",
+    "connectivity": "Connectivité mondiale",
+    "secure": "Transmission de données sécurisée"
+  },
+  "finance": {
+    "badge": "Supervision financière",
+    "title": "Facturation unifiée et suivi des paiements.",
+    "subtitle": "Gérez les paiements partiels et complets, générez des factures PDF professionnelles et suivez les analyses de revenus en temps réel. Éliminez les litiges de paiement et améliorez la trésorerie.",
+    "invoice": "Facture",
+    "amount_due": "Montant dû",
+    "base_rental": "Location de base (7 jours)",
+    "security_deposit": "Dépôt de garantie",
+    "insurance": "Couverture d'assurance",
+    "auto_gen": "Généré automatiquement",
+    "billed_to": "Facturé automatiquement à",
+    "account": "Compte d'entreprise"
+  },
+  "map": {
+    "badge": "Intelligence opérationnelle",
+    "title": "Intelligence de flotte en temps réel.",
+    "subtitle": "Regardez votre entreprise bouger en temps réel. Une interface cartographique conçue pour la clarté opérationnelle, vous offrant une visibilité totale sur chaque véhicule de votre flotte."
+  },
+  "analytics": {
+    "badge": "Analyses d'utilisation",
+    "title": "Croissance pilotée par les données.",
+    "subtitle": "Analysez les taux d'utilisation de la flotte, les revenus par véhicule et le temps d'inactivité pour optimiser votre inventaire. Prenez des décisions éclairées sur l'expansion et la cession de la flotte.",
+    "avg_utilization": "Utilisation moyenne",
+    "revenue_growth": "Croissance des revenus",
+    "fleet_revenue": "Revenus de la flotte",
+    "weekly_performance": "Performance hebdomadaire",
+    "vs_last_week": "par rapport à la semaine dernière"
+  },
+  "benefits": {
+    "badge": "Architecture d'entreprise",
+    "title": "Pourquoi les agences professionnelles choisissent KimiFleet",
+    "save_hours_title": "Gagnez des heures chaque jour",
+    "save_hours_desc": "Automatisez les tâches répétitives et concentrez-vous sur le développement de vos opérations.",
+    "scale_title": "Développez-vous en toute confiance",
+    "scale_desc": "Gérez 10 ou 1 000 véhicules dans plusieurs villes en toute simplicité.",
+    "revenue_title": "Revenus protégés",
+    "revenue_desc": "Ne perdez jamais un enregistrement de paiement ou un détail de contrat grâce à notre historique 100% numérique."
+  },
+  "process": {
+    "badge": "Flux d'automatisation",
+    "title": "Quatre étapes vers l'automatisation totale",
+    "join": "Rejoignez les agences professionnelles qui se développent avec KimiFleet.",
+    "step1_title": "Intégrez votre flotte",
+    "step1_desc": "Ajoutez vos véhicules et configurez vos agences en quelques minutes.",
+    "step2_title": "Gérez les réservations",
+    "step2_desc": "Centralisez toutes les réservations dans votre centre de commandement unifié.",
+    "step3_title": "Signature numérique QR",
+    "step3_desc": "Les clients scannent un code QR et signent le contrat sur leur appareil.",
+    "step4_title": "Suivez et évoluez",
+    "step4_desc": "Surveillez le GPS en temps réel et gérez les paiements en toute simplicité."
+  },
+  "faq": {
+    "title": "Questions fréquemment posées",
+    "subtitle": "Tout ce que vous devez savoir pour moderniser vos opérations de location.",
+    "q1": "La signature numérique QR est-elle juridiquement contraignante ?",
+    "a1": "Oui, notre plateforme génère des signatures électroniques juridiquement contraignantes qui répondent aux normes internationales pour les contrats de location.",
+    "q2": "Dois-je installer du matériel GPS ?",
+    "a2": "Nous supportons le matériel professionnel comme Teltonika pour le suivi en temps réel, mais vous pouvez également gérer le kilométrage manuellement si vous préférez.",
+    "q3": "Puis-je gérer plusieurs sites ?",
+    "a3": "Absolument. KimiFleet est conçu pour les agences multi-sites avec une administration centralisée.",
+    "q4": "Quelle est la sécurité des données de notre agence ?",
+    "a4": "Nous utilisons une architecture multi-tenant pour garantir que les données de chaque agence sont isolées et cryptées selon les normes les plus élevées.",
+    "q5": "Puis-je migrer mes feuilles de calcul actuelles ?",
+    "a5": "Oui, nous proposons des outils d'importation en masse pour mettre toute votre flotte en ligne en quelques minutes.",
+    "q6": "Comment suivre les paiements ?",
+    "a6": "Notre module financier vous permet d'enregistrer les paiements partiels et complets, en les synchronisant directement avec vos dossiers de location et vos factures."
+  },
+  "contact": {
+    "title": "Réservez votre démo.",
+    "subtitle": "Parlez à un spécialiste de flotte pour moderniser vos opérations avec KimiFleet.",
+    "name": "Nom complet",
+    "email": "E-mail professionnel",
+    "fleet_size": "Taille de la flotte",
+    "select_size": "Sélectionnez la taille",
+    "v1_10": "1-10 Véhicules",
+    "v11_50": "11-50 Véhicules",
+    "v50_plus": "50+ Véhicules",
+    "branches_count": "Combien d'entreprises gérez-vous ?",
+    "select_branches": "Sélectionnez le nombre d'agences/entités",
+    "b1": "1 (Entreprise unique)",
+    "b2_5": "2-5 Agences",
+    "b6_plus": "6+ Entités",
+    "b_franchise": "Opérateur de franchise",
+    "book": "Réserver ma démo",
+    "processing": "Traitement...",
+    "confidential": "Vos données sont strictement confidentielles et protégées par une sécurité de niveau entreprise."
+  },
+  "footer": {
+    "desc": "Le système d'exploitation pour votre agence de location de voitures. Automatisez les contrats, le suivi et les finances avec un SaaS de qualité professionnelle.",
+    "nav": "Navigation",
+    "services": "Services",
+    "contact": "Contact",
+    "qr": "Contrats numériques QR",
+    "maintenance": "Maintenance prédictive",
+    "gps": "Télémétrie de flotte GPS",
+    "finance": "Supervision financière",
+    "rights": "Tous droits réservés.",
+    "solutions": "Solutions de gestion de flotte depuis 2024"
+  }
+}

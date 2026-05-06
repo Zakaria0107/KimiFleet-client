@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 import { BarChart3 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 // Mock Data for the chart
 const data = [
@@ -14,8 +15,9 @@ const data = [
 ];
 
 const AnalyticsSection = () => {
+  const { t } = useTranslation();
   return (
-    <section className="py-32 bg-white border-t border-gray-100">
+    <section id="analytics" className="py-32 bg-white border-t border-gray-100">
       <div className="container mx-auto px-4">
         
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -27,23 +29,23 @@ const AnalyticsSection = () => {
             transition={{ duration: 0.8 }}
             className="space-y-8"
           >
-            <div className="inline-flex items-center gap-2 bg-purple-50 text-purple-600 px-4 py-2 rounded-full text-sm font-medium">
+            <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-600 px-4 py-2 rounded-full text-sm font-medium mb-8">
               <BarChart3 size={16} />
-              <span>Management Analytics</span>
+              <span>{t("analytics.badge")}</span>
             </div>
             
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-gray-900">
-              Data-driven <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500">decisions.</span>
+            <h2 className="font-display text-4xl md:text-5xl font-bold leading-tight tracking-tight text-gray-900 mb-8">
+              {t("analytics.title")}
             </h2>
             
             <p className="text-xl text-gray-600 font-light leading-relaxed">
-              Stop guessing. Understand your most profitable assets and your highest maintenance costs with Kimifleet's expert analytics.
+              {t("analytics.subtitle")}
             </p>
 
             <div className="flex gap-6 mt-8">
               <div>
-                <p className="text-3xl font-bold text-gray-900">84%</p>
-                <p className="text-sm text-gray-500 mt-1">Avg Utilization</p>
+                <p className="text-sm text-gray-500 mb-1">{t("analytics.avg_utilization")}</p>
+                <p className="font-display font-bold text-3xl text-gray-900">84.2%</p>
               </div>
               <div className="w-px bg-gray-200" />
               <div>
@@ -62,12 +64,12 @@ const AnalyticsSection = () => {
           >
             <div className="mb-6 flex justify-between items-end">
               <div>
-                <h3 className="font-semibold text-gray-900">Fleet Revenue</h3>
-                <p className="text-sm text-gray-500">Weekly Performance</p>
+                <h4 className="font-bold text-gray-900">{t("analytics.fleet_revenue")}</h4>
+                <p className="text-xs text-gray-400">{t("analytics.weekly_performance")}</p>
               </div>
               <div className="text-right">
-                <p className="text-2xl font-bold text-gray-900">$31,700</p>
-                <p className="text-sm text-green-500 font-medium">+2.4% vs last week</p>
+                <p className="font-display font-bold text-xl text-gray-900">42,500.00 {t("common.mad")}</p>
+                <p className="text-xs text-green-600 font-medium">+15.2% {t("analytics.vs_last_week")}</p>
               </div>
             </div>
 

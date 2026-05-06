@@ -25,16 +25,16 @@ const ContactModal = ({ open, onClose }: Props) => {
     e.preventDefault();
     if (!validate()) return;
     setSubmitted(true);
-    
+
     const whatsappMessage = `Hello FleetOps Experts!%0A%0AFullName: ${form.name}%0AEmail: ${form.email}%0APhone: ${form.phone}%0A%0AMessage:%0A${form.message}`;
-    const whatsappUrl = `https://wa.me/212667959143?text=${whatsappMessage}`;
-    
+    const whatsappUrl = `https://wa.me/212641800086?text=${whatsappMessage}`;
+
     window.open(whatsappUrl, "_blank");
-    
-    setTimeout(() => { 
-      setSubmitted(false); 
-      setForm({ name: "", email: "", phone: "", message: "" }); 
-      onClose(); 
+
+    setTimeout(() => {
+      setSubmitted(false);
+      setForm({ name: "", email: "", phone: "", message: "" });
+      onClose();
     }, 2000);
   };
 

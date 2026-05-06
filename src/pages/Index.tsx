@@ -2,12 +2,16 @@ import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
+import ProblemSection from "@/components/ProblemSection";
 import CommandCenterSection from "@/components/CommandCenterSection";
 import LifecycleSection from "@/components/LifecycleSection";
 import HardwareSection from "@/components/HardwareSection";
 import FinancialPulseSection from "@/components/FinancialPulseSection";
 import MapExperienceSection from "@/components/MapExperienceSection";
 import AnalyticsSection from "@/components/AnalyticsSection";
+import WhyUsSection from "@/components/WhyUsSection";
+import ServicesSection from "@/components/ServicesSection";
+import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import ContactModal from "@/components/ContactModal";
@@ -33,8 +37,10 @@ const Index = () => {
     <main className="bg-background">
       <Navbar onContactOpen={() => setContactOpen(true)} />
       
-      {/* 1. The Hero: The Mastery Section */}
       <HeroSection onContactOpen={() => setContactOpen(true)} />
+      
+      {/* 2. The Chaos: Problem Section */}
+      <ProblemSection />
       
       {/* 2. The Command Center: Multi-Business Management */}
       <CommandCenterSection />
@@ -53,6 +59,15 @@ const Index = () => {
       
       {/* 7. The Management Analytics: Data Insights */}
       <AnalyticsSection />
+      
+      {/* 8. Why Us: Benefits */}
+      <WhyUsSection />
+      
+      {/* 9. Process: How It Works */}
+      <ServicesSection />
+      
+      {/* 10. FAQ: Help */}
+      <FAQSection />
       
       {/* 8. The Briefing: Expert Contact Form */}
       <ContactSection />

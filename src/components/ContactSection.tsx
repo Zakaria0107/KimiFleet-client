@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const ContactSection = () => {
+  const { t } = useTranslation();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -9,7 +11,7 @@ const ContactSection = () => {
     setIsSubmitting(true);
     setTimeout(() => {
       setIsSubmitting(false);
-      alert("Briefing request sent. An expert will context you shortly.");
+      alert(t("contact.success_alert") || "Briefing request sent. An expert will contact you shortly.");
     }, 1000);
   };
 
@@ -24,10 +26,10 @@ const ContactSection = () => {
           className="mb-12"
         >
           <h2 className="font-display text-4xl md:text-5xl font-bold leading-tight tracking-tight text-gray-900 mb-4">
-            The Briefing.
+            {t("contact.title")}
           </h2>
           <p className="text-xl text-gray-500 font-light">
-            Speak with an expert to configure Kimifleet for your scale.
+            {t("contact.subtitle")}
           </p>
         </motion.div>
 
@@ -41,7 +43,7 @@ const ContactSection = () => {
         >
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-2">
-              <label className="text-sm font-semibold text-gray-900">Full Name</label>
+              <label className="text-sm font-semibold text-gray-900">{t("contact.name")}</label>
               <input 
                 type="text" 
                 required 
@@ -50,7 +52,7 @@ const ContactSection = () => {
               />
             </div>
             <div className="space-y-2">
-              <label className="text-sm font-semibold text-gray-900">Corporate Email</label>
+              <label className="text-sm font-semibold text-gray-900">{t("contact.email")}</label>
               <input 
                 type="email" 
                 required 
@@ -61,23 +63,23 @@ const ContactSection = () => {
           </div>
 
           <div className="space-y-2">
-            <label className="text-sm font-semibold text-gray-900">Fleet Size</label>
+            <label className="text-sm font-semibold text-gray-900">{t("contact.fleet_size")}</label>
             <select className="w-full bg-gray-50 border border-gray-200 text-gray-900 px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-black transition-all appearance-none cursor-pointer">
-              <option disabled>Select size</option>
-              <option>1-10 Vehicles</option>
-              <option>11-50 Vehicles</option>
-              <option>50+ Vehicles</option>
+              <option disabled>{t("contact.select_size")}</option>
+              <option>{t("contact.v1_10")}</option>
+              <option>{t("contact.v11_50")}</option>
+              <option>{t("contact.v50_plus")}</option>
             </select>
           </div>
 
           <div className="space-y-2">
-            <label className="text-sm font-semibold text-gray-900">How many businesses do you manage?</label>
+            <label className="text-sm font-semibold text-gray-900">{t("contact.branches_count")}</label>
             <select className="w-full bg-gray-50 border border-gray-200 text-gray-900 px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-black transition-all appearance-none cursor-pointer">
-              <option disabled>Select number of branches/entities</option>
-              <option>1 (Single Business)</option>
-              <option>2-5 Branches</option>
-              <option>6+ Entities</option>
-              <option>Franchise Operator</option>
+              <option disabled>{t("contact.select_branches")}</option>
+              <option>{t("contact.b1")}</option>
+              <option>{t("contact.b2_5")}</option>
+              <option>{t("contact.b6_plus")}</option>
+              <option>{t("contact.b_franchise")}</option>
             </select>
           </div>
 
@@ -86,12 +88,12 @@ const ContactSection = () => {
             disabled={isSubmitting}
             className="w-full bg-black text-white px-8 py-4 rounded-lg font-body font-bold text-lg hover:bg-gray-800 transition-all mt-4 tracking-tight"
           >
-            {isSubmitting ? "Processing..." : "Request Access"}
+            {isSubmitting ? t("contact.processing") : t("contact.book")}
           </button>
         </motion.form>
 
         <p className="text-sm text-gray-400 mt-8">
-          Your data is strictly confidential and protected by enterprise-grade security.
+          {t("contact.confidential")}
         </p>
 
       </div>

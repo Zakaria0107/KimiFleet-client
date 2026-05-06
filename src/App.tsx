@@ -7,8 +7,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // Lazy load pages for code splitting
 const Index = lazy(() => import("./pages/Index"));
-const Apartments = lazy(() => import("./pages/Apartments"));
-const ApartmentDetail = lazy(() => import("./pages/ApartmentDetail"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 // Create QueryClient outside component to avoid recreation on every render
@@ -38,8 +36,6 @@ const App = () => (
         <Suspense fallback={<PageLoader />}>
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/appartements" element={<Apartments />} />
-            <Route path="/appartements/:id" element={<ApartmentDetail />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

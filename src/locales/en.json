@@ -1,0 +1,164 @@
+{
+  "common": {
+    "mad": "MAD"
+  },
+  "navbar": {
+    "home": "Home",
+    "solution": "Our Solution",
+    "fleet": "Fleet",
+    "how_it_works": "How It Works",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "get_started": "Get Started"
+  },
+  "hero": {
+    "badge": "Built for the Modern Agency Owner",
+    "title": "Scale Your Fleet with Precision.",
+    "subtitle": "The complete operating system for car rental agencies. Manage your workspace, automate contracts with QR signatures, and track your assets in real-time.",
+    "cta": "Modernize My Fleet",
+    "trial": "Start Your Free Trial"
+  },
+  "problem": {
+    "badge": "Operational Inefficiency",
+    "title": "The Chaos of Manual Management is Costing You.",
+    "subtitle": "Spreadsheets and paper contracts are holding your business back. Every manual entry is a risk; every lost paper is a liability.",
+    "fatigue_title": "Spreadsheet Fatigue",
+    "fatigue_desc": "Data silos and manual entry errors lead to scheduling conflicts and double-booked vehicles.",
+    "paperwork_title": "Paperwork Bottlenecks",
+    "paperwork_desc": "Waiting for signatures and filing physical contracts wastes hours and creates liability risks.",
+    "maintenance_title": "Maintenance Guesswork",
+    "maintenance_desc": "Missed oil changes and odometer oversights decrease asset value and cause breakdowns.",
+    "revenue_title": "Revenue Leakage",
+    "revenue_desc": "Untracked partial payments and lost invoices hurt your bottom line and cash flow."
+  },
+  "solution": {
+    "badge": "The KimiFleet Workspace",
+    "title": "Unified Command Center for Multiple Branches.",
+    "subtitle": "Manage all your locations, vehicles, and team members from one high-performance dashboard. Total control, absolute clarity.",
+    "multi_tenant_title": "Multi-Tenant Architecture",
+    "multi_tenant_desc": "Keep your business entities isolated and secure with professional-grade data separation.",
+    "real_time_title": "Real-Time Sync",
+    "real_time_desc": "Instantly sync bookings and status updates across all your operational branches.",
+    "feature_1": "Centralized agency administration.",
+    "feature_2": "Real-time operational visibility.",
+    "feature_3": "Multi-branch data isolation."
+  },
+  "fleet": {
+    "badge": "Fleet & Asset Management",
+    "title": "Predictive Maintenance & Asset Lifecycle.",
+    "subtitle": "Track every vehicle from registration to disposal. Get automated alerts based on real-time odometer readings to keep your fleet in peak condition.",
+    "odometer_title": "Smart Odometer Tracking",
+    "odometer_desc": "Automated updates ensure you never miss a critical service interval.",
+    "alerts_title": "Predictive Alerts",
+    "alerts_desc": "AI-driven maintenance scheduling based on historical usage patterns.",
+    "resale_title": "Resale Strategy",
+    "resale_desc": "Documented service history ensures higher resale value for every vehicle."
+  },
+  "hardware": {
+    "badge": "Integrated GPS Telemetry",
+    "title": "Native Fleet Tracking.",
+    "subtitle": "Deep integration with professional GPS hardware ensures real-time visibility. Monitor every vehicle’s location, speed, and engine status directly from your command center.",
+    "monitoring": "Real-time Monitoring",
+    "connectivity": "Global Connectivity",
+    "secure": "Secure Data Transmission"
+  },
+  "finance": {
+    "badge": "Financial Oversight",
+    "title": "Unified Invoicing & Payment Tracking.",
+    "subtitle": "Manage partial and full payments, generate professional PDF invoices, and track revenue analytics in real-time. Eliminate payment disputes and improve cash flow.",
+    "invoice": "Invoice",
+    "amount_due": "Amount Due",
+    "base_rental": "Base Rental (7 Days)",
+    "security_deposit": "Security Deposit",
+    "insurance": "Insurance Coverage",
+    "auto_gen": "Automatically Generated",
+    "billed_to": "Billed automatically to",
+    "account": "Corporate Account"
+  },
+  "map": {
+    "badge": "Operational Intelligence",
+    "title": "Real-Time Fleet Intelligence.",
+    "subtitle": "Watch your business move in real-time. A map interface designed for operational clarity, giving you total visibility of every vehicle in your fleet."
+  },
+  "analytics": {
+    "badge": "Utilization Analytics",
+    "title": "Data-Driven Growth.",
+    "subtitle": "Analyze fleet utilization rates, revenue per vehicle, and idle time to optimize your inventory. Make informed decisions on fleet expansion and disposal.",
+    "avg_utilization": "Avg Utilization",
+    "revenue_growth": "Revenue Growth",
+    "fleet_revenue": "Fleet Revenue",
+    "weekly_performance": "Weekly Performance",
+    "vs_last_week": "vs last week"
+  },
+  "benefits": {
+    "badge": "Enterprise Architecture",
+    "title": "Why Professional Agencies Choose KimiFleet",
+    "save_hours_title": "Save Hours Daily",
+    "save_hours_desc": "Automate repetitive tasks and focus on scaling your business operations.",
+    "scale_title": "Scale with Confidence",
+    "scale_desc": "Manage 10 or 1,000 vehicles across multiple cities with ease.",
+    "revenue_title": "Protected Revenue",
+    "revenue_desc": "Never lose a payment record or a contract detail with our 100% digital history."
+  },
+  "process": {
+    "badge": "Automation Workflow",
+    "title": "Four Steps to Full Automation",
+    "join": "Join the professional agencies scaling with KimiFleet.",
+    "step1_title": "Onboard Your Fleet",
+    "step1_desc": "Add your vehicles and set up your branch locations in minutes.",
+    "step2_title": "Manage Bookings",
+    "step2_desc": "Centralize all reservations in your unified command center.",
+    "step3_title": "QR Digital Signing",
+    "step3_desc": "Clients scan a QR code and sign the contract on their device.",
+    "step4_title": "Track & Grow",
+    "step4_desc": "Monitor real-time GPS and manage payments with ease."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about modernizing your rental operations.",
+    "q1": "Is the QR digital signature legally binding?",
+    "a1": "Yes, our platform generates legally binding electronic signatures that meet international standards for rental agreements.",
+    "q2": "Do I need to install GPS hardware?",
+    "a2": "We support professional hardware like Teltonika for real-time tracking, but you can also manage mileage manually if preferred.",
+    "q3": "Can I manage multiple locations?",
+    "a3": "Absolutely. KimiFleet is built for multi-branch agencies with centralized administration.",
+    "q4": "How secure is our agency data?",
+    "a4": "We use multi-tenant architecture to ensure every agency's data is isolated and encrypted at the highest standards.",
+    "q5": "Can I migrate from my current spreadsheets?",
+    "a5": "Yes, we offer bulk import tools to get your entire fleet online in a matter of minutes.",
+    "q6": "How do I track payments?",
+    "a6": "Our financial module allows you to record partial and full payments, syncing them directly with your rental records and invoices."
+  },
+  "contact": {
+    "title": "Book Your Demo.",
+    "subtitle": "Speak with a fleet specialist to modernize your operations with KimiFleet.",
+    "name": "Full Name",
+    "email": "Corporate Email",
+    "fleet_size": "Fleet Size",
+    "select_size": "Select size",
+    "v1_10": "1-10 Vehicles",
+    "v11_50": "11-50 Vehicles",
+    "v50_plus": "50+ Vehicles",
+    "branches_count": "How many businesses do you manage?",
+    "select_branches": "Select number of branches/entities",
+    "b1": "1 (Single Business)",
+    "b2_5": "2-5 Branches",
+    "b6_plus": "6+ Entities",
+    "b_franchise": "Franchise Operator",
+    "book": "Book My Demo",
+    "processing": "Processing...",
+    "confidential": "Your data is strictly confidential and protected by enterprise-grade security."
+  },
+  "footer": {
+    "desc": "The operating system for your car rental agency. Automate contracts, tracking, and financials with professional-grade SaaS.",
+    "nav": "Navigation",
+    "services": "Services",
+    "contact": "Contact",
+    "qr": "QR Digital Contracts",
+    "maintenance": "Predictive Maintenance",
+    "gps": "GPS Fleet Telemetry",
+    "finance": "Financial Oversight",
+    "rights": "All rights reserved.",
+    "solutions": "Fleet Management Solutions since 2024"
+  }
+}

@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
-import { Navigation } from "lucide-react";
+import { Navigation, MapPin, Shield, Zap } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const MapExperienceSection = () => {
+  const { t } = useTranslation();
   return (
-    <section className="relative h-[80vh] min-h-[600px] flex items-center overflow-hidden bg-[#E5E7EB]">
+    <section id="map" className="relative h-[80vh] min-h-[600px] flex items-center overflow-hidden bg-[#E5E7EB]">
       {/* Background Image: using a light silver map aesthetic */}
       <div 
         className="absolute inset-0 z-0 bg-[url('https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=2000')] bg-cover bg-center grayscale opacity-50"
@@ -41,17 +43,17 @@ const MapExperienceSection = () => {
           transition={{ duration: 0.8 }}
           className="max-w-2xl mx-auto bg-white/90 backdrop-blur-xl p-10 rounded-3xl shadow-2xl border border-white"
         >
-          <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-600 px-4 py-2 rounded-full text-sm font-medium mb-6">
-            <Navigation size={16} />
-            <span>Real-Time UI</span>
+          <div className="inline-flex items-center gap-2 bg-black border border-gray-800 text-white px-4 py-2 rounded-full text-sm font-medium mb-8">
+            <MapPin size={16} className="text-blue-400" />
+            <span>{t("map.badge")}</span>
           </div>
           
-          <h2 className="font-display text-4xl md:text-5xl font-bold leading-tight tracking-tight text-gray-900 mb-6">
-            Fluid. <span className="text-gray-400">Real-time.</span> Remarkable.
+          <h2 className="font-display text-4xl md:text-6xl font-bold leading-tight tracking-tight text-gray-900 mb-8">
+            {t("map.title")}
           </h2>
           
-          <p className="text-lg text-gray-600 font-light leading-relaxed">
-            Watch your empire move. A map interface designed for clarity, not clutter. Experience Apple-style minimalism for enterprise logistics.
+          <p className="text-xl text-gray-600 font-light leading-relaxed">
+            {t("map.subtitle")}
           </p>
         </motion.div>
       </div>
