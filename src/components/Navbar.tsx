@@ -86,12 +86,14 @@ const Navbar = ({ onContactOpen }: { onContactOpen?: () => void }) => {
 
           <div className="hidden md:flex items-center gap-4">
             <LanguageSelector isWhite={shouldShowWhite} />
-            <button
-              onClick={onContactOpen}
-              className="bg-blue-600 text-white px-6 py-2.5 rounded-lg font-body text-sm font-medium tracking-tight hover:bg-blue-700 transition-all"
-            >
-              {t("navbar.get_started")}
-            </button>
+            <a href="https://kimifleet.com:3000" target="_blank">
+              <button
+                // onClick={onContactOpen}
+                className="bg-blue-600 text-white px-6 py-2.5 rounded-lg font-body text-sm font-medium tracking-tight hover:bg-blue-700 transition-all"
+              >
+                {t("navbar.get_started")}
+              </button>
+            </a>
           </div>
 
           <button

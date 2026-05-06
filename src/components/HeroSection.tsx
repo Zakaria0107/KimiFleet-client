@@ -74,18 +74,21 @@ const HeroSection = ({ onContactOpen }: { onContactOpen?: () => void }) => {
           className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
         >
           <a
-            href="#appartements"
+            href="https://kimifleet.com:3000" target="_blank"
             className="bg-white text-black px-8 py-4 rounded-lg font-body font-bold text-base tracking-tight hover:bg-white/90 transition-all shadow-lg"
           >
             {t("hero.trial")}
           </a>
-          <button
-            onClick={onContactOpen}
-            className="bg-blue-600 text-white px-8 py-4 rounded-lg font-body font-bold text-lg hover:bg-blue-700 transition-all flex items-center justify-center gap-2 group shadow-xl"
-          >
-            {t("hero.cta")}
-            <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
-          </button>
+
+          <a href="https://kimifleet.com:3000" target="_blank">
+            <button
+              // onClick={onContactOpen}
+              className="bg-blue-600 text-white px-8 py-4 rounded-lg font-body font-bold text-lg hover:bg-blue-700 transition-all flex items-center justify-center gap-2 group shadow-xl"
+            >
+              {t("hero.cta")}
+              <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
+            </button>
+          </a>
         </motion.div>
 
         <motion.div
