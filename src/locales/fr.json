@@ -73,7 +73,8 @@
     "insurance": "Couverture d'assurance",
     "auto_gen": "Généré automatiquement",
     "billed_to": "Facturé automatiquement à",
-    "account": "Compte d'entreprise"
+    "account": "Compte d'entreprise",
+    "cta": "Explorer les outils financiers"
   },
   "map": {
     "badge": "Intelligence opérationnelle",

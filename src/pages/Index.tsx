@@ -70,7 +70,7 @@ const Index = () => {
       <FAQSection />
       
       {/* 8. The Briefing: Expert Contact Form */}
-      <ContactSection />
+      {/* <ContactSection /> */}
       
       <Footer />
       

@@ -73,7 +73,8 @@
     "insurance": "Insurance Coverage",
     "auto_gen": "Automatically Generated",
     "billed_to": "Billed automatically to",
-    "account": "Corporate Account"
+    "account": "Corporate Account",
+    "cta": "Explore Financial Tools"
   },
   "map": {
     "badge": "Operational Intelligence",

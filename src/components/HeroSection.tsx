@@ -91,7 +91,7 @@ const HeroSection = ({ onContactOpen }: { onContactOpen?: () => void }) => {
           </a>
         </motion.div>
 
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 1, duration: 0.6 }}
@@ -104,7 +104,7 @@ const HeroSection = ({ onContactOpen }: { onContactOpen?: () => void }) => {
             <span className="text-white font-display font-bold text-xl">+{count}</span>
             <span className="text-gray-400 text-sm block">active assets tracked</span>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
 
       <motion.div
