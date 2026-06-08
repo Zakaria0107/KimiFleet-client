@@ -68,7 +68,7 @@ const Footer = () => {
                 <div className="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center">
                   <Phone size={16} className="text-blue-400" />
                 </div>
-                0641800086
+                0773273153
               </a>
               <a href="https://wa.me/212773273153" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-blue-400 transition-colors">
                 <div className="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center">
