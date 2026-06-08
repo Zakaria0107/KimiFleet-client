@@ -141,7 +141,7 @@ const Navbar = ({ onContactOpen }: { onContactOpen?: () => void }) => {
 
       {/* Floating WhatsApp Button */}
       <motion.a
-        href="https://wa.me/212641800086"
+        href="https://wa.me/212773273153"
         target="_blank"
         rel="noopener noreferrer"
         initial={{ scale: 0 }}

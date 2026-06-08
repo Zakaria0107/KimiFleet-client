@@ -17,7 +17,7 @@ const Footer = () => {
               {t("footer.desc")}
             </p>
             <a
-              href="https://wa.me/212641800086"
+              href="https://wa.me/212773273153"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-blue-600 text-white px-5 py-2.5 rounded-lg font-body text-sm font-medium hover:bg-blue-700 transition-all"
@@ -64,13 +64,13 @@ const Footer = () => {
                 </div>
                 Agadir, Maroc
               </a>
-              <a href="tel:+212641800086" className="flex items-center gap-3 hover:text-blue-400 transition-colors">
+              <a href="tel:+212773273153" className="flex items-center gap-3 hover:text-blue-400 transition-colors">
                 <div className="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center">
                   <Phone size={16} className="text-blue-400" />
                 </div>
                 0641800086
               </a>
-              <a href="https://wa.me/212641800086" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-blue-400 transition-colors">
+              <a href="https://wa.me/212773273153" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-blue-400 transition-colors">
                 <div className="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center">
                   <MessageCircle size={16} className="text-green-400" />
                 </div>

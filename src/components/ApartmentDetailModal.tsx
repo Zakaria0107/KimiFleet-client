@@ -36,7 +36,7 @@ const ApartmentDetailModal = ({ apartment, onClose }: Props) => {
 
   const handleWhatsApp = () => {
     const message = `Bonjour Immobaz.Kima !%0A%0AJe suis intéressé(e) par le bien :%0A${apartment.title}%0ARéférence : ${apartment.id}%0ALocation : ${apartment.location}%0A%0APrix de vente : ${apartment.priceForSale?.toLocaleString()} DH%0A${apartment.pricePerMonth ? `Loyer mensuel : ${apartment.pricePerMonth.toLocaleString()} DH` : ''}`;
-    window.open(`https://wa.me/212641800086?text=${message}`, "_blank");
+    window.open(`https://wa.me/212773273153?text=${message}`, "_blank");
   };
 
   return (
