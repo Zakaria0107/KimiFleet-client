@@ -160,6 +160,26 @@
     "gps": "Télémétrie de flotte GPS",
     "finance": "Supervision financière",
     "rights": "Tous droits réservés.",
-    "solutions": "Solutions de gestion de flotte depuis 2024"
+    "solutions": "Solutions de gestion de flotte depuis 2024",
+    "privacy": "Politique de confidentialité"
+  },
+  "privacy": {
+    "badge": "Légal",
+    "title": "Politique de confidentialité",
+    "subtitle": "Comment KimiFleet collecte, utilise et protège vos données personnelles.",
+    "last_updated": "Dernière mise à jour : Juin 2026",
+    "data_collected_title": "Données collectées",
+    "data_collected_desc": "Nous collectons les informations que vous fournissez lors de la création d'un compte : nom complet, adresse e-mail, numéro de téléphone et informations professionnelles. Nous collectons également des jetons d'authentification, des identifiants d'appareils et des jetons de notification push.",
+    "how_we_use_title": "Utilisation de vos données",
+    "how_we_use_desc": "Vos données sont utilisées uniquement pour exploiter la plateforme KimiFleet — pour authentifier votre compte, gérer votre flotte et vos contrats, envoyer des notifications opérationnelles et fournir un support client. Nous ne vendons pas vos données à des tiers.",
+    "data_security_title": "Sécurité des données",
+    "data_security_desc": "Nous utilisons une architecture multi-tenant pour garantir que vos données sont totalement isolées des autres comptes. Toutes les données sont chiffrées en transit (TLS) et au repos.",
+    "notifications_title": "Notifications push",
+    "notifications_desc": "Avec votre consentement, nous envoyons des notifications push pour les événements de location, les alertes de flotte et les mises à jour via Firebase Cloud Messaging (FCM). Vous pouvez désactiver les notifications à tout moment dans les paramètres de votre appareil.",
+    "retention_title": "Conservation des données",
+    "retention_desc": "Nous conservons vos données tant que votre compte est actif. Après suppression de votre compte, vos données personnelles sont supprimées dans un délai de 30 jours.",
+    "contact_title": "Nous contacter",
+    "contact_desc": "Pour toute question sur cette politique ou pour demander l'accès ou la suppression de vos données, contactez-nous à l'adresse ci-dessous.",
+    "questions": "Des questions sur votre confidentialité ?"
   }
 }

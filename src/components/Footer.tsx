@@ -1,4 +1,5 @@
 import { Phone, MapPin, MessageCircle, Mail, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import { useTranslation } from "../../node_modules/react-i18next";
 
 const Footer = () => {
@@ -84,9 +85,14 @@ const Footer = () => {
           <p className="text-gray-500 font-body text-sm">
             © 2024-{new Date().getFullYear()} Kimifleet. {t("footer.rights")}
           </p>
-          <p className="text-gray-500 font-body text-sm">
-            {t("footer.solutions")}
-          </p>
+          <div className="flex items-center gap-6">
+            <Link to="/privacy" className="text-gray-500 font-body text-sm hover:text-blue-400 transition-colors">
+              {t("footer.privacy")}
+            </Link>
+            <p className="text-gray-500 font-body text-sm">
+              {t("footer.solutions")}
+            </p>
+          </div>
         </div>
       </div>
     </footer>

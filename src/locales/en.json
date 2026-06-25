@@ -150,6 +150,25 @@
     "processing": "Processing...",
     "confidential": "Your data is strictly confidential and protected by enterprise-grade security."
   },
+  "privacy": {
+    "badge": "Legal",
+    "title": "Privacy Policy",
+    "subtitle": "How KimiFleet collects, uses, and protects your personal data.",
+    "last_updated": "Last updated: June 2026",
+    "data_collected_title": "Data We Collect",
+    "data_collected_desc": "We collect information you provide when creating an account: full name, email address, phone number, and business details. We also collect authentication tokens, device identifiers, and push notification tokens to deliver our service.",
+    "how_we_use_title": "How We Use Your Data",
+    "how_we_use_desc": "Your data is used solely to operate the KimiFleet platform — to authenticate your account, manage your fleet and rental records, send operational notifications, and provide customer support. We do not sell your data to third parties.",
+    "data_security_title": "Data Security",
+    "data_security_desc": "We use multi-tenant architecture to ensure your business data is fully isolated from other accounts. All data is encrypted in transit (TLS) and at rest. Access is restricted to authorized personnel only.",
+    "notifications_title": "Push Notifications",
+    "notifications_desc": "With your consent, we send push notifications for rental events, fleet alerts, and platform updates via Firebase Cloud Messaging (FCM). You can disable notifications at any time from your device settings.",
+    "retention_title": "Data Retention",
+    "retention_desc": "We retain your data for as long as your account is active. Upon account deletion, your personal data is removed within 30 days. Rental records may be retained for legal compliance purposes as required by applicable law.",
+    "contact_title": "Contact Us",
+    "contact_desc": "If you have questions about this privacy policy or wish to request access to or deletion of your personal data, contact us at the address below.",
+    "questions": "Questions about your privacy?"
+  },
   "footer": {
     "desc": "The operating system for your car rental agency. Automate contracts, tracking, and financials with professional-grade SaaS.",
     "nav": "Navigation",
@@ -160,6 +179,7 @@
     "gps": "GPS Fleet Telemetry",
     "finance": "Financial Oversight",
     "rights": "All rights reserved.",
-    "solutions": "Fleet Management Solutions since 2024"
+    "solutions": "Fleet Management Solutions since 2024",
+    "privacy": "Privacy Policy"
   }
 }
