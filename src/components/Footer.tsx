@@ -51,7 +51,6 @@ const Footer = () => {
             <div className="flex flex-col gap-3 text-gray-400 font-body text-sm">
               <span>{t("footer.qr")}</span>
               <span>{t("footer.maintenance")}</span>
-              <span>{t("footer.gps")}</span>
               <span>{t("footer.finance")}</span>
             </div>
           </div>

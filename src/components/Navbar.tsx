@@ -43,6 +43,7 @@ const Navbar = ({ onContactOpen }: { onContactOpen?: () => void }) => {
     { label: t("navbar.solution"), href: "#solution" },
     { label: t("navbar.fleet"), href: "#fleet" },
     { label: t("navbar.how_it_works"), href: "#how-it-works" },
+    { label: t("navbar.pricing"), href: "#pricing" },
     { label: t("navbar.faq"), href: "#faq" },
     { label: t("navbar.contact"), href: "#contact" },
   ];

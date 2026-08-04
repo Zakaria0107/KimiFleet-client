@@ -7,6 +7,7 @@
     "solution": "Our Solution",
     "fleet": "Fleet",
     "how_it_works": "How It Works",
+    "pricing": "Pricing",
     "faq": "FAQ",
     "contact": "Contact",
     "get_started": "Get Started"
@@ -53,14 +54,6 @@
     "alerts_desc": "AI-driven maintenance scheduling based on historical usage patterns.",
     "resale_title": "Resale Strategy",
     "resale_desc": "Documented service history ensures higher resale value for every vehicle."
-  },
-  "hardware": {
-    "badge": "Integrated GPS Telemetry",
-    "title": "Native Fleet Tracking.",
-    "subtitle": "Deep integration with professional GPS hardware ensures real-time visibility. Monitor every vehicle’s location, speed, and engine status directly from your command center.",
-    "monitoring": "Real-time Monitoring",
-    "connectivity": "Global Connectivity",
-    "secure": "Secure Data Transmission"
   },
   "finance": {
     "badge": "Financial Oversight",
@@ -112,15 +105,31 @@
     "step3_title": "QR Digital Signing",
     "step3_desc": "Clients scan a QR code and sign the contract on their device.",
     "step4_title": "Track & Grow",
-    "step4_desc": "Monitor real-time GPS and manage payments with ease."
+    "step4_desc": "Track mileage and manage payments with ease."
+  },
+  "pricing": {
+    "badge": "Simple Pricing",
+    "title": "One Price, Every Feature",
+    "subtitle": "Whether you manage a single agency or a network of multiple entities, every plan gives full, unlimited access to the dashboard and server. No hidden limits.",
+    "plan3_name": "3-Month Plan",
+    "plan6_name": "6-Month Plan",
+    "best_value": "Best Value",
+    "savings": "Save 100 MAD compared to the 3-month plan",
+    "per_month": "≈ {{amount}} MAD / month",
+    "feature_1": "Unlimited businesses/branches",
+    "feature_2": "Unlimited vehicles",
+    "feature_3": "Full dashboard access",
+    "feature_4": "All server features included",
+    "feature_5": "Unlimited contracts & QR signatures",
+    "feature_6": "Customer support included",
+    "cta": "Choose This Plan",
+    "note": "One-time billing for the selected period. No limit on the number of agencies or vehicles, on any plan."
   },
   "faq": {
     "title": "Frequently Asked Questions",
     "subtitle": "Everything you need to know about modernizing your rental operations.",
     "q1": "Is the QR digital signature legally binding?",
     "a1": "Yes, our platform generates legally binding electronic signatures that meet international standards for rental agreements.",
-    "q2": "Do I need to install GPS hardware?",
-    "a2": "We support professional hardware like Teltonika for real-time tracking, but you can also manage mileage manually if preferred.",
     "q3": "Can I manage multiple locations?",
     "a3": "Absolutely. KimiFleet is built for multi-branch agencies with centralized administration.",
     "q4": "How secure is our agency data?",
@@ -176,7 +185,6 @@
     "contact": "Contact",
     "qr": "QR Digital Contracts",
     "maintenance": "Predictive Maintenance",
-    "gps": "GPS Fleet Telemetry",
     "finance": "Financial Oversight",
     "rights": "All rights reserved.",
     "solutions": "Fleet Management Solutions since 2024",

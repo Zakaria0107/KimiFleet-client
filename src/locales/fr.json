@@ -7,6 +7,7 @@
     "solution": "Notre Solution",
     "fleet": "Flotte",
     "how_it_works": "Comment ça marche",
+    "pricing": "Tarifs",
     "faq": "FAQ",
     "contact": "Contact",
     "get_started": "Commencer"
@@ -53,14 +54,6 @@
     "alerts_desc": "Planification de la maintenance basée sur l'IA selon les modèles d'utilisation historiques.",
     "resale_title": "Stratégie de revente",
     "resale_desc": "L'historique d'entretien documenté garantit une valeur de revente plus élevée pour chaque véhicule."
-  },
-  "hardware": {
-    "badge": "Télémétrie GPS intégrée",
-    "title": "Suivi de flotte natif.",
-    "subtitle": "L'intégration profonde avec du matériel GPS professionnel garantit une visibilité en temps réel. Surveillez l'emplacement, la vitesse et l'état du moteur de chaque véhicule directement depuis votre centre de commandement.",
-    "monitoring": "Surveillance 24/7",
-    "connectivity": "Connectivité mondiale",
-    "secure": "Transmission de données sécurisée"
   },
   "finance": {
     "badge": "Supervision financière",
@@ -112,15 +105,31 @@
     "step3_title": "Signature numérique QR",
     "step3_desc": "Les clients scannent un code QR et signent le contrat sur leur appareil.",
     "step4_title": "Suivez et évoluez",
-    "step4_desc": "Surveillez le GPS en temps réel et gérez les paiements en toute simplicité."
+    "step4_desc": "Suivez le kilométrage et gérez les paiements en toute simplicité."
+  },
+  "pricing": {
+    "badge": "Tarification simple",
+    "title": "Un tarif, toutes les fonctionnalités",
+    "subtitle": "Que vous gériez une seule agence ou un réseau de plusieurs entités, chaque plan donne un accès complet et illimité au tableau de bord et au serveur. Aucune limite cachée.",
+    "plan3_name": "Plan 3 mois",
+    "plan6_name": "Plan 6 mois",
+    "best_value": "Meilleure offre",
+    "savings": "Économisez 100 MAD par rapport au plan 3 mois",
+    "per_month": "≈ {{amount}} MAD / mois",
+    "feature_1": "Entreprises/agences illimitées",
+    "feature_2": "Véhicules illimités",
+    "feature_3": "Accès complet au tableau de bord",
+    "feature_4": "Toutes les fonctionnalités serveur incluses",
+    "feature_5": "Contrats et signatures QR illimités",
+    "feature_6": "Support client inclus",
+    "cta": "Choisir ce plan",
+    "note": "Facturation unique pour la période choisie. Aucune limite sur le nombre d'agences ou de véhicules, quel que soit le plan."
   },
   "faq": {
     "title": "Questions fréquemment posées",
     "subtitle": "Tout ce que vous devez savoir pour moderniser vos opérations de location.",
     "q1": "La signature numérique QR est-elle juridiquement contraignante ?",
     "a1": "Oui, notre plateforme génère des signatures électroniques juridiquement contraignantes qui répondent aux normes internationales pour les contrats de location.",
-    "q2": "Dois-je installer du matériel GPS ?",
-    "a2": "Nous supportons le matériel professionnel comme Teltonika pour le suivi en temps réel, mais vous pouvez également gérer le kilométrage manuellement si vous préférez.",
     "q3": "Puis-je gérer plusieurs sites ?",
     "a3": "Absolument. KimiFleet est conçu pour les agences multi-sites avec une administration centralisée.",
     "q4": "Quelle est la sécurité des données de notre agence ?",
@@ -157,7 +166,6 @@
     "contact": "Contact",
     "qr": "Contrats numériques QR",
     "maintenance": "Maintenance prédictive",
-    "gps": "Télémétrie de flotte GPS",
     "finance": "Supervision financière",
     "rights": "Tous droits réservés.",
     "solutions": "Solutions de gestion de flotte depuis 2024",

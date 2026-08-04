@@ -5,12 +5,12 @@ import HeroSection from "@/components/HeroSection";
 import ProblemSection from "@/components/ProblemSection";
 import CommandCenterSection from "@/components/CommandCenterSection";
 import LifecycleSection from "@/components/LifecycleSection";
-import HardwareSection from "@/components/HardwareSection";
 import FinancialPulseSection from "@/components/FinancialPulseSection";
 import MapExperienceSection from "@/components/MapExperienceSection";
 import AnalyticsSection from "@/components/AnalyticsSection";
 import WhyUsSection from "@/components/WhyUsSection";
 import ServicesSection from "@/components/ServicesSection";
+import PricingSection from "@/components/PricingSection";
 import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
@@ -48,9 +48,6 @@ const Index = () => {
       {/* 3. The Lifecycle Engine: Distance-Based Maintenance */}
       <LifecycleSection />
       
-      {/* 4. The Hardware Synergy: Teltonika Integration */}
-      <HardwareSection />
-      
       {/* 5. The Financial Pulse: Invoicing & Revenue */}
       <FinancialPulseSection />
       
@@ -65,8 +62,11 @@ const Index = () => {
       
       {/* 9. Process: How It Works */}
       <ServicesSection />
-      
-      {/* 10. FAQ: Help */}
+
+      {/* 10. Pricing: Plans */}
+      <PricingSection />
+
+      {/* 11. FAQ: Help */}
       <FAQSection />
       
       {/* 8. The Briefing: Expert Contact Form */}
