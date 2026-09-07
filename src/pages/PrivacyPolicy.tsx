@@ -83,11 +83,11 @@ const PrivacyPolicy = () => {
               {t("privacy.questions")}
             </p>
             <a
-              href="mailto:zakariabijaddigune1234@gmail.com"
+              href="mailto:contact@kimifleet.com"
               className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-2.5 rounded-lg font-body text-sm font-medium hover:bg-blue-700 transition-all"
             >
               <Mail size={15} />
-              zakariabijaddigune1234@gmail.com
+              contact@kimifleet.com
             </a>
           </div>
         </div>
