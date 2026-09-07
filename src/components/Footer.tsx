@@ -82,7 +82,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-gray-500 font-body text-sm">
-            © 2024-{new Date().getFullYear()} Kimifleet. {t("footer.rights")}
+            © {new Date().getFullYear()} Kimifleet. {t("footer.rights")}
           </p>
           <div className="flex items-center gap-6">
             <Link to="/privacy" className="text-gray-500 font-body text-sm hover:text-blue-400 transition-colors">
