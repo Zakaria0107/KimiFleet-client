@@ -9,10 +9,8 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div>
-            <div className="flex items-center gap-2 mb-6">
-              <span className="font-display text-2xl font-bold tracking-tight">
-                <span className="text-blue-400">Kimi</span>fleet
-              </span>
+            <div className="flex items-start gap-2 mb-6 p-0 -mt-10">
+              <img src="/logo.png" alt="Kimifleet" className="h-32 w-auto" />
             </div>
             <p className="text-gray-400 font-body text-sm leading-relaxed mb-6">
               {t("footer.desc")}
@@ -68,7 +66,7 @@ const Footer = () => {
                 <div className="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center">
                   <Phone size={16} className="text-blue-400" />
                 </div>
-                0773273153
+                +212 773273153
               </a>
               <a href="https://wa.me/212773273153" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-blue-400 transition-colors">
                 <div className="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center">

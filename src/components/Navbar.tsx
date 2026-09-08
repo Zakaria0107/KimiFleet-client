@@ -4,7 +4,6 @@ import { Menu, X } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "../../node_modules/react-i18next";
 import { LanguageSelector } from "./LanguageSelector";
-import logo from "../assets/logo.png";
 
 const Navbar = ({ onContactOpen }: { onContactOpen?: () => void }) => {
   const [scrolled, setScrolled] = useState(false);
@@ -59,16 +58,14 @@ const Navbar = ({ onContactOpen }: { onContactOpen?: () => void }) => {
       >
         <div className="container mx-auto flex items-center justify-between px-6 lg:px-12">
           <Link to="/" className="flex items-center">
-            {shouldShowWhite && scrolled && (
-              <span className="absolute font-display text-xl font-bold tracking-tight text-primary">
-                <span className="text-blue-400">Kimi</span>fleet
-              </span>
-            )}
-            {!shouldShowWhite && !scrolled && (
-              <span className="absolute font-display text-xl font-bold tracking-tight text-white">
-                <span className="text-blue-400">Kimi</span>fleet
-              </span>
-            )}
+            <div className="h-10 w-32 overflow-hidden flex items-center">
+              <img
+                src="/logo2.png"
+                alt="Kimifleet"
+                className={` h-32 object-cover transition-all duration-300 ${shouldShowWhite ? "" : "brightness-0 invert"
+                  }`}
+              />
+            </div>
           </Link>
 
           <div className="hidden md:flex items-center gap-8">
