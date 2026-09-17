@@ -1,38 +1,86 @@
+import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import { Navigation, MapPin, Shield, Zap } from "lucide-react";
+import { MapPin } from "lucide-react";
 import { useTranslation } from "../../node_modules/react-i18next";
+import L from "leaflet";
+import "leaflet/dist/leaflet.css";
+
+// Chosen to sit outside the footprint of the centered content card at the
+// map's fixed zoom/center below — Casablanca/Rabat/Marrakech/Fes cluster
+// right behind the card and would never be visible.
+const FLEET_CITIES: { name: string; lat: number; lng: number }[] = [
+  { name: "Tangier", lat: 35.7595, lng: -5.8340 },
+  { name: "Oujda", lat: 34.6867, lng: -1.9114 },
+  { name: "Essaouira", lat: 31.5085, lng: -9.7595 },
+  { name: "Agadir", lat: 30.4278, lng: -9.5981 },
+  { name: "Tan-Tan", lat: 28.4378, lng: -11.1030 },
+];
 
 const MapExperienceSection = () => {
   const { t } = useTranslation();
+  const mapContainerRef = useRef<HTMLDivElement>(null);
+  const mapRef = useRef<L.Map | null>(null);
+
+  useEffect(() => {
+    if (!mapContainerRef.current || mapRef.current) return;
+
+    const map = L.map(mapContainerRef.current, {
+      center: [32.5, -7.6],
+      zoom: 6.85,
+      minZoom: 6.85,
+      maxZoom: 6.85,
+      zoomSnap: 0,
+      zoomControl: false,
+      dragging: false,
+      scrollWheelZoom: false,
+      doubleClickZoom: false,
+      boxZoom: false,
+      keyboard: false,
+      touchZoom: false,
+      attributionControl: true,
+    });
+    mapRef.current = map;
+
+    L.control.attribution({ prefix: false, position: "bottomright" }).addTo(map);
+
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      subdomains: "abc",
+      maxZoom: 19,
+      attribution: "&copy; OpenStreetMap contributors",
+    }).addTo(map);
+
+    FLEET_CITIES.forEach((city, i) => {
+      const icon = L.divIcon({
+        className: "",
+        html: `
+          <div style="position:relative;display:flex;align-items:center;justify-content:center;">
+            <span class="absolute w-4 h-4 rounded-full bg-blue-500/40 animate-ping" style="animation-delay:${i * 0.3}s"></span>
+            <span class="relative w-3 h-3 rounded-full bg-blue-600 border-2 border-white shadow"></span>
+            <span class="absolute top-5 left-1/2 -translate-x-1/2 bg-white px-2 py-0.5 rounded shadow text-[10px] font-bold text-gray-800 whitespace-nowrap">${city.name}</span>
+          </div>
+        `,
+        iconSize: [12, 12],
+        iconAnchor: [6, 6],
+      });
+      L.marker([city.lat, city.lng], { icon, interactive: false }).addTo(map);
+    });
+
+    return () => {
+      map.remove();
+      mapRef.current = null;
+    };
+  }, []);
+
   return (
     <section id="map" className="relative h-[80vh] min-h-[600px] flex items-center overflow-hidden bg-[#E5E7EB]">
-      {/* Background Image: using a light silver map aesthetic */}
-      <div
-        className="absolute inset-0 z-0 bg-[url('https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=2000')] bg-cover bg-center grayscale opacity-50"
-      />
-
-      {/* Map Dots Overlay (Simulated Data) */}
-      <div className="absolute inset-0 z-0 hidden lg:block">
-        {[
-          { top: '30%', left: '20%', delay: 0 },
-          { top: '45%', left: '50%', delay: 0.5 },
-          { top: '60%', left: '70%', delay: 1 },
-          { top: '25%', left: '80%', delay: 0.2 },
-          { top: '75%', left: '35%', delay: 0.8 },
-        ].map((dot, i) => (
-          <div key={i} className="absolute" style={{ top: dot.top, left: dot.left }}>
-            <motion.div
-              animate={{ scale: [1, 2, 1], opacity: [1, 0, 1] }}
-              transition={{ repeat: Infinity, duration: 2, delay: dot.delay }}
-              className="w-4 h-4 bg-blue-500 rounded-full"
-            />
-            <div className="w-4 h-4 bg-blue-600 rounded-full absolute top-0 left-0" />
-            <div className="absolute top-6 left-1/2 -translate-x-1/2 bg-white px-2 py-1 rounded shadow-lg text-[10px] font-bold text-gray-800 whitespace-nowrap">
-              Active
-            </div>
-          </div>
-        ))}
-      </div>
+      {/* Real, decorative Morocco fleet map (Leaflet + OpenStreetMap tiles) */}
+      <style>{`
+        .kf-fleet-map .leaflet-tile-pane { filter: grayscale(100%) contrast(1.05) brightness(1.15); }
+        .kf-fleet-map .leaflet-control-attribution { font-size: 9px; opacity: 0.5; background: transparent; }
+      `}</style>
+      <div ref={mapContainerRef} className="kf-fleet-map absolute inset-0 z-0" />
+      {/* Soft grey wash so the map reads as a quiet backdrop, not the focal point */}
+      <div className="absolute inset-0 z-[1] bg-gray-200/55 pointer-events-none" />
 
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10 text-center">

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Users } from "lucide-react";
 import { useTranslation } from "../../node_modules/react-i18next";
-import heroImg from "@/assets/kimi_hero.png";
+import heroImg from "@/assets/hero-keys.jpg";
 
 const HeroSection = ({ onContactOpen }: { onContactOpen?: () => void }) => {
   const { t } = useTranslation();
@@ -30,12 +30,12 @@ const HeroSection = ({ onContactOpen }: { onContactOpen?: () => void }) => {
       <div className="absolute inset-0">
         <img
           src={heroImg}
-          alt="Vue aérienne de la côte d'Agadir"
+          alt="Remise des clés d'un véhicule de location"
           className="w-full h-full object-cover"
           fetchpriority="high"
           decoding="async"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-gray-950/80 via-gray-900/70 to-gray-950/90" />
+        <div className="absolute inset-0 bg-gradient-to-b from-gray-950/60 via-gray-950/50 to-gray-950/85" />
       </div>
 
       <div className="relative z-10 container mx-auto px-4 text-center">

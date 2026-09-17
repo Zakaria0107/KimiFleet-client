@@ -58,7 +58,7 @@ const CommandCenterSection = () => {
 
             <img
               src={commandImg}
-              alt="Glassmorphism UI Command Center Dropdown"
+              alt="KimiFleet dashboard overview with revenue trends and fleet KPIs"
               className="relative z-10 w-full h-auto rounded-3xl shadow-2xl border border-white/10"
             />
 

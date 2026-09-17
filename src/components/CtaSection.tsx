@@ -4,7 +4,7 @@ import poolImg from "@/assets/cta-bg.png";
 const CtaSection = ({ onContactOpen }: { onContactOpen?: () => void }) => (
   <section className="relative py-24 overflow-hidden">
     <div className="absolute inset-0">
-      <img src={poolImg} alt="Vue piscine Agadir" className="w-full h-full object-cover" />
+      <img src={poolImg} alt="Vue de la page des locations KimiFleet" className="w-full h-full object-cover" />
       <div className="absolute inset-0 bg-gradient-to-r from-gray-950/95 via-gray-900/90 to-gray-950/95" />
     </div>
     <div className="relative z-10 container mx-auto px-4 text-center">
@@ -21,7 +21,7 @@ const CtaSection = ({ onContactOpen }: { onContactOpen?: () => void }) => (
           </span>
         </h2>
         <p className="text-gray-300 text-lg max-w-xl mx-auto mb-10 font-body">
-          Join the elite layer of operators who leverage deep Teltonika integration for unparalleled insight.
+          Join the operators streamlining their fleet with automated contracts and unified operational visibility.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button

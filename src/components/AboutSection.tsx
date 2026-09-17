@@ -22,7 +22,7 @@ const AboutSection = () => {
           >
             <img
               src={aboutImg}
-              alt="Intérieur d'un appartement Immobaz.Kima"
+              alt="Liste de la flotte KimiFleet avec kilométrage et statut des véhicules"
               className="rounded-2xl w-full object-cover aspect-[4/3] shadow-2xl"
             />
             <motion.div

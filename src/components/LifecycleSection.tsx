@@ -20,7 +20,7 @@ const LifecycleSection = () => {
             <div className="absolute inset-0 bg-blue-100 blur-[80px] rounded-full" />
             <img
               src={lifecycleImg}
-              alt="Lifecycle tracking progress ring"
+              alt="KimiFleet maintenance tracking table with mileage and pending tasks"
               className="relative z-10 w-full max-w-lg mx-auto rounded-3xl shadow-xl hover:scale-105 transition-transform duration-700"
             />
           </motion.div>

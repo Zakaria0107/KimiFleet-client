@@ -15,7 +15,7 @@
   "hero": {
     "badge": "Conçu pour le propriétaire d'agence moderne",
     "title": "Développez votre flotte avec précision.",
-    "subtitle": "Le système d'exploitation complet pour les agences de location de voitures. Gérez votre espace de travail, automatisez les contrats avec des signatures QR et suivez vos actifs en temps réel.",
+    "subtitle": "Le système d'exploitation complet pour les agences de location de voitures. Gérez votre espace de travail, automatisez les contrats avec des signatures QR et gardez le contrôle sur chaque véhicule de votre flotte.",
     "cta": "Moderniser ma flotte",
     "trial": "Commencer mon essai gratuit"
   },
@@ -51,14 +51,14 @@
     "odometer_title": "Suivi intelligent du compteur",
     "odometer_desc": "Les mises à jour automatisées garantissent que vous ne manquez jamais un intervalle d'entretien critique.",
     "alerts_title": "Alertes prédictives",
-    "alerts_desc": "Planification de la maintenance basée sur l'IA selon les modèles d'utilisation historiques.",
+    "alerts_desc": "Planification automatisée de la maintenance selon les intervalles d'entretien recommandés par le constructeur.",
     "resale_title": "Stratégie de revente",
     "resale_desc": "L'historique d'entretien documenté garantit une valeur de revente plus élevée pour chaque véhicule."
   },
   "finance": {
     "badge": "Supervision financière",
     "title": "Facturation unifiée et suivi des paiements.",
-    "subtitle": "Gérez les paiements partiels et complets, générez des factures PDF professionnelles et suivez les analyses de revenus en temps réel. Éliminez les litiges de paiement et améliorez la trésorerie.",
+    "subtitle": "Gérez les paiements partiels et complets, générez des factures prêtes à imprimer et suivez vos analyses de revenus. Éliminez les litiges de paiement et améliorez la trésorerie.",
     "invoice": "Facture",
     "amount_due": "Montant dû",
     "base_rental": "Location de base (7 jours)",
@@ -71,8 +71,8 @@
   },
   "map": {
     "badge": "Intelligence opérationnelle",
-    "title": "Intelligence de flotte en temps réel.",
-    "subtitle": "Regardez votre entreprise bouger en temps réel. Une interface cartographique conçue pour la clarté opérationnelle, vous offrant une visibilité totale sur chaque véhicule de votre flotte."
+    "title": "Une Visibilité Opérationnelle, Partout Où Vous Opérez.",
+    "subtitle": "Conçu pour les agences présentes dans plusieurs villes. Le support matériel GPS donne à votre équipe une visibilité sur la localisation de chaque véhicule de votre flotte."
   },
   "analytics": {
     "badge": "Analyses d'utilisation",
@@ -128,16 +128,18 @@
   "faq": {
     "title": "Questions fréquemment posées",
     "subtitle": "Tout ce que vous devez savoir pour moderniser vos opérations de location.",
-    "q1": "La signature numérique QR est-elle juridiquement contraignante ?",
-    "a1": "Oui, notre plateforme génère des signatures électroniques juridiquement contraignantes qui répondent aux normes internationales pour les contrats de location.",
+    "q1": "Comment fonctionne la signature numérique QR ?",
+    "a1": "Les clients signent directement sur leur propre appareil après avoir scanné un QR code, et la signature est enregistrée avec le contrat de location — fini les contrats papier égarés.",
     "q3": "Puis-je gérer plusieurs sites ?",
     "a3": "Absolument. KimiFleet est conçu pour les agences multi-sites avec une administration centralisée.",
     "q4": "Quelle est la sécurité des données de notre agence ?",
     "a4": "Nous utilisons une architecture multi-tenant pour garantir que les données de chaque agence sont isolées et cryptées selon les normes les plus élevées.",
     "q5": "Puis-je migrer mes feuilles de calcul actuelles ?",
-    "a5": "Oui, nous proposons des outils d'importation en masse pour mettre toute votre flotte en ligne en quelques minutes.",
+    "a5": "Oui. Vous pouvez ajouter vos véhicules, clients et historique de location directement dans le tableau de bord en quelques minutes — plus besoin de continuer à travailler avec des tableurs.",
     "q6": "Comment suivre les paiements ?",
-    "a6": "Notre module financier vous permet d'enregistrer les paiements partiels et complets, en les synchronisant directement avec vos dossiers de location et vos factures."
+    "a6": "Notre module financier vous permet d'enregistrer les paiements partiels et complets, en les synchronisant directement avec vos dossiers de location et vos factures.",
+    "q7": "Existe-t-il une application mobile pour mon équipe ?",
+    "a7": "Oui. Notre application mobile permet à votre équipe de gérer les locations, les véhicules, les clients et les factures depuis leur téléphone, avec des notifications push pour les alertes de flotte et les événements de location."
   },
   "contact": {
     "title": "Réservez votre démo.",
@@ -183,7 +185,7 @@
     "data_security_title": "Sécurité des données",
     "data_security_desc": "Nous utilisons une architecture multi-tenant pour garantir que vos données sont totalement isolées des autres comptes. Toutes les données sont chiffrées en transit (TLS) et au repos.",
     "notifications_title": "Notifications push",
-    "notifications_desc": "Avec votre consentement, nous envoyons des notifications push pour les événements de location, les alertes de flotte et les mises à jour via Firebase Cloud Messaging (FCM). Vous pouvez désactiver les notifications à tout moment dans les paramètres de votre appareil.",
+    "notifications_desc": "Avec votre consentement, nous envoyons des notifications push pour les événements de location, les alertes de flotte et les mises à jour via notre application mobile. Vous pouvez désactiver les notifications à tout moment dans les paramètres de votre appareil.",
     "retention_title": "Conservation des données",
     "retention_desc": "Nous conservons vos données tant que votre compte est actif. Après suppression de votre compte, vos données personnelles sont supprimées dans un délai de 30 jours.",
     "contact_title": "Nous contacter",

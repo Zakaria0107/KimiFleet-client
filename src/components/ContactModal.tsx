@@ -127,11 +127,11 @@ const ContactModal = ({ open, onClose }: Props) => {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1.5 font-body">Fleet Size & Current Hardware *</label>
+                  <label className="block text-sm font-medium text-gray-700 mb-1.5 font-body">Fleet Size & Current Setup *</label>
                   <textarea
                     value={form.message}
                     onChange={(e) => setForm({ ...form, message: e.target.value })}
-                    placeholder="Tell us about your current fleet size and Teltonika devices..."
+                    placeholder="Tell us about your current fleet size and any GPS tracking hardware you use..."
                     rows={4}
                     className="w-full bg-gray-50 text-gray-900 border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-300 transition-all resize-none placeholder:text-gray-400 font-body"
                   />

@@ -15,7 +15,7 @@
   "hero": {
     "badge": "Built for the Modern Agency Owner",
     "title": "Scale Your Fleet with Precision.",
-    "subtitle": "The complete operating system for car rental agencies. Manage your workspace, automate contracts with QR signatures, and track your assets in real-time.",
+    "subtitle": "The complete operating system for car rental agencies. Manage your workspace, automate contracts with QR signatures, and stay on top of every vehicle's status.",
     "cta": "Modernize My Fleet",
     "trial": "Start Your Free Trial"
   },
@@ -51,14 +51,14 @@
     "odometer_title": "Smart Odometer Tracking",
     "odometer_desc": "Automated updates ensure you never miss a critical service interval.",
     "alerts_title": "Predictive Alerts",
-    "alerts_desc": "AI-driven maintenance scheduling based on historical usage patterns.",
+    "alerts_desc": "Automated maintenance scheduling based on manufacturer-recommended service intervals.",
     "resale_title": "Resale Strategy",
     "resale_desc": "Documented service history ensures higher resale value for every vehicle."
   },
   "finance": {
     "badge": "Financial Oversight",
     "title": "Unified Invoicing & Payment Tracking.",
-    "subtitle": "Manage partial and full payments, generate professional PDF invoices, and track revenue analytics in real-time. Eliminate payment disputes and improve cash flow.",
+    "subtitle": "Manage partial and full payments, generate print-ready invoices, and track your revenue analytics. Eliminate payment disputes and improve cash flow.",
     "invoice": "Invoice",
     "amount_due": "Amount Due",
     "base_rental": "Base Rental (7 Days)",
@@ -71,8 +71,8 @@
   },
   "map": {
     "badge": "Operational Intelligence",
-    "title": "Real-Time Fleet Intelligence.",
-    "subtitle": "Watch your business move in real-time. A map interface designed for operational clarity, giving you total visibility of every vehicle in your fleet."
+    "title": "Operational Visibility, Wherever You Operate.",
+    "subtitle": "Built for agencies operating across multiple cities. GPS-ready hardware support gives your team location visibility for every vehicle in your fleet."
   },
   "analytics": {
     "badge": "Utilization Analytics",
@@ -128,16 +128,18 @@
   "faq": {
     "title": "Frequently Asked Questions",
     "subtitle": "Everything you need to know about modernizing your rental operations.",
-    "q1": "Is the QR digital signature legally binding?",
-    "a1": "Yes, our platform generates legally binding electronic signatures that meet international standards for rental agreements.",
+    "q1": "How does the QR digital signature work?",
+    "a1": "Clients sign directly on their own device after scanning a QR code, and the signature is stored with your rental record — no more paper contracts or lost signatures.",
     "q3": "Can I manage multiple locations?",
     "a3": "Absolutely. KimiFleet is built for multi-branch agencies with centralized administration.",
     "q4": "How secure is our agency data?",
     "a4": "We use multi-tenant architecture to ensure every agency's data is isolated and encrypted at the highest standards.",
     "q5": "Can I migrate from my current spreadsheets?",
-    "a5": "Yes, we offer bulk import tools to get your entire fleet online in a matter of minutes.",
+    "a5": "Yes. You can add your vehicles, clients, and rental history directly in the dashboard in just a few minutes — no need to keep working from spreadsheets.",
     "q6": "How do I track payments?",
-    "a6": "Our financial module allows you to record partial and full payments, syncing them directly with your rental records and invoices."
+    "a6": "Our financial module allows you to record partial and full payments, syncing them directly with your rental records and invoices.",
+    "q7": "Is there a mobile app for my team?",
+    "a7": "Yes. Our mobile app lets your staff manage rentals, vehicles, clients, and invoices from their phone, with push notifications for fleet alerts and rental events."
   },
   "contact": {
     "title": "Book Your Demo.",
@@ -171,7 +173,7 @@
     "data_security_title": "Data Security",
     "data_security_desc": "We use multi-tenant architecture to ensure your business data is fully isolated from other accounts. All data is encrypted in transit (TLS) and at rest. Access is restricted to authorized personnel only.",
     "notifications_title": "Push Notifications",
-    "notifications_desc": "With your consent, we send push notifications for rental events, fleet alerts, and platform updates via Firebase Cloud Messaging (FCM). You can disable notifications at any time from your device settings.",
+    "notifications_desc": "With your consent, we send push notifications for rental events, fleet alerts, and platform updates through our mobile app. You can disable notifications at any time from your device settings.",
     "retention_title": "Data Retention",
     "retention_desc": "We retain your data for as long as your account is active. Upon account deletion, your personal data is removed within 30 days. Rental records may be retained for legal compliance purposes as required by applicable law.",
     "contact_title": "Contact Us",
