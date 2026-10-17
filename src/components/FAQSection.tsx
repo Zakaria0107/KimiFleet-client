@@ -38,22 +38,24 @@ const FAQSection = () => {
                 transition={{ delay: i * 0.1 }}
                 className="bg-white rounded-2xl border border-gray-100 overflow-hidden"
               >
-                <button
-                  onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                  className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
-                >
-                  <span className="text-lg font-semibold text-gray-900">{faq.question}</span>
-                  {openIndex === i ? (
-                    <Minus className="text-blue-600" size={20} />
-                  ) : (
-                    <Plus className="text-gray-400" size={20} />
-                  )}
-                </button>
-                {openIndex === i && (
+                {/* Answers are always in the HTML (for search engines and FAQPage data); <details> hides
+                    closed ones and still works without JavaScript. React keeps one item open at a time. */}
+                <details open={openIndex === i} className="group">
+                  <summary
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setOpenIndex(openIndex === i ? null : i);
+                    }}
+                    className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden"
+                  >
+                    <span className="text-lg font-semibold text-gray-900">{faq.question}</span>
+                    <Plus className="text-gray-400 shrink-0 group-open:hidden" size={20} />
+                    <Minus className="text-blue-600 shrink-0 hidden group-open:block" size={20} />
+                  </summary>
                   <div className="px-8 pb-6 text-gray-500 leading-relaxed">
                     {faq.answer}
                   </div>
-                )}
+                </details>
               </motion.div>
             ))}
           </div>
