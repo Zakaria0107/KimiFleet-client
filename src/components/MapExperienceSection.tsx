@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { MapPin } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import L from "leaflet";
+import type { Map as LeafletMap } from "leaflet";
 import "leaflet/dist/leaflet.css";
 
 // Chosen to sit outside the footprint of the centered content card at the
@@ -19,55 +19,61 @@ const FLEET_CITIES: { name: string; lat: number; lng: number }[] = [
 const MapExperienceSection = () => {
   const { t } = useTranslation();
   const mapContainerRef = useRef<HTMLDivElement>(null);
-  const mapRef = useRef<L.Map | null>(null);
 
+  // Leaflet touches `window` when imported, so it is loaded in the browser only
+  // (never during prerendering) and stays out of the main chunk.
   useEffect(() => {
-    if (!mapContainerRef.current || mapRef.current) return;
+    let map: LeafletMap | undefined;
+    let cancelled = false;
 
-    const map = L.map(mapContainerRef.current, {
-      center: [32.5, -7.6],
-      zoom: 6.85,
-      minZoom: 6.85,
-      maxZoom: 6.85,
-      zoomSnap: 0,
-      zoomControl: false,
-      dragging: false,
-      scrollWheelZoom: false,
-      doubleClickZoom: false,
-      boxZoom: false,
-      keyboard: false,
-      touchZoom: false,
-      attributionControl: true,
-    });
-    mapRef.current = map;
+    import("leaflet").then((L) => {
+      if (cancelled || !mapContainerRef.current) return;
 
-    L.control.attribution({ prefix: false, position: "bottomright" }).addTo(map);
-
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      subdomains: "abc",
-      maxZoom: 19,
-      attribution: "&copy; OpenStreetMap contributors",
-    }).addTo(map);
-
-    FLEET_CITIES.forEach((city, i) => {
-      const icon = L.divIcon({
-        className: "",
-        html: `
-          <div style="position:relative;display:flex;align-items:center;justify-content:center;">
-            <span class="absolute w-4 h-4 rounded-full bg-blue-500/40 animate-ping" style="animation-delay:${i * 0.3}s"></span>
-            <span class="relative w-3 h-3 rounded-full bg-blue-600 border-2 border-white shadow"></span>
-            <span class="absolute top-5 left-1/2 -translate-x-1/2 bg-white px-2 py-0.5 rounded shadow text-[10px] font-bold text-gray-800 whitespace-nowrap">${city.name}</span>
-          </div>
-        `,
-        iconSize: [12, 12],
-        iconAnchor: [6, 6],
+      const leafletMap = L.map(mapContainerRef.current, {
+        center: [32.5, -7.6],
+        zoom: 6.85,
+        minZoom: 6.85,
+        maxZoom: 6.85,
+        zoomSnap: 0,
+        zoomControl: false,
+        dragging: false,
+        scrollWheelZoom: false,
+        doubleClickZoom: false,
+        boxZoom: false,
+        keyboard: false,
+        touchZoom: false,
+        attributionControl: true,
       });
-      L.marker([city.lat, city.lng], { icon, interactive: false }).addTo(map);
+      map = leafletMap;
+
+      L.control.attribution({ prefix: false, position: "bottomright" }).addTo(leafletMap);
+
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        subdomains: "abc",
+        maxZoom: 19,
+        attribution: "&copy; OpenStreetMap contributors",
+      }).addTo(leafletMap);
+
+      FLEET_CITIES.forEach((city, i) => {
+        const icon = L.divIcon({
+          className: "",
+          html: `
+            <div style="position:relative;display:flex;align-items:center;justify-content:center;">
+              <span class="absolute w-4 h-4 rounded-full bg-blue-500/40 animate-ping" style="animation-delay:${i * 0.3}s"></span>
+              <span class="relative w-3 h-3 rounded-full bg-blue-600 border-2 border-white shadow"></span>
+              <span class="absolute top-5 left-1/2 -translate-x-1/2 bg-white px-2 py-0.5 rounded shadow text-[10px] font-bold text-gray-800 whitespace-nowrap">${city.name}</span>
+            </div>
+          `,
+          iconSize: [12, 12],
+          iconAnchor: [6, 6],
+        });
+        L.marker([city.lat, city.lng], { icon, interactive: false }).addTo(leafletMap);
+      });
     });
 
     return () => {
-      map.remove();
-      mapRef.current = null;
+      cancelled = true;
+      map?.remove();
     };
   }, []);
 
