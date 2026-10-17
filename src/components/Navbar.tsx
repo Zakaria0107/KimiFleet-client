@@ -129,12 +129,15 @@ const Navbar = ({ onContactOpen }: { onContactOpen?: () => void }) => {
                     {item.label}
                   </a>
                 ))}
-                <button
-                  onClick={() => { setMobileOpen(false); if (onContactOpen) onContactOpen(); }}
+                <a
+                  href="https://kimifleet.com/dashboard/"
+                  target="_blank"
+                  rel="noopener"
+                  onClick={() => setMobileOpen(false)}
                   className="bg-blue-600 text-white px-6 py-3 rounded-lg font-body text-sm font-medium text-center mt-2"
                 >
                   {t("navbar.get_started")}
-                </button>
+                </a>
                 <div className="flex justify-center pt-4 border-t border-gray-100">
                   <LanguageSelector isWhite={true} />
                 </div>
