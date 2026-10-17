@@ -1,9 +1,12 @@
 import { Phone, MapPin, MessageCircle, Mail, ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { langFromPath, pathFor } from "@/seo/routes";
 
 const Footer = () => {
   const { t } = useTranslation();
+  const lang = langFromPath(useLocation().pathname);
+  const homePath = pathFor("home", lang);
   return (
     <footer className="bg-gray-950 text-white">
       <div className="container mx-auto px-4 py-16">
@@ -30,10 +33,10 @@ const Footer = () => {
             <h4 className="font-display font-semibold text-sm uppercase tracking-wide text-gray-300 mb-4">{t("footer.nav")}</h4>
             <div className="flex flex-col gap-3">
               {[
-                { label: t("navbar.home"), href: "#home" },
-                { label: t("navbar.solution"), href: "#solution" },
-                { label: t("navbar.how_it_works"), href: "#how-it-works" },
-                { label: t("navbar.fleet"), href: "#fleet" },
+                { label: t("navbar.home"), href: `${homePath}#home` },
+                { label: t("navbar.solution"), href: `${homePath}#solution` },
+                { label: t("navbar.how_it_works"), href: `${homePath}#how-it-works` },
+                { label: t("navbar.fleet"), href: `${homePath}#fleet` },
               ].map((item) => (
                 <a key={item.label} href={item.href} className="text-gray-400 font-body text-sm hover:text-blue-400 transition-colors inline-flex items-center gap-1">
                   <ArrowRight size={14} className="opacity-0 group-hover:opacity-100" />
@@ -82,9 +85,9 @@ const Footer = () => {
             © {new Date().getFullYear()} Kimifleet. {t("footer.rights")}
           </p>
           <div className="flex items-center gap-6">
-            <Link to="/privacy" className="text-gray-500 font-body text-sm hover:text-blue-400 transition-colors">
+            <a href={pathFor("privacy", lang)} className="text-gray-500 font-body text-sm hover:text-blue-400 transition-colors">
               {t("footer.privacy")}
-            </Link>
+            </a>
             <p className="text-gray-500 font-body text-sm">
               {t("footer.solutions")}
             </p>

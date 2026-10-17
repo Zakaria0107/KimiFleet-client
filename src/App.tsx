@@ -1,13 +1,18 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, type ReactNode } from "react";
+import type { i18n as I18n } from "i18next";
+import { I18nextProvider } from "react-i18next";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import { ROUTES, type PageId } from "./seo/routes";
 
-// Lazy load pages for code splitting
-const Index = lazy(() => import("./pages/Index"));
-const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
+// Lazy load pages for code splitting. Keep in sync with PAGE_MODULES in seo/routes.ts.
+const pages: Record<PageId, ReturnType<typeof lazy>> = {
+  home: lazy(() => import("./pages/Index")),
+  privacy: lazy(() => import("./pages/PrivacyPolicy")),
+};
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 // Create QueryClient outside component to avoid recreation on every render
@@ -28,23 +33,28 @@ const PageLoader = () => (
   </div>
 );
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Suspense fallback={<PageLoader />}>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/privacy" element={<PrivacyPolicy />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </Suspense>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
+/** Providers shared by the browser entry (main.tsx) and the prerender entry (entry-server.tsx). */
+export const AppProviders = ({ i18n, children }: { i18n: I18n; children: ReactNode }) => (
+  <I18nextProvider i18n={i18n}>
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        {children}
+      </TooltipProvider>
+    </QueryClientProvider>
+  </I18nextProvider>
 );
 
-export default App;
+/** Routes come from seo/routes.ts; the router itself is supplied by each entry. */
+export const AppRoutes = () => (
+  <Suspense fallback={<PageLoader />}>
+    <Routes>
+      {ROUTES.map((route) => {
+        const Page = pages[route.page];
+        return <Route key={route.path} path={route.path} element={<Page />} />;
+      })}
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+  </Suspense>
+);

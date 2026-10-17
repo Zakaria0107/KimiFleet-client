@@ -1,18 +1,19 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { LanguageSelector } from "./LanguageSelector";
+import { findRoute, langFromPath, pathFor } from "@/seo/routes";
 
 const Navbar = ({ onContactOpen }: { onContactOpen?: () => void }) => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const { t } = useTranslation();
   const location = useLocation();
-  const navigate = useNavigate();
 
-  const isHomePage = location.pathname === "/";
+  const isHomePage = findRoute(location.pathname)?.page === "home";
+  const homePath = pathFor("home", langFromPath(location.pathname));
   const shouldShowWhite = !isHomePage || scrolled;
 
   useEffect(() => {
@@ -21,37 +22,32 @@ const Navbar = ({ onContactOpen }: { onContactOpen?: () => void }) => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const handleAnchorClick = useCallback((e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    if (href === "#contact" && onContactOpen) {
+  // Links are real URLs ("/fr/#pricing") so they work without JavaScript and from other pages.
+  // On the home page they scroll smoothly instead.
+  const handleAnchorClick = useCallback((e: React.MouseEvent<HTMLAnchorElement>, hash: string) => {
+    if (hash === "#contact" && onContactOpen) {
       e.preventDefault();
       onContactOpen();
       setMobileOpen(false);
       return;
     }
-    if (href.startsWith("#")) {
+    if (isHomePage) {
       e.preventDefault();
-      const id = href.replace("#", "");
-      if (isHomePage) {
-        const element = document.getElementById(id);
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth" });
-        }
-      } else {
-        navigate(`/${href}`);
-      }
-      setMobileOpen(false);
+      document.getElementById(hash.replace("#", ""))?.scrollIntoView({ behavior: "smooth" });
+      window.history.replaceState(null, "", hash);
     }
-  }, [isHomePage, navigate, onContactOpen]);
+    setMobileOpen(false);
+  }, [isHomePage, onContactOpen]);
 
   const navItems = [
-    { label: t("navbar.home"), href: "#home" },
-    { label: t("navbar.solution"), href: "#solution" },
-    { label: t("navbar.fleet"), href: "#fleet" },
-    { label: t("navbar.how_it_works"), href: "#how-it-works" },
-    { label: t("navbar.pricing"), href: "#pricing" },
-    { label: t("navbar.faq"), href: "#faq" },
+    { label: t("navbar.home"), hash: "#home" },
+    { label: t("navbar.solution"), hash: "#solution" },
+    { label: t("navbar.fleet"), hash: "#fleet" },
+    { label: t("navbar.how_it_works"), hash: "#how-it-works" },
+    { label: t("navbar.pricing"), hash: "#pricing" },
+    { label: t("navbar.faq"), hash: "#faq" },
     // There is no #contact section; the link opens the contact modal on pages that provide one.
-    ...(onContactOpen ? [{ label: t("navbar.contact"), href: "#contact" }] : []),
+    ...(onContactOpen ? [{ label: t("navbar.contact"), hash: "#contact" }] : []),
   ];
 
   return (
@@ -64,7 +60,7 @@ const Navbar = ({ onContactOpen }: { onContactOpen?: () => void }) => {
           }`}
       >
         <div className="container mx-auto flex items-center justify-between px-6 lg:px-12">
-          <Link to="/" className="flex items-center">
+          <a href={homePath} className="flex items-center">
             <div className="h-10 w-32 overflow-hidden flex items-center">
               <img
                 src="/logo2.png"
@@ -73,14 +69,14 @@ const Navbar = ({ onContactOpen }: { onContactOpen?: () => void }) => {
                   }`}
               />
             </div>
-          </Link>
+          </a>
 
           <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
               <a
                 key={item.label}
-                href={item.href}
-                onClick={(e) => handleAnchorClick(e, item.href)}
+                href={`${homePath}${item.hash}`}
+                onClick={(e) => handleAnchorClick(e, item.hash)}
                 className={`font-body text-sm font-medium tracking-tight transition-colors hover:text-blue-600 ${shouldShowWhite ? "text-gray-700" : "text-white/90"
                   }`}
               >
@@ -122,8 +118,8 @@ const Navbar = ({ onContactOpen }: { onContactOpen?: () => void }) => {
                 {navItems.map((item) => (
                   <a
                     key={item.label}
-                    href={item.href}
-                    onClick={(e) => handleAnchorClick(e, item.href)}
+                    href={`${homePath}${item.hash}`}
+                    onClick={(e) => handleAnchorClick(e, item.hash)}
                     className="font-body text-base text-gray-700 hover:text-blue-600 transition-colors py-2"
                   >
                     {item.label}

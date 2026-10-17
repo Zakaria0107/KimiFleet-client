@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Check, Sparkles } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { PLANS } from "@/data/pricing";
 
 const PricingSection = () => {
   const { t } = useTranslation();
@@ -14,22 +15,13 @@ const PricingSection = () => {
     t("pricing.feature_6"),
   ];
 
-  const plans = [
-    {
-      name: t("pricing.plan3_name"),
-      price: "700",
-      perMonth: "233",
-      highlighted: false,
-    },
-    {
-      name: t("pricing.plan6_name"),
-      price: "1300",
-      perMonth: "217",
-      highlighted: true,
-      badge: t("pricing.best_value"),
-      savings: t("pricing.savings"),
-    },
-  ];
+  const plans = PLANS.map((plan) => ({
+    name: t(plan.nameKey),
+    price: plan.price,
+    perMonth: plan.perMonth,
+    highlighted: plan.highlighted,
+    ...(plan.highlighted ? { badge: t("pricing.best_value"), savings: t("pricing.savings") } : {}),
+  }));
 
   return (
     <section id="pricing" className="py-20 bg-gray-50">

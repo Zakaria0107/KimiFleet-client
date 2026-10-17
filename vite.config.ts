@@ -4,7 +4,9 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
+// `npm run build` runs two builds: the client bundle (dist/) and a server bundle (dist-ssr/,
+// from src/entry-server.tsx) that scripts/prerender.mjs uses to write static HTML per route.
+export default defineConfig(({ mode, isSsrBuild }) => ({
   server: {
     host: "::",
     port: 8081,
@@ -21,9 +23,12 @@ export default defineConfig(({ mode }) => ({
   build: {
     target: "esnext",
     minify: "esbuild",
+    // The prerender script reads the manifest to link each page's JS/CSS chunks in its HTML.
+    manifest: !isSsrBuild,
     rollupOptions: {
       output: {
-        manualChunks: {
+        // Vendor chunks only apply to the client; in the SSR build these packages are external.
+        manualChunks: isSsrBuild ? undefined : {
           // Separate vendor chunks for better caching
           "vendor-react": ["react", "react-dom", "react-router-dom"],
           "vendor-radix": [

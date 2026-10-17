@@ -1,40 +1,30 @@
-import i18n from 'i18next';
+import i18next, { type i18n as I18n } from "i18next";
 import { initReactI18next } from "react-i18next";
-import LanguageDetector from 'i18next-browser-languagedetector';
 
-import enTranslation from './locales/en.json';
-import frTranslation from './locales/fr.json';
-import arTranslation from './locales/ar.json';
+import enTranslation from "./locales/en.json";
+import frTranslation from "./locales/fr.json";
+import { DEFAULT_LANG, type Lang } from "./seo/routes";
 
+// Arabic (locales/ar.json) is not served yet: it needs its own /ar/ URLs and RTL prerendering.
 const resources = {
-  en: { translation: enTranslation },
   fr: { translation: frTranslation },
-  ar: { translation: arTranslation },
+  en: { translation: enTranslation },
 };
 
-i18n
-  .use(LanguageDetector)
-  .use(initReactI18next)
-  .init({
+/**
+ * The language comes from the URL (/fr/..., /en/...), never from browser storage, so the
+ * prerendered HTML and the hydrated page always agree. One instance per render.
+ */
+export const createI18n = (lng: Lang): I18n => {
+  const instance = i18next.createInstance();
+  instance.use(initReactI18next).init({
     resources,
-    fallbackLng: 'fr',
+    lng,
+    fallbackLng: DEFAULT_LANG,
     interpolation: {
       escapeValue: false,
     },
-    detection: {
-      order: ['localStorage'],
-      caches: ['localStorage'],
-    },
+    initAsync: false,
   });
-
-// Handle RTL
-i18n.on('languageChanged', (lng) => {
-  document.documentElement.dir = lng === 'ar' ? 'rtl' : 'ltr';
-  document.documentElement.lang = lng;
-});
-
-// Initial check
-document.documentElement.dir = i18n.language === 'ar' ? 'rtl' : 'ltr';
-document.documentElement.lang = i18n.language;
-
-export default i18n;
+  return instance;
+};
