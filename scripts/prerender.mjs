@@ -43,7 +43,11 @@ const pageAssets = (moduleId) => {
   return { js: [...js].filter(notInTemplate), css: [...css].filter(notInTemplate) };
 };
 
-const fillTemplate = ({ lang, head, html, moduleId }) => {
+/** Drops template tags marked data-only-page="<page>" (e.g. the hero preload) from other pages. */
+const keepPageOnlyTags = (document, page) =>
+  document.replace(/^\s*<[^>]*\sdata-only-page="([^"]+)"[^>]*>\n/gm, (tag, onlyPage) => (onlyPage === page ? tag : ""));
+
+const fillTemplate = ({ page, lang, head, html, moduleId }) => {
   const { js, css } = pageAssets(moduleId);
   const assetTags = [
     ...css.map((file) => `<link rel="stylesheet" crossorigin href="/${file}">`),
@@ -52,7 +56,7 @@ const fillTemplate = ({ lang, head, html, moduleId }) => {
 
   if (!/<h1[\s>]/.test(html)) throw new Error(`Prerendered HTML for ${lang} has no <h1>`);
 
-  return template
+  return keepPageOnlyTags(template, page)
     .replace(/<html lang="[^"]*"/, `<html lang="${lang}"`)
     .replace("<!--app-head-->", head)
     .replace("</head>", `  ${assetTags}\n</head>`)
@@ -72,14 +76,14 @@ for (const route of ROUTES) {
   const html = await render(route.path, route.lang);
   await writePage(
     path.join(route.path, "index.html"),
-    fillTemplate({ lang: route.lang, head: buildHead(route), html, moduleId: PAGE_MODULES[route.page] }),
+    fillTemplate({ page: route.page, lang: route.lang, head: buildHead(route), html, moduleId: PAGE_MODULES[route.page] }),
   );
 }
 
 const notFoundHtml = await render(NOT_FOUND_PATH, DEFAULT_LANG);
 await writePage(
   "404.html",
-  fillTemplate({ lang: DEFAULT_LANG, head: buildNotFoundHead(), html: notFoundHtml, moduleId: PAGE_MODULES.notFound }),
+  fillTemplate({ page: "notFound", lang: DEFAULT_LANG, head: buildNotFoundHead(), html: notFoundHtml, moduleId: PAGE_MODULES.notFound }),
 );
 
 await writePage("sitemap.xml", buildSitemap());

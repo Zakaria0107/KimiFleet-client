@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Users } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import heroImg from "@/assets/hero-keys.jpg";
+import heroImg from "@/assets/hero-keys.webp";
 
 const HeroSection = ({ onContactOpen }: { onContactOpen?: () => void }) => {
   const { t } = useTranslation();

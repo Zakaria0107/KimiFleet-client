@@ -17,8 +17,9 @@
   <link rel="dns-prefetch" href="https://images.unsplash.com" />
   <link rel="dns-prefetch" href="https://i.pravatar.cc" />
 
-  <!-- Resource Hints for Critical Resources -->
-  <link rel="preload" as="image" href="/src/assets/kimi_hero.png" />
+  <!-- Hero background (LCP image). Must match the import in HeroSection.tsx.
+       data-only-page: the prerender script removes the tag from other pages. -->
+  <link rel="preload" as="image" type="image/webp" href="/src/assets/hero-keys.webp" fetchpriority="high" data-only-page="home" />
 
   <!-- Theme Color -->
   <meta name="theme-color" content="#2563eb" />

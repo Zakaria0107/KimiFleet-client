@@ -2,13 +2,18 @@
 // Drives the React routes, the prerender script, per-page <head> tags, JSON-LD and sitemap.xml.
 
 export const SITE_URL = "https://kimifleet.com";
-export const OG_IMAGE = { url: `${SITE_URL}/og-image.jpg`, width: 1200, height: 630, type: "image/jpeg" };
 
 export const LANGS = ["fr", "en"] as const;
 export type Lang = (typeof LANGS)[number];
 export const DEFAULT_LANG: Lang = "fr";
 
 export const OG_LOCALES: Record<Lang, string> = { fr: "fr_FR", en: "en_US" };
+
+/** Social share image per language (1200x630, text in that language). */
+export const OG_IMAGES: Record<Lang, { url: string; width: number; height: number; type: string }> = {
+  fr: { url: `${SITE_URL}/og/fr.jpg`, width: 1200, height: 630, type: "image/jpeg" },
+  en: { url: `${SITE_URL}/og/en.jpg`, width: 1200, height: 630, type: "image/jpeg" },
+};
 
 export type PageId = "home" | "privacy";
 export type JsonLdType = "Organization" | "SoftwareApplication" | "FAQPage";
@@ -34,7 +39,7 @@ export const ROUTES: SeoRoute[] = [
     title: "Logiciel de location de voiture au Maroc | KimiFleet",
     description:
       "Logiciel de gestion pour agences de location de voitures au Maroc : contrats digitaux signés par QR code, réservations, entretien et facturation. Essai gratuit.",
-    ogImageAlt: "Tableau de bord KimiFleet, logiciel de gestion de location de voitures",
+    ogImageAlt: "KimiFleet, logiciel de gestion de location de voitures",
     jsonLd: ["Organization", "SoftwareApplication", "FAQPage"],
     lastmod: "2026-10-17",
   },
@@ -45,7 +50,7 @@ export const ROUTES: SeoRoute[] = [
     title: "Car Rental Management Software | KimiFleet",
     description:
       "Car rental management software for rental agencies: QR-signed digital contracts, bookings, vehicle maintenance and invoicing in one place. Start your free trial.",
-    ogImageAlt: "KimiFleet car rental management software dashboard",
+    ogImageAlt: "KimiFleet car rental management software",
     jsonLd: ["Organization", "SoftwareApplication", "FAQPage"],
     lastmod: "2026-10-17",
   },
@@ -55,7 +60,7 @@ export const ROUTES: SeoRoute[] = [
     path: "/fr/confidentialite",
     title: "Politique de confidentialité | KimiFleet",
     description: "Comment KimiFleet collecte, utilise et protège vos données personnelles.",
-    ogImageAlt: "Tableau de bord KimiFleet, logiciel de gestion de location de voitures",
+    ogImageAlt: "KimiFleet, logiciel de gestion de location de voitures",
     jsonLd: ["Organization"],
     lastmod: "2026-10-17",
   },
@@ -65,7 +70,7 @@ export const ROUTES: SeoRoute[] = [
     path: "/en/privacy",
     title: "Privacy Policy | KimiFleet",
     description: "How KimiFleet collects, uses, and protects your personal data.",
-    ogImageAlt: "KimiFleet car rental management software dashboard",
+    ogImageAlt: "KimiFleet car rental management software",
     jsonLd: ["Organization"],
     lastmod: "2026-10-17",
   },

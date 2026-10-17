@@ -5,7 +5,7 @@ import { FAQ_ITEMS } from "../data/faq";
 import { PLANS, PRICE_CURRENCY } from "../data/pricing";
 import {
   DEFAULT_LANG,
-  OG_IMAGE,
+  OG_IMAGES,
   OG_LOCALES,
   SITE_URL,
   ROUTES,
@@ -105,6 +105,7 @@ const jsonLdScript = (route: SeoRoute) => {
 
 export const buildHead = (route: SeoRoute): string => {
   const url = absoluteUrl(route.path);
+  const ogImage = OG_IMAGES[route.lang];
   const otherLocales = alternatesFor(route.page)
     .filter((alt) => alt.lang !== route.lang)
     .map((alt) => meta("property", "og:locale:alternate", OG_LOCALES[alt.lang]));
@@ -119,17 +120,17 @@ export const buildHead = (route: SeoRoute): string => {
     meta("property", "og:title", route.title),
     meta("property", "og:description", route.description),
     meta("property", "og:url", url),
-    meta("property", "og:image", OG_IMAGE.url),
-    meta("property", "og:image:type", OG_IMAGE.type),
-    meta("property", "og:image:width", String(OG_IMAGE.width)),
-    meta("property", "og:image:height", String(OG_IMAGE.height)),
+    meta("property", "og:image", ogImage.url),
+    meta("property", "og:image:type", ogImage.type),
+    meta("property", "og:image:width", String(ogImage.width)),
+    meta("property", "og:image:height", String(ogImage.height)),
     meta("property", "og:image:alt", route.ogImageAlt),
     meta("property", "og:locale", OG_LOCALES[route.lang]),
     ...otherLocales,
     meta("name", "twitter:card", "summary_large_image"),
     meta("name", "twitter:title", route.title),
     meta("name", "twitter:description", route.description),
-    meta("name", "twitter:image", OG_IMAGE.url),
+    meta("name", "twitter:image", ogImage.url),
     meta("name", "twitter:image:alt", route.ogImageAlt),
     jsonLdScript(route),
   ].join("\n  ");
