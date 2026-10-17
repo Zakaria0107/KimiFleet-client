@@ -34,7 +34,6 @@ const Footer = () => {
                 { label: t("navbar.solution"), href: "#solution" },
                 { label: t("navbar.how_it_works"), href: "#how-it-works" },
                 { label: t("navbar.fleet"), href: "#fleet" },
-                { label: t("navbar.contact"), href: "#contact" },
               ].map((item) => (
                 <a key={item.label} href={item.href} className="text-gray-400 font-body text-sm hover:text-blue-400 transition-colors inline-flex items-center gap-1">
                   <ArrowRight size={14} className="opacity-0 group-hover:opacity-100" />

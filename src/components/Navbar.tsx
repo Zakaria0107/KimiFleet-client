@@ -22,6 +22,12 @@ const Navbar = ({ onContactOpen }: { onContactOpen?: () => void }) => {
   }, []);
 
   const handleAnchorClick = useCallback((e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (href === "#contact" && onContactOpen) {
+      e.preventDefault();
+      onContactOpen();
+      setMobileOpen(false);
+      return;
+    }
     if (href.startsWith("#")) {
       e.preventDefault();
       const id = href.replace("#", "");
@@ -35,7 +41,7 @@ const Navbar = ({ onContactOpen }: { onContactOpen?: () => void }) => {
       }
       setMobileOpen(false);
     }
-  }, [isHomePage, navigate]);
+  }, [isHomePage, navigate, onContactOpen]);
 
   const navItems = [
     { label: t("navbar.home"), href: "#home" },
@@ -44,7 +50,8 @@ const Navbar = ({ onContactOpen }: { onContactOpen?: () => void }) => {
     { label: t("navbar.how_it_works"), href: "#how-it-works" },
     { label: t("navbar.pricing"), href: "#pricing" },
     { label: t("navbar.faq"), href: "#faq" },
-    { label: t("navbar.contact"), href: "#contact" },
+    // There is no #contact section; the link opens the contact modal on pages that provide one.
+    ...(onContactOpen ? [{ label: t("navbar.contact"), href: "#contact" }] : []),
   ];
 
   return (
@@ -84,13 +91,13 @@ const Navbar = ({ onContactOpen }: { onContactOpen?: () => void }) => {
 
           <div className="hidden md:flex items-center gap-4">
             <LanguageSelector isWhite={shouldShowWhite} />
-            <a href="https://kimifleet.com/dashboard/" target="_blank">
-              <button
-                // onClick={onContactOpen}
-                className="bg-blue-600 text-white px-6 py-2.5 rounded-lg font-body text-sm font-medium tracking-tight hover:bg-blue-700 transition-all"
-              >
-                {t("navbar.get_started")}
-              </button>
+            <a
+              href="https://kimifleet.com/dashboard/"
+              target="_blank"
+              rel="noopener"
+              className="bg-blue-600 text-white px-6 py-2.5 rounded-lg font-body text-sm font-medium tracking-tight hover:bg-blue-700 transition-all"
+            >
+              {t("navbar.get_started")}
             </a>
           </div>
 

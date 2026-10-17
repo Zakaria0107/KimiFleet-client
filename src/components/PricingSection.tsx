@@ -100,16 +100,17 @@ const PricingSection = () => {
                 ))}
               </ul>
 
-              <a href="https://kimifleet.com/dashboard/" target="_blank" rel="noopener noreferrer">
-                <button
-                  className={`w-full py-3.5 rounded-lg font-body text-sm font-medium tracking-tight transition-all ${
-                    plan.highlighted
-                      ? "bg-blue-600 text-white hover:bg-blue-700"
-                      : "bg-gray-900 text-white hover:bg-gray-800"
-                  }`}
-                >
-                  {t("pricing.cta")}
-                </button>
+              <a
+                href="https://kimifleet.com/dashboard/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`block w-full text-center py-3.5 rounded-lg font-body text-sm font-medium tracking-tight transition-all ${
+                  plan.highlighted
+                    ? "bg-blue-600 text-white hover:bg-blue-700"
+                    : "bg-gray-900 text-white hover:bg-gray-800"
+                }`}
+              >
+                {t("pricing.cta")}
               </a>
             </motion.div>
           ))}

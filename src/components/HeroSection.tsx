@@ -49,9 +49,10 @@ const HeroSection = ({ onContactOpen }: { onContactOpen?: () => void }) => {
           <span className="text-blue-300 text-sm font-medium">{t("hero.badge")}</span>
         </motion.div>
 
+        {/* No opacity animation on the H1 and subtitle: they must be visible on first paint (LCP). */}
         <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ y: 30 }}
+          animate={{ y: 0 }}
           transition={{ delay: 0.4, duration: 0.8 }}
           className="font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.1] tracking-tight text-white mb-8"
         >
@@ -59,8 +60,8 @@ const HeroSection = ({ onContactOpen }: { onContactOpen?: () => void }) => {
         </motion.h1>
 
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ y: 20 }}
+          animate={{ y: 0 }}
           transition={{ delay: 0.6, duration: 0.6 }}
           className="text-lg md:text-xl text-gray-300 font-light leading-relaxed max-w-2xl mx-auto mb-10"
         >
@@ -74,20 +75,22 @@ const HeroSection = ({ onContactOpen }: { onContactOpen?: () => void }) => {
           className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
         >
           <a
-            href="httpa://kimifleet.com/dashboard/" target="_blank"
+            href="https://kimifleet.com/dashboard/"
+            target="_blank"
+            rel="noopener"
             className="bg-white text-black px-8 py-4 rounded-lg font-body font-bold text-base tracking-tight hover:bg-white/90 transition-all shadow-lg"
           >
             {t("hero.trial")}
           </a>
 
-          <a href="https://kimifleet.com/dashboard/" target="_blank">
-            <button
-              // onClick={onContactOpen}
-              className="bg-blue-600 text-white px-8 py-4 rounded-lg font-body font-bold text-lg hover:bg-blue-700 transition-all flex items-center justify-center gap-2 group shadow-xl"
-            >
-              {t("hero.cta")}
-              <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
-            </button>
+          <a
+            href="https://kimifleet.com/dashboard/"
+            target="_blank"
+            rel="noopener"
+            className="bg-blue-600 text-white px-8 py-4 rounded-lg font-body font-bold text-lg hover:bg-blue-700 transition-all flex items-center justify-center gap-2 group shadow-xl"
+          >
+            {t("hero.cta")}
+            <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
           </a>
         </motion.div>
 
