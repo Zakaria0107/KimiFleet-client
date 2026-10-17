@@ -10,25 +10,25 @@ const ServicesSection = () => {
       icon: Car,
       title: t("process.step1_title"),
       description: t("process.step1_desc"),
-      badge: "Step 1",
+      badge: t("process.step", { number: 1 }),
     },
     {
       icon: Calendar,
       title: t("process.step2_title"),
       description: t("process.step2_desc"),
-      badge: "Step 2",
+      badge: t("process.step", { number: 2 }),
     },
     {
       icon: QrCode,
       title: t("process.step3_title"),
       description: t("process.step3_desc"),
-      badge: "Step 3",
+      badge: t("process.step", { number: 3 }),
     },
     {
       icon: TrendingUp,
       title: t("process.step4_title"),
       description: t("process.step4_desc"),
-      badge: "Step 4",
+      badge: t("process.step", { number: 4 }),
     },
   ];
 

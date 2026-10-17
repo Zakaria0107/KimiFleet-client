@@ -131,7 +131,7 @@ const ContactModal = ({ open, onClose }: Props) => {
                   <textarea
                     value={form.message}
                     onChange={(e) => setForm({ ...form, message: e.target.value })}
-                    placeholder="Tell us about your current fleet size and any GPS tracking hardware you use..."
+                    placeholder="Tell us about your fleet size and how you manage rentals today..."
                     rows={4}
                     className="w-full bg-gray-50 text-gray-900 border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-300 transition-all resize-none placeholder:text-gray-400 font-body"
                   />

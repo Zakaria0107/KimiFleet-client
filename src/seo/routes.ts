@@ -31,9 +31,9 @@ export const ROUTES: SeoRoute[] = [
     page: "home",
     lang: "fr",
     path: "/fr/",
-    title: "Logiciel de gestion de location de voitures | KimiFleet",
+    title: "Logiciel de location de voiture au Maroc | KimiFleet",
     description:
-      "SaaS professionnel pour les agences de location de voitures : contrats digitaux avec signature QR, suivi GPS et gestion multi-agences. Commencez votre essai.",
+      "Logiciel de gestion pour agences de location de voitures au Maroc : contrats digitaux signés par QR code, réservations, entretien et facturation. Essai gratuit.",
     ogImageAlt: "Tableau de bord KimiFleet, logiciel de gestion de location de voitures",
     jsonLd: ["Organization", "SoftwareApplication", "FAQPage"],
     lastmod: "2026-10-17",
@@ -42,9 +42,9 @@ export const ROUTES: SeoRoute[] = [
     page: "home",
     lang: "en",
     path: "/en/",
-    title: "Car Rental Management Software | KimiFleet Fleet SaaS",
+    title: "Car Rental Management Software | KimiFleet",
     description:
-      "Professional SaaS for car rental agencies. Streamline fleet operations with QR digital contracts, GPS tracking, and multi-tenant management. Start your trial.",
+      "Car rental management software for rental agencies: QR-signed digital contracts, bookings, vehicle maintenance and invoicing in one place. Start your free trial.",
     ogImageAlt: "KimiFleet car rental management software dashboard",
     jsonLd: ["Organization", "SoftwareApplication", "FAQPage"],
     lastmod: "2026-10-17",

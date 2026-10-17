@@ -43,7 +43,7 @@ const AnalyticsSection = () => {
               <div className="w-px bg-gray-200" />
               <div>
                 <p className="text-3xl font-bold text-gray-900">+12%</p>
-                <p className="text-sm text-gray-500 mt-1">Revenue Growth</p>
+                <p className="text-sm text-gray-500 mt-1">{t("analytics.revenue_growth")}</p>
               </div>
             </div>
           </motion.div>

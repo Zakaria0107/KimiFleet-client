@@ -13,16 +13,16 @@
     "get_started": "Commencer"
   },
   "hero": {
-    "badge": "Conçu pour le propriétaire d'agence moderne",
-    "title": "Développez votre flotte avec précision.",
-    "subtitle": "Le système d'exploitation complet pour les agences de location de voitures. Gérez votre espace de travail, automatisez les contrats avec des signatures QR et gardez le contrôle sur chaque véhicule de votre flotte.",
+    "badge": "Conçu pour les agences de location de voitures",
+    "title": "Logiciel de gestion de location de voitures au Maroc",
+    "subtitle": "KimiFleet remplace les tableurs et les contrats papier : réservations, contrats de location signés par QR code, entretien des véhicules et facturation, dans un seul logiciel pour votre agence.",
     "cta": "Moderniser ma flotte",
     "trial": "Commencer mon essai gratuit"
   },
   "problem": {
     "badge": "Inefficacité opérationnelle",
-    "title": "Le chaos de la gestion manuelle vous coûte cher.",
-    "subtitle": "Les feuilles de calcul et les contrats papier freinent votre entreprise. Chaque saisie manuelle est un risque ; chaque papier perdu est une responsabilité.",
+    "title": "Tableurs et contrats papier : ce que la gestion manuelle coûte à votre agence",
+    "subtitle": "Les tableurs et les contrats papier freinent votre agence de location. Chaque saisie manuelle est un risque ; chaque contrat perdu est une responsabilité.",
     "fatigue_title": "Fatigue des feuilles de calcul",
     "fatigue_desc": "Les silos de données et les erreurs de saisie manuelle entraînent des conflits de calendrier et des véhicules réservés en double.",
     "paperwork_title": "Goulots d'étranglement administratifs",
@@ -34,8 +34,8 @@
   },
   "solution": {
     "badge": "L'espace de travail KimiFleet",
-    "title": "Centre de commandement unifié pour plusieurs agences.",
-    "subtitle": "Gérez tous vos sites, véhicules et membres d'équipe à partir d'un tableau de bord performant. Contrôle total, clarté absolue.",
+    "title": "Gestion multi-agences : toutes vos agences dans un seul tableau de bord",
+    "subtitle": "Gérez toutes vos agences, vos véhicules et les membres de votre équipe depuis un seul tableau de bord. Contrôle total, clarté absolue.",
     "multi_tenant_title": "Architecture multi-tenant",
     "multi_tenant_desc": "Gardez vos entités commerciales isolées et sécurisées avec une séparation des données de niveau professionnel.",
     "real_time_title": "Synchronisation en temps réel",
@@ -46,8 +46,8 @@
   },
   "fleet": {
     "badge": "Gestion de flotte et d'actifs",
-    "title": "Maintenance prédictive et cycle de vie des actifs.",
-    "subtitle": "Suivez chaque véhicule de l'immatriculation à la cession. Recevez des alertes automatisées basées sur les lectures du compteur en temps réel pour maintenir votre flotte en parfait état.",
+    "title": "Gestion de flotte et suivi de l'entretien des véhicules",
+    "subtitle": "Suivez chaque véhicule de l'immatriculation à la cession. Recevez des alertes d'entretien automatiques basées sur le kilométrage pour maintenir votre flotte en parfait état.",
     "odometer_title": "Suivi intelligent du compteur",
     "odometer_desc": "Les mises à jour automatisées garantissent que vous ne manquez jamais un intervalle d'entretien critique.",
     "alerts_title": "Alertes prédictives",
@@ -57,8 +57,8 @@
   },
   "finance": {
     "badge": "Supervision financière",
-    "title": "Facturation unifiée et suivi des paiements.",
-    "subtitle": "Gérez les paiements partiels et complets, générez des factures prêtes à imprimer et suivez vos analyses de revenus. Éliminez les litiges de paiement et améliorez la trésorerie.",
+    "title": "Facturation et suivi des paiements pour agence de location",
+    "subtitle": "Gérez les paiements partiels et complets, générez une facture prête à imprimer pour chaque location et suivez vos revenus. Éliminez les litiges de paiement et améliorez la trésorerie.",
     "invoice": "Facture",
     "amount_due": "Montant dû",
     "base_rental": "Location de base (7 jours)",
@@ -71,12 +71,12 @@
   },
   "map": {
     "badge": "Intelligence opérationnelle",
-    "title": "Une Visibilité Opérationnelle, Partout Où Vous Opérez.",
-    "subtitle": "Conçu pour les agences présentes dans plusieurs villes. Le support matériel GPS donne à votre équipe une visibilité sur la localisation de chaque véhicule de votre flotte."
+    "title": "Votre flotte dans toutes vos villes, agence par agence",
+    "subtitle": "Conçu pour les agences présentes dans plusieurs villes. Voyez en un coup d'œil quels véhicules sont disponibles, réservés, loués ou en entretien, dans chaque agence."
   },
   "analytics": {
     "badge": "Analyses d'utilisation",
-    "title": "Croissance pilotée par les données.",
+    "title": "Rentabilité par véhicule et taux d'utilisation de la flotte",
     "subtitle": "Analysez les taux d'utilisation de la flotte, les revenus par véhicule et le temps d'inactivité pour optimiser votre inventaire. Prenez des décisions éclairées sur l'expansion et la cession de la flotte.",
     "avg_utilization": "Utilisation moyenne",
     "revenue_growth": "Croissance des revenus",
@@ -86,7 +86,7 @@
   },
   "benefits": {
     "badge": "Architecture d'entreprise",
-    "title": "Pourquoi les agences professionnelles choisissent KimiFleet",
+    "title": "Pourquoi choisir KimiFleet pour votre agence de location de voitures",
     "save_hours_title": "Gagnez des heures chaque jour",
     "save_hours_desc": "Automatisez les tâches répétitives et concentrez-vous sur le développement de vos opérations.",
     "scale_title": "Développez-vous en toute confiance",
@@ -96,7 +96,7 @@
   },
   "process": {
     "badge": "Flux d'automatisation",
-    "title": "Quatre étapes vers l'automatisation totale",
+    "title": "Démarrer avec KimiFleet en 4 étapes",
     "join": "Rejoignez les agences professionnelles qui se développent avec KimiFleet.",
     "step1_title": "Intégrez votre flotte",
     "step1_desc": "Ajoutez vos véhicules et configurez vos agences en quelques minutes.",
@@ -105,11 +105,12 @@
     "step3_title": "Signature numérique QR",
     "step3_desc": "Les clients scannent un code QR et signent le contrat sur leur appareil.",
     "step4_title": "Suivez et évoluez",
-    "step4_desc": "Suivez le kilométrage et gérez les paiements en toute simplicité."
+    "step4_desc": "Suivez le kilométrage et gérez les paiements en toute simplicité.",
+    "step": "Étape {{number}}"
   },
   "pricing": {
     "badge": "Tarification simple",
-    "title": "Un tarif, toutes les fonctionnalités",
+    "title": "Tarifs du logiciel KimiFleet",
     "subtitle": "Que vous gériez une seule agence ou un réseau de plusieurs entités, chaque plan donne un accès complet et illimité au tableau de bord et au serveur. Aucune limite cachée.",
     "plan3_name": "Plan 3 mois",
     "plan6_name": "Plan 6 mois",
@@ -126,14 +127,14 @@
     "note": "Facturation unique pour la période choisie. Aucune limite sur le nombre d'agences ou de véhicules, quel que soit le plan."
   },
   "faq": {
-    "title": "Questions fréquemment posées",
+    "title": "Questions fréquentes sur le logiciel KimiFleet",
     "subtitle": "Tout ce que vous devez savoir pour moderniser vos opérations de location.",
     "q1": "Comment fonctionne la signature numérique QR ?",
     "a1": "Les clients signent directement sur leur propre appareil après avoir scanné un QR code, et la signature est enregistrée avec le contrat de location — fini les contrats papier égarés.",
     "q3": "Puis-je gérer plusieurs sites ?",
     "a3": "Absolument. KimiFleet est conçu pour les agences multi-sites avec une administration centralisée.",
     "q4": "Quelle est la sécurité des données de notre agence ?",
-    "a4": "Nous utilisons une architecture multi-tenant pour garantir que les données de chaque agence sont isolées et cryptées selon les normes les plus élevées.",
+    "a4": "Les données de chaque agence sont isolées de celles des autres comptes grâce à une architecture multi-tenant, et tous les échanges avec KimiFleet sont protégés par HTTPS.",
     "q5": "Puis-je migrer mes feuilles de calcul actuelles ?",
     "a5": "Oui. Vous pouvez ajouter vos véhicules, clients et historique de location directement dans le tableau de bord en quelques minutes — plus besoin de continuer à travailler avec des tableurs.",
     "q6": "Comment suivre les paiements ?",
@@ -183,7 +184,7 @@
     "how_we_use_title": "Utilisation de vos données",
     "how_we_use_desc": "Vos données sont utilisées uniquement pour exploiter la plateforme KimiFleet — pour authentifier votre compte, gérer votre flotte et vos contrats, envoyer des notifications opérationnelles et fournir un support client. Nous ne vendons pas vos données à des tiers.",
     "data_security_title": "Sécurité des données",
-    "data_security_desc": "Nous utilisons une architecture multi-tenant pour garantir que vos données sont totalement isolées des autres comptes. Toutes les données sont chiffrées en transit (TLS) et au repos.",
+    "data_security_desc": "Nous utilisons une architecture multi-tenant pour garantir que vos données sont totalement isolées des autres comptes. Toutes les données sont chiffrées en transit (TLS).",
     "notifications_title": "Notifications push",
     "notifications_desc": "Avec votre consentement, nous envoyons des notifications push pour les événements de location, les alertes de flotte et les mises à jour via notre application mobile. Vous pouvez désactiver les notifications à tout moment dans les paramètres de votre appareil.",
     "retention_title": "Conservation des données",

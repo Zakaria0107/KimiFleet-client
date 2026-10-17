@@ -13,16 +13,16 @@
     "get_started": "Get Started"
   },
   "hero": {
-    "badge": "Built for the Modern Agency Owner",
-    "title": "Scale Your Fleet with Precision.",
-    "subtitle": "The complete operating system for car rental agencies. Manage your workspace, automate contracts with QR signatures, and stay on top of every vehicle's status.",
+    "badge": "Built for car rental agencies",
+    "title": "Car rental management software for rental agencies",
+    "subtitle": "KimiFleet replaces spreadsheets and paper contracts: bookings, QR-signed rental agreements, vehicle maintenance and invoicing in one system for your agency.",
     "cta": "Modernize My Fleet",
     "trial": "Start Your Free Trial"
   },
   "problem": {
     "badge": "Operational Inefficiency",
-    "title": "The Chaos of Manual Management is Costing You.",
-    "subtitle": "Spreadsheets and paper contracts are holding your business back. Every manual entry is a risk; every lost paper is a liability.",
+    "title": "Spreadsheets and paper contracts: what manual management costs your agency",
+    "subtitle": "Spreadsheets and paper contracts are holding your rental agency back. Every manual entry is a risk; every lost contract is a liability.",
     "fatigue_title": "Spreadsheet Fatigue",
     "fatigue_desc": "Data silos and manual entry errors lead to scheduling conflicts and double-booked vehicles.",
     "paperwork_title": "Paperwork Bottlenecks",
@@ -34,8 +34,8 @@
   },
   "solution": {
     "badge": "The KimiFleet Workspace",
-    "title": "Unified Command Center for Multiple Branches.",
-    "subtitle": "Manage all your locations, vehicles, and team members from one high-performance dashboard. Total control, absolute clarity.",
+    "title": "Multi-branch management: every branch in one dashboard",
+    "subtitle": "Manage every branch, vehicle and team member from one dashboard. Total control, absolute clarity.",
     "multi_tenant_title": "Multi-Tenant Architecture",
     "multi_tenant_desc": "Keep your business entities isolated and secure with professional-grade data separation.",
     "real_time_title": "Real-Time Sync",
@@ -46,8 +46,8 @@
   },
   "fleet": {
     "badge": "Fleet & Asset Management",
-    "title": "Predictive Maintenance & Asset Lifecycle.",
-    "subtitle": "Track every vehicle from registration to disposal. Get automated alerts based on real-time odometer readings to keep your fleet in peak condition.",
+    "title": "Fleet management and vehicle maintenance tracking",
+    "subtitle": "Track every vehicle from registration to disposal. Get automatic maintenance alerts based on mileage to keep your fleet in peak condition.",
     "odometer_title": "Smart Odometer Tracking",
     "odometer_desc": "Automated updates ensure you never miss a critical service interval.",
     "alerts_title": "Predictive Alerts",
@@ -57,8 +57,8 @@
   },
   "finance": {
     "badge": "Financial Oversight",
-    "title": "Unified Invoicing & Payment Tracking.",
-    "subtitle": "Manage partial and full payments, generate print-ready invoices, and track your revenue analytics. Eliminate payment disputes and improve cash flow.",
+    "title": "Invoicing and payment tracking for rental agencies",
+    "subtitle": "Manage partial and full payments, generate a print-ready invoice for every rental, and track your revenue. Eliminate payment disputes and improve cash flow.",
     "invoice": "Invoice",
     "amount_due": "Amount Due",
     "base_rental": "Base Rental (7 Days)",
@@ -71,22 +71,22 @@
   },
   "map": {
     "badge": "Operational Intelligence",
-    "title": "Operational Visibility, Wherever You Operate.",
-    "subtitle": "Built for agencies operating across multiple cities. GPS-ready hardware support gives your team location visibility for every vehicle in your fleet."
+    "title": "Your fleet in every city, branch by branch",
+    "subtitle": "Built for agencies operating in several cities. See at a glance which vehicles are available, reserved, rented or in maintenance at each branch."
   },
   "analytics": {
     "badge": "Utilization Analytics",
-    "title": "Data-Driven Growth.",
+    "title": "Profit per vehicle and fleet utilization rates",
     "subtitle": "Analyze fleet utilization rates, revenue per vehicle, and idle time to optimize your inventory. Make informed decisions on fleet expansion and disposal.",
     "avg_utilization": "Avg Utilization",
-    "revenue_growth": "Revenue Growth",
+    "revenue_growth": "Revenue growth",
     "fleet_revenue": "Fleet Revenue",
     "weekly_performance": "Weekly Performance",
     "vs_last_week": "vs last week"
   },
   "benefits": {
     "badge": "Enterprise Architecture",
-    "title": "Why Professional Agencies Choose KimiFleet",
+    "title": "Why car rental agencies choose KimiFleet",
     "save_hours_title": "Save Hours Daily",
     "save_hours_desc": "Automate repetitive tasks and focus on scaling your business operations.",
     "scale_title": "Scale with Confidence",
@@ -96,7 +96,7 @@
   },
   "process": {
     "badge": "Automation Workflow",
-    "title": "Four Steps to Full Automation",
+    "title": "Get started with KimiFleet in 4 steps",
     "join": "Join the professional agencies scaling with KimiFleet.",
     "step1_title": "Onboard Your Fleet",
     "step1_desc": "Add your vehicles and set up your branch locations in minutes.",
@@ -105,11 +105,12 @@
     "step3_title": "QR Digital Signing",
     "step3_desc": "Clients scan a QR code and sign the contract on their device.",
     "step4_title": "Track & Grow",
-    "step4_desc": "Track mileage and manage payments with ease."
+    "step4_desc": "Track mileage and manage payments with ease.",
+    "step": "Step {{number}}"
   },
   "pricing": {
     "badge": "Simple Pricing",
-    "title": "One Price, Every Feature",
+    "title": "KimiFleet pricing",
     "subtitle": "Whether you manage a single agency or a network of multiple entities, every plan gives full, unlimited access to the dashboard and server. No hidden limits.",
     "plan3_name": "3-Month Plan",
     "plan6_name": "6-Month Plan",
@@ -126,14 +127,14 @@
     "note": "One-time billing for the selected period. No limit on the number of agencies or vehicles, on any plan."
   },
   "faq": {
-    "title": "Frequently Asked Questions",
+    "title": "KimiFleet software FAQ",
     "subtitle": "Everything you need to know about modernizing your rental operations.",
     "q1": "How does the QR digital signature work?",
     "a1": "Clients sign directly on their own device after scanning a QR code, and the signature is stored with your rental record — no more paper contracts or lost signatures.",
     "q3": "Can I manage multiple locations?",
     "a3": "Absolutely. KimiFleet is built for multi-branch agencies with centralized administration.",
     "q4": "How secure is our agency data?",
-    "a4": "We use multi-tenant architecture to ensure every agency's data is isolated and encrypted at the highest standards.",
+    "a4": "Each agency's data is isolated from other accounts by our multi-tenant architecture, and all traffic to and from KimiFleet is protected with HTTPS.",
     "q5": "Can I migrate from my current spreadsheets?",
     "a5": "Yes. You can add your vehicles, clients, and rental history directly in the dashboard in just a few minutes — no need to keep working from spreadsheets.",
     "q6": "How do I track payments?",
@@ -171,7 +172,7 @@
     "how_we_use_title": "How We Use Your Data",
     "how_we_use_desc": "Your data is used solely to operate the KimiFleet platform — to authenticate your account, manage your fleet and rental records, send operational notifications, and provide customer support. We do not sell your data to third parties.",
     "data_security_title": "Data Security",
-    "data_security_desc": "We use multi-tenant architecture to ensure your business data is fully isolated from other accounts. All data is encrypted in transit (TLS) and at rest. Access is restricted to authorized personnel only.",
+    "data_security_desc": "We use multi-tenant architecture to ensure your business data is fully isolated from other accounts. All data is encrypted in transit (TLS). Access is restricted to authorized personnel only.",
     "notifications_title": "Push Notifications",
     "notifications_desc": "With your consent, we send push notifications for rental events, fleet alerts, and platform updates through our mobile app. You can disable notifications at any time from your device settings.",
     "retention_title": "Data Retention",
