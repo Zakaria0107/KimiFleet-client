@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 import { BarChart3 } from "lucide-react";
-import { useTranslation } from "../../node_modules/react-i18next";
+import { useTranslation } from "react-i18next";
 
 // Mock Data for the chart
 const data = [

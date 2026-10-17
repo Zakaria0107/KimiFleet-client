@@ -1,5 +1,5 @@
 import { Languages, Check, ChevronDown } from "lucide-react";
-import { useTranslation } from "../../node_modules/react-i18next";
+import { useTranslation } from "react-i18next";
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 

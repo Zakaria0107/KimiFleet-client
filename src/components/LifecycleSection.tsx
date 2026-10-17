@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Wrench, ShieldCheck, Activity } from "lucide-react";
-import { useTranslation } from "../../node_modules/react-i18next";
+import { useTranslation } from "react-i18next";
 import lifecycleImg from "@/assets/kimi_lifecycle.png";
 
 const LifecycleSection = () => {

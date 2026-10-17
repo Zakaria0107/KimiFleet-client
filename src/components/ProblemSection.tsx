@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { AlertCircle, FileX, Clock, DollarSign } from "lucide-react";
-import { useTranslation } from "../../node_modules/react-i18next";
+import { useTranslation } from "react-i18next";
 
 const ProblemSection = () => {
   const { t } = useTranslation();

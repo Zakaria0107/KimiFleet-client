@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Layout, Building2 } from "lucide-react";
-import { useTranslation } from "../../node_modules/react-i18next";
+import { useTranslation } from "react-i18next";
 import commandImg from "@/assets/kimi_command.png";
 
 const CommandCenterSection = () => {

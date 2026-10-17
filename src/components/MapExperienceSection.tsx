@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { MapPin } from "lucide-react";
-import { useTranslation } from "../../node_modules/react-i18next";
+import { useTranslation } from "react-i18next";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 

@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useTranslation } from "../../node_modules/react-i18next";
+import { useTranslation } from "react-i18next";
 import { LanguageSelector } from "./LanguageSelector";
 
 const Navbar = ({ onContactOpen }: { onContactOpen?: () => void }) => {

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Check, Sparkles } from "lucide-react";
-import { useTranslation } from "../../node_modules/react-i18next";
+import { useTranslation } from "react-i18next";
 
 const PricingSection = () => {
   const { t } = useTranslation();

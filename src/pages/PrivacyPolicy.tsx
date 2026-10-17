@@ -1,4 +1,4 @@
-import { useTranslation } from "../../node_modules/react-i18next";
+import { useTranslation } from "react-i18next";
 import { Shield, Database, Bell, Lock, Mail, RefreshCw } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
