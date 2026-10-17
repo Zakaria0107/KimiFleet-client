@@ -1,8 +1,6 @@
 {
-  "rewrites": [
-    {
-      "source": "/((?!api/|uploads/).*)",
-      "destination": "/index.html"
-    }
+  "redirects": [
+    { "source": "/", "destination": "/fr/", "statusCode": 301 },
+    { "source": "/privacy", "destination": "/fr/confidentialite", "statusCode": 301 }
   ]
 }
