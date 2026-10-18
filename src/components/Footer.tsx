@@ -2,6 +2,7 @@ import { Phone, MapPin, MessageCircle, Mail, ArrowRight } from "lucide-react";
 import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { CONTENT_PAGES, langFromPath, pathFor } from "@/seo/routes";
+import { PHONE_DISPLAY, PHONE_TEL, WHATSAPP_URL } from "@/data/links";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -19,7 +20,7 @@ const Footer = () => {
               {t("footer.desc")}
             </p>
             <a
-              href="https://wa.me/212773273153"
+              href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-blue-600 text-white px-5 py-2.5 rounded-lg font-body text-sm font-medium hover:bg-blue-700 transition-all"
@@ -64,15 +65,15 @@ const Footer = () => {
                 <div className="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center">
                   <MapPin size={16} className="text-blue-400" />
                 </div>
-                Agadir, Maroc
+                {t("footer.city")}
               </a>
-              <a href="tel:+212773273153" className="flex items-center gap-3 hover:text-blue-400 transition-colors">
+              <a href={PHONE_TEL} className="flex items-center gap-3 hover:text-blue-400 transition-colors">
                 <div className="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center">
                   <Phone size={16} className="text-blue-400" />
                 </div>
-                +212 773273153
+                {PHONE_DISPLAY}
               </a>
-              <a href="https://wa.me/212773273153" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-blue-400 transition-colors">
+              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-blue-400 transition-colors">
                 <div className="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center">
                   <MessageCircle size={16} className="text-green-400" />
                 </div>
@@ -86,13 +87,22 @@ const Footer = () => {
           <p className="text-gray-500 font-body text-sm">
             © {new Date().getFullYear()} KimiFleet. {t("footer.rights")}
           </p>
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
             <a href={pathFor("privacy", lang)} className="text-gray-500 font-body text-sm hover:text-blue-400 transition-colors">
               {t("footer.privacy")}
             </a>
-            <p className="text-gray-500 font-body text-sm">
+            <a href={pathFor("terms", lang)} className="text-gray-500 font-body text-sm hover:text-blue-400 transition-colors">
+              {t("footer.terms")}
+            </a>
+            {/* The legal notice exists in French only. */}
+            {lang === "fr" && (
+              <a href={pathFor("legalNotice", "fr")} className="text-gray-500 font-body text-sm hover:text-blue-400 transition-colors">
+                {t("footer.legal_notice")}
+              </a>
+            )}
+            <a href={homePath} className="text-gray-500 font-body text-sm hover:text-blue-400 transition-colors">
               {t("footer.solutions")}
-            </p>
+            </a>
           </div>
         </div>
       </div>

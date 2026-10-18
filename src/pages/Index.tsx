@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
@@ -14,10 +14,8 @@ import PricingSection from "@/components/PricingSection";
 import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
-import ContactModal from "@/components/ContactModal";
 
 const Index = () => {
-  const [contactOpen, setContactOpen] = useState(false);
   const location = useLocation();
 
   // Handle scroll to section when navigating with hash
@@ -35,9 +33,9 @@ const Index = () => {
 
   return (
     <main className="bg-background">
-      <Navbar onContactOpen={() => setContactOpen(true)} />
+      <Navbar />
       
-      <HeroSection onContactOpen={() => setContactOpen(true)} />
+      <HeroSection />
       
       {/* 2. The Chaos: Problem Section */}
       <ProblemSection />
@@ -73,9 +71,6 @@ const Index = () => {
       {/* <ContactSection /> */}
       
       <Footer />
-      
-      {/* Legacy form popup just in case */}
-      <ContactModal open={contactOpen} onClose={() => setContactOpen(false)} />
     </main>
   );
 };

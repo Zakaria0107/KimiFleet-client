@@ -5,8 +5,9 @@ import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { LanguageSelector } from "./LanguageSelector";
 import { findRoute, langFromPath, pathFor } from "@/seo/routes";
+import { DASHBOARD_URL, SIGNUP_URL, WHATSAPP_URL } from "@/data/links";
 
-const Navbar = ({ onContactOpen }: { onContactOpen?: () => void }) => {
+const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const { t } = useTranslation();
@@ -26,30 +27,24 @@ const Navbar = ({ onContactOpen }: { onContactOpen?: () => void }) => {
   // Links are real URLs ("/fr/#pricing") so they work without JavaScript and from other pages.
   // On the home page they scroll smoothly instead.
   const handleAnchorClick = useCallback((e: React.MouseEvent<HTMLAnchorElement>, hash: string) => {
-    if (hash === "#contact" && onContactOpen) {
-      e.preventDefault();
-      onContactOpen();
-      setMobileOpen(false);
-      return;
-    }
     if (isHomePage) {
       e.preventDefault();
       document.getElementById(hash.replace("#", ""))?.scrollIntoView({ behavior: "smooth" });
       window.history.replaceState(null, "", hash);
     }
     setMobileOpen(false);
-  }, [isHomePage, onContactOpen]);
+  }, [isHomePage]);
 
-  // Items with `hash` are sections of the home page; items with `href` are pages of their own.
-  const navItems: { label: string; hash?: string; href?: string }[] = [
+  // Items with `hash` are sections of the home page; items with `href` are pages of their own;
+  // `external` items open in a new tab (WhatsApp works without JavaScript).
+  const navItems: { label: string; hash?: string; href?: string; external?: boolean }[] = [
     { label: t("navbar.home"), hash: "#home" },
     { label: t("navbar.solution"), hash: "#solution" },
     { label: t("navbar.fleet"), hash: "#fleet" },
     { label: t("navbar.how_it_works"), hash: "#how-it-works" },
     { label: t("navbar.pricing"), href: pathFor("pricing", lang) },
     { label: t("navbar.faq"), hash: "#faq" },
-    // There is no #contact section; the link opens the contact modal on pages that provide one.
-    ...(onContactOpen ? [{ label: t("navbar.contact"), hash: "#contact" }] : []),
+    { label: t("navbar.contact"), href: WHATSAPP_URL, external: true },
   ];
 
   return (
@@ -78,6 +73,7 @@ const Navbar = ({ onContactOpen }: { onContactOpen?: () => void }) => {
               <a
                 key={item.label}
                 href={item.href ?? `${homePath}${item.hash}`}
+                {...(item.external ? { target: "_blank", rel: "noopener" } : {})}
                 onClick={item.hash ? (e) => handleAnchorClick(e, item.hash!) : undefined}
                 className={`font-body text-sm font-medium tracking-tight transition-colors hover:text-blue-600 ${shouldShowWhite ? "text-gray-700" : "text-white/90"
                   }`}
@@ -89,8 +85,15 @@ const Navbar = ({ onContactOpen }: { onContactOpen?: () => void }) => {
 
           <div className="hidden md:flex items-center gap-4">
             <LanguageSelector isWhite={shouldShowWhite} />
+            {/* Existing customers log in; new ones go straight to signup. */}
             <a
-              href="https://kimifleet.com/dashboard/"
+              href={DASHBOARD_URL}
+              className={`font-body text-sm font-medium tracking-tight transition-colors hover:text-blue-600 ${shouldShowWhite ? "text-gray-700" : "text-white/90"}`}
+            >
+              {t("navbar.login")}
+            </a>
+            <a
+              href={SIGNUP_URL}
               target="_blank"
               rel="noopener"
               className="bg-blue-600 text-white px-6 py-2.5 rounded-lg font-body text-sm font-medium tracking-tight hover:bg-blue-700 transition-all"
@@ -121,6 +124,7 @@ const Navbar = ({ onContactOpen }: { onContactOpen?: () => void }) => {
                   <a
                     key={item.label}
                     href={item.href ?? `${homePath}${item.hash}`}
+                {...(item.external ? { target: "_blank", rel: "noopener" } : {})}
                     onClick={item.hash ? (e) => handleAnchorClick(e, item.hash!) : undefined}
                     className="font-body text-base text-gray-700 hover:text-blue-600 transition-colors py-2"
                   >
@@ -128,7 +132,14 @@ const Navbar = ({ onContactOpen }: { onContactOpen?: () => void }) => {
                   </a>
                 ))}
                 <a
-                  href="https://kimifleet.com/dashboard/"
+                  href={DASHBOARD_URL}
+                  onClick={() => setMobileOpen(false)}
+                  className="font-body text-base text-gray-700 hover:text-blue-600 transition-colors py-2"
+                >
+                  {t("navbar.login")}
+                </a>
+                <a
+                  href={SIGNUP_URL}
                   target="_blank"
                   rel="noopener"
                   onClick={() => setMobileOpen(false)}

@@ -5,9 +5,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PricingSection from "@/components/PricingSection";
 import { CONTENT_PAGES, findRoute, pathFor, type PageId } from "@/seo/routes";
+import { SIGNUP_URL, WHATSAPP_URL } from "@/data/links";
 
-const SIGNUP_URL = "https://kimifleet.com/dashboard/signup";
-const WHATSAPP_URL = "https://wa.me/212773273153";
 
 interface PageSection {
   h2: string;
@@ -106,13 +105,15 @@ const ContentPage = () => {
                   {paragraph}
                 </p>
               ))}
+              {/* The <ol> provides the numbering; the circle shows it with a CSS counter, so each
+                  number appears once (no extra "1" in the text before the list number). */}
               {section.steps && (
-                <ol className="space-y-4 mt-6">
-                  {section.steps.map((step, i) => (
-                    <li key={step} className="flex gap-4 items-start">
-                      <span className="shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white font-display font-bold text-sm flex items-center justify-center">
-                        {i + 1}
-                      </span>
+                <ol className="space-y-4 mt-6 [counter-reset:step]">
+                  {section.steps.map((step) => (
+                    <li
+                      key={step}
+                      className="flex gap-4 items-start [counter-increment:step] before:content-[counter(step)] before:shrink-0 before:w-8 before:h-8 before:rounded-full before:bg-blue-600 before:text-white before:font-display before:font-bold before:text-sm before:flex before:items-center before:justify-center"
+                    >
                       <span className="font-body text-gray-700 leading-relaxed pt-1">{step}</span>
                     </li>
                   ))}

@@ -10,14 +10,16 @@
     "pricing": "Pricing",
     "faq": "FAQ",
     "contact": "Contact",
-    "get_started": "Get Started"
+    "get_started": "Get Started",
+    "login": "Log in"
   },
   "hero": {
     "badge": "Built for car rental agencies",
     "title": "Management software for car rental agencies",
     "subtitle": "KimiFleet replaces spreadsheets and paper contracts: bookings, QR-signed rental agreements, vehicle maintenance and invoicing in one system for your agency in Morocco.",
     "cta": "See pricing",
-    "trial": "Create my account"
+    "trial": "Create my account",
+    "image_alt": "Handing over the keys of a rental car"
   },
   "problem": {
     "badge": "Operational Inefficiency",
@@ -117,7 +119,7 @@
   "pricing": {
     "badge": "Simple Pricing",
     "title": "KimiFleet pricing",
-    "subtitle": "Whether you manage a single agency or a network of multiple entities, every plan gives full, unlimited access to the dashboard and server. No hidden limits.",
+    "subtitle": "Whether you manage a single agency or a network of multiple entities, every plan includes every feature: dashboard, booking website and mobile app. No hidden limits.",
     "plan3_name": "3-Month Plan",
     "plan6_name": "6-Month Plan",
     "best_value": "Best Value",
@@ -126,7 +128,7 @@
     "feature_1": "Unlimited businesses/branches",
     "feature_2": "Unlimited vehicles",
     "feature_3": "Full dashboard access",
-    "feature_4": "All server features included",
+    "feature_4": "Booking website and mobile app included",
     "feature_5": "Unlimited contracts & QR signatures",
     "feature_6": "Customer support included",
     "cta": "Choose This Plan",
@@ -197,6 +199,9 @@
     "finance": "Financial Oversight",
     "rights": "All rights reserved.",
     "solutions": "Fleet Management Solutions",
-    "privacy": "Privacy Policy"
+    "privacy": "Privacy Policy",
+    "city": "Agadir, Morocco",
+    "terms": "Terms of service",
+    "legal_notice": "Legal notice"
   }
 }

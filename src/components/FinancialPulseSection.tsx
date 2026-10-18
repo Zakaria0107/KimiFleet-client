@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { FileText, CheckCircle2, TrendingUp } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { formatAmount } from "@/lib/format";
+import { SIGNUP_URL } from "@/data/links";
 
 const FinancialPulseSection = () => {
   const { t, i18n } = useTranslation();
@@ -31,9 +32,14 @@ const FinancialPulseSection = () => {
               {t("finance.subtitle")}
             </p>
 
-            <button className="bg-black text-white px-8 py-4 rounded-lg font-body font-medium text-base tracking-tight hover:bg-gray-800 transition-all shadow-xl">
+            <a
+              href={SIGNUP_URL}
+              target="_blank"
+              rel="noopener"
+              className="inline-block bg-black text-white px-8 py-4 rounded-lg font-body font-medium text-base tracking-tight hover:bg-gray-800 transition-all shadow-xl"
+            >
               {t("finance.cta")}
-            </button>
+            </a>
           </motion.div>
 
           <motion.div

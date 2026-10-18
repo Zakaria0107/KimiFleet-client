@@ -4,9 +4,10 @@ import { ArrowRight, Users } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
 import { langFromPath, pathFor } from "@/seo/routes";
+import { SIGNUP_URL } from "@/data/links";
 import heroImg from "@/assets/hero-keys.webp";
 
-const HeroSection = ({ onContactOpen }: { onContactOpen?: () => void }) => {
+const HeroSection = () => {
   const { t } = useTranslation();
   const lang = langFromPath(useLocation().pathname);
   const [count, setCount] = useState(0);
@@ -33,7 +34,7 @@ const HeroSection = ({ onContactOpen }: { onContactOpen?: () => void }) => {
       <div className="absolute inset-0">
         <img
           src={heroImg}
-          alt="Remise des clés d'un véhicule de location"
+          alt={t("hero.image_alt")}
           className="w-full h-full object-cover"
           fetchpriority="high"
           decoding="async"
@@ -78,7 +79,7 @@ const HeroSection = ({ onContactOpen }: { onContactOpen?: () => void }) => {
           className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
         >
           <a
-            href="https://kimifleet.com/dashboard/signup"
+            href={SIGNUP_URL}
             target="_blank"
             rel="noopener"
             className="bg-white text-black px-8 py-4 rounded-lg font-body font-bold text-base tracking-tight hover:bg-white/90 transition-all shadow-lg"

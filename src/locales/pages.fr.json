@@ -259,5 +259,71 @@
     "related": "À lire aussi",
     "faq_title": "Questions fréquentes",
     "whatsapp": "Parler à l'équipe sur WhatsApp"
+  },
+  "terms": {
+    "breadcrumb": "Conditions générales",
+    "h1": "Conditions générales d'utilisation",
+    "notice": "Document en préparation. Les sections marquées « À valider » sont des textes provisoires, à compléter et valider avec un conseil juridique avant publication définitive.",
+    "sections": [
+      {
+        "h2": "1. Objet",
+        "text": "[À valider] Décrire l'objet des présentes conditions : l'accès au logiciel KimiFleet (tableau de bord, site de réservation de l'agence, application mobile) par les agences de location de voitures."
+      },
+      {
+        "h2": "2. Compte et accès",
+        "text": "[À valider] Préciser les conditions de création du compte, la responsabilité des identifiants de connexion, et les comptes des membres d'équipe avec leurs rôles et droits d'accès."
+      },
+      {
+        "h2": "3. Abonnement et paiement",
+        "text": "[À valider] Plans disponibles : 3 mois (700 MAD) ou 6 mois (1 300 MAD). Après l'inscription, l'équipe KimiFleet contacte le client sur WhatsApp pour confirmer le plan et le paiement. À préciser : moyens de paiement acceptés, facturation, taxes applicables."
+      },
+      {
+        "h2": "4. Fin de période et renouvellement",
+        "text": "[À valider] Pendant les 7 derniers jours de la période, un rappel de renouvellement s'affiche dans le tableau de bord et l'application mobile. À préciser : ce qui se passe à l'échéance en l'absence de renouvellement."
+      },
+      {
+        "h2": "5. Données clients et export des données",
+        "text": "[À valider] Préciser à qui appartiennent les données saisies par l'agence (véhicules, clients, locations). Le tableau de bord permet aujourd'hui d'exporter en CSV les clients, les véhicules et les entretiens. À préciser : conservation et suppression des données après la fin du contrat."
+      },
+      {
+        "h2": "6. Résiliation",
+        "text": "[À valider] Préciser les conditions de résiliation par le client et par KimiFleet, ainsi que les délais applicables."
+      },
+      {
+        "h2": "7. Responsabilité",
+        "text": "[À valider] Limites de responsabilité à rédiger avec un conseil juridique."
+      },
+      {
+        "h2": "8. Droit applicable",
+        "text": "[À valider] Droit marocain. Tribunal compétent à préciser."
+      }
+    ]
+  },
+  "legalNotice": {
+    "breadcrumb": "Mentions légales",
+    "h1": "Mentions légales",
+    "notice": "Document en préparation. Les informations marquées « À compléter » doivent être renseignées et validées avant publication définitive.",
+    "sections": [
+      {
+        "h2": "Éditeur du site",
+        "text": "Raison sociale : [À compléter]. Forme juridique : [À compléter]. Capital social : [À compléter]. Siège social : [À compléter : adresse complète]."
+      },
+      {
+        "h2": "Immatriculation",
+        "text": "ICE : [À compléter]. Registre de commerce (RC) : [À compléter]. Identifiant fiscal (IF) : [À compléter]."
+      },
+      {
+        "h2": "Directeur de la publication",
+        "text": "[À compléter : nom et fonction]."
+      },
+      {
+        "h2": "Contact",
+        "text": "E-mail : contact@kimifleet.com. Téléphone et WhatsApp : +212 773 273 153."
+      },
+      {
+        "h2": "Hébergement",
+        "text": "[À compléter : nom, adresse et contact de l'hébergeur du site]."
+      }
+    ]
   }
 }

@@ -10,6 +10,7 @@ import { ROUTES, type PageId } from "./seo/routes";
 
 // Lazy load pages for code splitting. Keep in sync with PAGE_MODULES in seo/routes.ts.
 const ContentPage = lazy(() => import("./pages/ContentPage"));
+const LegalPage = lazy(() => import("./pages/LegalPage"));
 const pages: Record<PageId, ReturnType<typeof lazy>> = {
   home: lazy(() => import("./pages/Index")),
   privacy: lazy(() => import("./pages/PrivacyPolicy")),
@@ -17,6 +18,8 @@ const pages: Record<PageId, ReturnType<typeof lazy>> = {
   moroccoSoftware: ContentPage,
   digitalContract: ContentPage,
   pricing: ContentPage,
+  terms: LegalPage,
+  legalNotice: LegalPage,
 };
 const NotFound = lazy(() => import("./pages/NotFound"));
 

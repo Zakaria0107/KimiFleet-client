@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Check, Sparkles } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { PLANS } from "@/data/pricing";
+import { signupUrlForPlan } from "@/data/links";
 import { formatNumber } from "@/lib/format";
 
 const PricingSection = ({ title }: { title?: string } = {}) => {
@@ -20,6 +21,7 @@ const PricingSection = ({ title }: { title?: string } = {}) => {
     name: t(plan.nameKey),
     price: plan.price,
     perMonth: plan.perMonth,
+    months: plan.months,
     highlighted: plan.highlighted,
     ...(plan.highlighted ? { badge: t("pricing.best_value"), savings: t("pricing.savings") } : {}),
   }));
@@ -94,7 +96,7 @@ const PricingSection = ({ title }: { title?: string } = {}) => {
               </ul>
 
               <a
-                href="https://kimifleet.com/dashboard/"
+                href={signupUrlForPlan(plan.months)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`block w-full text-center py-3.5 rounded-lg font-body text-sm font-medium tracking-tight transition-all ${

@@ -15,7 +15,15 @@ export const OG_IMAGES: Record<Lang, { url: string; width: number; height: numbe
   en: { url: `${SITE_URL}/og/en.jpg`, width: 1200, height: 630, type: "image/jpeg" },
 };
 
-export type PageId = "home" | "privacy" | "bookingWebsite" | "moroccoSoftware" | "digitalContract" | "pricing";
+export type PageId =
+  | "home"
+  | "privacy"
+  | "bookingWebsite"
+  | "moroccoSoftware"
+  | "digitalContract"
+  | "pricing"
+  | "terms"
+  | "legalNotice";
 
 /** Pages rendered by ContentPage from the `pages.<id>` content in src/locales/pages.<lang>.json. */
 export const CONTENT_PAGES = ["bookingWebsite", "moroccoSoftware", "digitalContract", "pricing"] as const;
@@ -32,6 +40,11 @@ export interface SeoRoute {
   jsonLd: JsonLdType[];
   /** Date the page content last changed (YYYY-MM-DD), for sitemap.xml. Update it when you edit the page. */
   lastmod: string;
+  /**
+   * Keep the page out of search results: adds <meta name="robots" content="noindex, follow">
+   * and leaves it out of sitemap.xml. The page stays reachable (footer links still work).
+   */
+  noindex?: boolean;
 }
 
 export const ROUTES: SeoRoute[] = [
@@ -166,6 +179,46 @@ export const ROUTES: SeoRoute[] = [
     jsonLd: ["Organization", "SoftwareApplication", "BreadcrumbList", "FAQPage"],
     lastmod: "2026-10-18",
   },
+  // Legal pages: placeholder content marked "À valider" until reviewed by legal counsel.
+  // They are `noindex` so the placeholder text does not appear in search results.
+  // To index them once the final legal text is in: delete the `noindex: true` lines below,
+  // update `lastmod`, rebuild (they are then added to sitemap.xml automatically), and
+  // request indexing in Google Search Console.
+  {
+    page: "terms",
+    lang: "fr",
+    path: "/fr/conditions-generales",
+    title: "Conditions générales d'utilisation | KimiFleet",
+    description:
+      "Conditions générales d'utilisation du logiciel KimiFleet pour les agences de location de voitures : compte, abonnement, données et résiliation.",
+    ogImageAlt: "KimiFleet, logiciel de gestion de location de voitures",
+    jsonLd: ["Organization", "BreadcrumbList"],
+    lastmod: "2026-10-18",
+    noindex: true,
+  },
+  {
+    page: "terms",
+    lang: "en",
+    path: "/en/terms",
+    title: "Terms of Service | KimiFleet",
+    description: "KimiFleet terms of service for car rental agencies: account, subscription, data and termination.",
+    ogImageAlt: "KimiFleet car rental management software",
+    jsonLd: ["Organization", "BreadcrumbList"],
+    lastmod: "2026-10-18",
+    noindex: true,
+  },
+  // French only: the legal notice is required for the French-language site.
+  {
+    page: "legalNotice",
+    lang: "fr",
+    path: "/fr/mentions-legales",
+    title: "Mentions légales | KimiFleet",
+    description: "Mentions légales du site KimiFleet : éditeur, immatriculation, contact et hébergement.",
+    ogImageAlt: "KimiFleet, logiciel de gestion de location de voitures",
+    jsonLd: ["Organization", "BreadcrumbList"],
+    lastmod: "2026-10-18",
+    noindex: true,
+  },
 ];
 
 /** Prerendered to dist/404.html and served by nginx for unknown URLs. */
@@ -182,6 +235,8 @@ export const PAGE_MODULES: Record<PageId | "notFound", string> = {
   moroccoSoftware: "src/pages/ContentPage.tsx",
   digitalContract: "src/pages/ContentPage.tsx",
   pricing: "src/pages/ContentPage.tsx",
+  terms: "src/pages/LegalPage.tsx",
+  legalNotice: "src/pages/LegalPage.tsx",
   notFound: "src/pages/NotFound.tsx",
 };
 

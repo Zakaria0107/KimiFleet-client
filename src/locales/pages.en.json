@@ -259,5 +259,44 @@
     "related": "Read next",
     "faq_title": "Frequently asked questions",
     "whatsapp": "Talk to the team on WhatsApp"
+  },
+  "terms": {
+    "breadcrumb": "Terms of service",
+    "h1": "Terms of service",
+    "notice": "Document in preparation. Sections marked \"To be validated\" are provisional texts, to be completed and validated with legal counsel before final publication.",
+    "sections": [
+      {
+        "h2": "1. Purpose",
+        "text": "[To be validated] Describe the purpose of these terms: access to the KimiFleet software (dashboard, agency booking website, mobile app) for car rental agencies."
+      },
+      {
+        "h2": "2. Account and access",
+        "text": "[To be validated] Specify how accounts are created, responsibility for login credentials, and team member accounts with their roles and access rights."
+      },
+      {
+        "h2": "3. Subscription and payment",
+        "text": "[To be validated] Available plans: 3 months (700 MAD) or 6 months (1,300 MAD). After signup, the KimiFleet team contacts the customer on WhatsApp to confirm the plan and payment. To specify: accepted payment methods, invoicing, applicable taxes."
+      },
+      {
+        "h2": "4. End of period and renewal",
+        "text": "[To be validated] During the last 7 days of the period, a renewal reminder appears in the dashboard and the mobile app. To specify: what happens at the end of the period without renewal."
+      },
+      {
+        "h2": "5. Customer data and data export",
+        "text": "[To be validated] Specify who owns the data entered by the agency (vehicles, customers, rentals). The dashboard currently exports customers, vehicles and maintenance records as CSV. To specify: data retention and deletion after the contract ends."
+      },
+      {
+        "h2": "6. Termination",
+        "text": "[To be validated] Specify termination conditions for the customer and for KimiFleet, and the applicable notice periods."
+      },
+      {
+        "h2": "7. Liability",
+        "text": "[To be validated] Limitation of liability to be drafted with legal counsel."
+      },
+      {
+        "h2": "8. Applicable law",
+        "text": "[To be validated] Moroccan law. Competent court to be specified."
+      }
+    ]
   }
 }

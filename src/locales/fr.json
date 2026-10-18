@@ -10,14 +10,16 @@
     "pricing": "Tarifs",
     "faq": "FAQ",
     "contact": "Contact",
-    "get_started": "Commencer"
+    "get_started": "Commencer",
+    "login": "Se connecter"
   },
   "hero": {
     "badge": "Conçu pour les agences de location de voitures",
     "title": "Logiciel de gestion pour agences de location de voitures",
     "subtitle": "KimiFleet remplace les tableurs et les contrats papier : réservations, contrats de location signés par QR code, entretien des véhicules et facturation, dans un seul logiciel pour votre agence au Maroc.",
     "cta": "Voir les tarifs",
-    "trial": "Créer mon compte"
+    "trial": "Créer mon compte",
+    "image_alt": "Remise des clés d'un véhicule de location"
   },
   "problem": {
     "badge": "Inefficacité opérationnelle",
@@ -117,7 +119,7 @@
   "pricing": {
     "badge": "Tarification simple",
     "title": "Tarifs du logiciel KimiFleet",
-    "subtitle": "Que vous gériez une seule agence ou un réseau de plusieurs entités, chaque plan donne un accès complet et illimité au tableau de bord et au serveur. Aucune limite cachée.",
+    "subtitle": "Que vous gériez une seule agence ou un réseau de plusieurs entités, chaque plan inclut toutes les fonctionnalités : tableau de bord, site de réservation et application mobile. Aucune limite cachée.",
     "plan3_name": "Plan 3 mois",
     "plan6_name": "Plan 6 mois",
     "best_value": "Meilleure offre",
@@ -126,7 +128,7 @@
     "feature_1": "Entreprises/agences illimitées",
     "feature_2": "Véhicules illimités",
     "feature_3": "Accès complet au tableau de bord",
-    "feature_4": "Toutes les fonctionnalités serveur incluses",
+    "feature_4": "Site de réservation et application mobile inclus",
     "feature_5": "Contrats et signatures QR illimités",
     "feature_6": "Support client inclus",
     "cta": "Choisir ce plan",
@@ -178,7 +180,10 @@
     "finance": "Supervision financière",
     "rights": "Tous droits réservés.",
     "solutions": "Solutions de gestion de flotte",
-    "privacy": "Politique de confidentialité"
+    "privacy": "Politique de confidentialité",
+    "city": "Agadir, Maroc",
+    "terms": "Conditions générales",
+    "legal_notice": "Mentions légales"
   },
   "privacy": {
     "badge": "Légal",

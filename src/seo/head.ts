@@ -132,6 +132,7 @@ export const buildHead = (route: SeoRoute): string => {
   return [
     `<title>${escapeHtml(route.title)}</title>`,
     meta("name", "description", route.description),
+    ...(route.noindex ? [meta("name", "robots", "noindex, follow")] : []),
     `<link rel="canonical" href="${url}" />`,
     ...hreflangLinks(route),
     meta("property", "og:type", "website"),
@@ -162,7 +163,8 @@ export const buildNotFoundHead = (): string =>
   ].join("\n  ");
 
 export const buildSitemap = (): string => {
-  const urls = ROUTES.map((route) => {
+  // Pages marked `noindex` stay out of the sitemap.
+  const urls = ROUTES.filter((route) => !route.noindex).map((route) => {
     const alternates = hreflangLinks(route).map((link) =>
       link.replace("<link ", "<xhtml:link ").replace(" />", "/>"),
     );
