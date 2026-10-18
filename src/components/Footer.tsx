@@ -1,7 +1,7 @@
 import { Phone, MapPin, MessageCircle, Mail, ArrowRight } from "lucide-react";
 import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { langFromPath, pathFor } from "@/seo/routes";
+import { CONTENT_PAGES, langFromPath, pathFor } from "@/seo/routes";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -49,9 +49,11 @@ const Footer = () => {
           <div>
             <h4 className="font-display font-semibold text-sm uppercase tracking-wide text-gray-300 mb-4">{t("footer.services")}</h4>
             <div className="flex flex-col gap-3 text-gray-400 font-body text-sm">
-              <span>{t("footer.qr")}</span>
-              <span>{t("footer.maintenance")}</span>
-              <span>{t("footer.finance")}</span>
+              {CONTENT_PAGES.map((page) => (
+                <a key={page} href={pathFor(page, lang)} className="hover:text-blue-400 transition-colors">
+                  {t(`pages.${page}.breadcrumb`)}
+                </a>
+              ))}
             </div>
           </div>
 

@@ -11,6 +11,7 @@ import {
   ROUTES,
   absoluteUrl,
   alternatesFor,
+  pathFor,
   type SeoRoute,
 } from "./routes";
 
@@ -51,7 +52,7 @@ const organization = () => ({
   },
 });
 
-const softwareApplication = (route: SeoRoute, t: (key: string) => string) => ({
+const softwareApplication = (route: SeoRoute, t: Translate) => ({
   "@type": "SoftwareApplication",
   name: "KimiFleet",
   url: absoluteUrl(route.path),
@@ -75,15 +76,31 @@ const softwareApplication = (route: SeoRoute, t: (key: string) => string) => ({
   })),
 });
 
-const faqPage = (route: SeoRoute, t: (key: string) => string) => ({
+type Translate = ReturnType<typeof createI18n>["t"];
+
+/** The home page uses the shared FAQ list; content pages use the `faq` of their own content. */
+const faqEntries = (route: SeoRoute, t: Translate): { q: string; a: string }[] =>
+  route.page === "home"
+    ? FAQ_ITEMS.map((item) => ({ q: t(item.question), a: t(item.answer) }))
+    : (t(`pages.${route.page}.faq`, { returnObjects: true }) as { q: string; a: string }[]);
+
+const faqPage = (route: SeoRoute, t: Translate) => ({
   "@type": "FAQPage",
   url: absoluteUrl(route.path),
   inLanguage: route.lang,
-  mainEntity: FAQ_ITEMS.map((item) => ({
+  mainEntity: faqEntries(route, t).map((item) => ({
     "@type": "Question",
-    name: t(item.question),
-    acceptedAnswer: { "@type": "Answer", text: t(item.answer) },
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
   })),
+});
+
+const breadcrumbList = (route: SeoRoute, t: Translate) => ({
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: t("pages.common.home"), item: absoluteUrl(pathFor("home", route.lang)) },
+    { "@type": "ListItem", position: 2, name: t(`pages.${route.page}.breadcrumb`), item: absoluteUrl(route.path) },
+  ],
 });
 
 const jsonLdScript = (route: SeoRoute) => {
@@ -96,6 +113,8 @@ const jsonLdScript = (route: SeoRoute) => {
         return softwareApplication(route, t);
       case "FAQPage":
         return faqPage(route, t);
+      case "BreadcrumbList":
+        return breadcrumbList(route, t);
     }
   });
   // Escape "<" so text can never close the <script> element.

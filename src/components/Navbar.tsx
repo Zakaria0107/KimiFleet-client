@@ -13,7 +13,8 @@ const Navbar = ({ onContactOpen }: { onContactOpen?: () => void }) => {
   const location = useLocation();
 
   const isHomePage = findRoute(location.pathname)?.page === "home";
-  const homePath = pathFor("home", langFromPath(location.pathname));
+  const lang = langFromPath(location.pathname);
+  const homePath = pathFor("home", lang);
   const shouldShowWhite = !isHomePage || scrolled;
 
   useEffect(() => {
@@ -39,12 +40,13 @@ const Navbar = ({ onContactOpen }: { onContactOpen?: () => void }) => {
     setMobileOpen(false);
   }, [isHomePage, onContactOpen]);
 
-  const navItems = [
+  // Items with `hash` are sections of the home page; items with `href` are pages of their own.
+  const navItems: { label: string; hash?: string; href?: string }[] = [
     { label: t("navbar.home"), hash: "#home" },
     { label: t("navbar.solution"), hash: "#solution" },
     { label: t("navbar.fleet"), hash: "#fleet" },
     { label: t("navbar.how_it_works"), hash: "#how-it-works" },
-    { label: t("navbar.pricing"), hash: "#pricing" },
+    { label: t("navbar.pricing"), href: pathFor("pricing", lang) },
     { label: t("navbar.faq"), hash: "#faq" },
     // There is no #contact section; the link opens the contact modal on pages that provide one.
     ...(onContactOpen ? [{ label: t("navbar.contact"), hash: "#contact" }] : []),
@@ -75,8 +77,8 @@ const Navbar = ({ onContactOpen }: { onContactOpen?: () => void }) => {
             {navItems.map((item) => (
               <a
                 key={item.label}
-                href={`${homePath}${item.hash}`}
-                onClick={(e) => handleAnchorClick(e, item.hash)}
+                href={item.href ?? `${homePath}${item.hash}`}
+                onClick={item.hash ? (e) => handleAnchorClick(e, item.hash!) : undefined}
                 className={`font-body text-sm font-medium tracking-tight transition-colors hover:text-blue-600 ${shouldShowWhite ? "text-gray-700" : "text-white/90"
                   }`}
               >
@@ -118,8 +120,8 @@ const Navbar = ({ onContactOpen }: { onContactOpen?: () => void }) => {
                 {navItems.map((item) => (
                   <a
                     key={item.label}
-                    href={`${homePath}${item.hash}`}
-                    onClick={(e) => handleAnchorClick(e, item.hash)}
+                    href={item.href ?? `${homePath}${item.hash}`}
+                    onClick={item.hash ? (e) => handleAnchorClick(e, item.hash!) : undefined}
                     className="font-body text-base text-gray-700 hover:text-blue-600 transition-colors py-2"
                   >
                     {item.label}

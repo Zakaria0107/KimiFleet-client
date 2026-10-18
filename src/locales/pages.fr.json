@@ -1,0 +1,262 @@
+{
+  "bookingWebsite": {
+    "breadcrumb": "Site de réservation",
+    "eyebrow": "Inclus dans tous les plans",
+    "h1": "Un site de réservation pour votre agence de location de voitures",
+    "intro": "Avec KimiFleet, chaque agence de location de voitures reçoit son propre site de réservation en ligne, à l'adresse votre-agence.kimifleet.com. Vos clients y consultent vos véhicules, vérifient les dates disponibles et vous envoient une demande de réservation, en français, en anglais ou en arabe. Pas de développeur, pas d'hébergement à gérer : le site se met à jour tout seul à partir de votre flotte.",
+    "sections": [
+      {
+        "h2": "Votre flotte en ligne, à jour en permanence",
+        "paragraphs": [
+          "Le site de réservation affiche les véhicules que vous gérez déjà dans le tableau de bord KimiFleet : photos, marque, modèle, prix par jour et disponibilité. Quand vous ajoutez une voiture, changez un prix ou mettez un véhicule en entretien, le site suit immédiatement.",
+          "Vous n'avez donc jamais deux listes à tenir à jour, ni un client qui réserve une voiture déjà louée ou au garage."
+        ],
+        "bullets": [
+          "Catalogue de vos véhicules avec photos et prix par jour",
+          "Fiche détaillée pour chaque voiture",
+          "Vérification des disponibilités avant la demande",
+          "Site adapté au mobile, là où vos clients réservent"
+        ]
+      },
+      {
+        "h2": "Des demandes de réservation qui arrivent directement dans votre tableau de bord",
+        "paragraphs": [
+          "Le client crée son compte, choisit ses dates et envoie sa demande. La réservation apparaît aussitôt dans votre tableau de bord, liée au véhicule et au client, avec le montant calculé selon votre prix par jour.",
+          "Votre équipe traite la demande comme n'importe quelle location : remise des clés, contrat signé par QR code, facture. Le client suit ses réservations depuis son espace « Mes réservations » et peut annuler une demande lui-même."
+        ],
+        "bullets": [
+          "Comptes clients avec historique des réservations",
+          "Montant calculé automatiquement selon le nombre de jours",
+          "Annulation par le client depuis son espace",
+          "Le paiement se fait à l'agence, comme aujourd'hui"
+        ]
+      },
+      {
+        "h2": "Aux couleurs de votre agence, en trois langues",
+        "paragraphs": [
+          "Le site reprend votre logo, votre bannière et votre texte de présentation. Il est disponible en français, en anglais et en arabe : un atout pour les touristes et pour les Marocains résidant à l'étranger qui louent pendant l'été.",
+          "La page contact affiche votre adresse, votre téléphone et un bouton WhatsApp, le canal que vos clients utilisent déjà."
+        ],
+        "bullets": [
+          "Logo, bannière et présentation personnalisés",
+          "Français, anglais et arabe",
+          "Bouton WhatsApp, téléphone et adresse de l'agence",
+          "Pages conditions générales et confidentialité incluses"
+        ]
+      },
+      {
+        "h2": "Pourquoi un site de réservation plutôt qu'une page Facebook",
+        "paragraphs": [
+          "Une page Facebook ou un groupe WhatsApp montre vos voitures, mais ne dit jamais si elles sont libres. Les échanges s'éparpillent entre plusieurs téléphones et les demandes se perdent.",
+          "Avec un site de réservation relié à votre logiciel de gestion, chaque demande est enregistrée, chaque client a un compte et votre équipe voit tout au même endroit. Vous gardez vos réseaux sociaux pour vous faire connaître, et vous y partagez le lien de votre site pour réserver."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Le site de réservation est-il payant en plus ?",
+        "a": "Non. Le site de réservation est inclus dans tous les plans KimiFleet, sans frais supplémentaires."
+      },
+      {
+        "q": "Mes clients peuvent-ils payer en ligne ?",
+        "a": "Pas pour le moment : le client envoie une demande de réservation, et le paiement se fait à l'agence lors de la prise du véhicule, comme vous le faites aujourd'hui."
+      },
+      {
+        "q": "Faut-il saisir mes véhicules une deuxième fois ?",
+        "a": "Non. Le site affiche directement la flotte de votre tableau de bord KimiFleet. Toute modification apparaît immédiatement en ligne."
+      },
+      {
+        "q": "Quelle est l'adresse de mon site ?",
+        "a": "Votre site est accessible à l'adresse votre-agence.kimifleet.com, où « votre-agence » est l'identifiant choisi pour votre agence."
+      }
+    ],
+    "cta": {
+      "title": "Mettez votre flotte en ligne cette semaine",
+      "text": "Créez votre compte, ajoutez vos véhicules : votre site de réservation est prêt.",
+      "button": "Créer mon compte"
+    }
+  },
+  "moroccoSoftware": {
+    "breadcrumb": "Logiciel location voiture Maroc",
+    "eyebrow": "Conçu au Maroc, pour le Maroc",
+    "h1": "Le logiciel de gestion pour les agences de location de voitures au Maroc",
+    "intro": "KimiFleet est un logiciel de location de voiture basé à Agadir et conçu pour les agences marocaines. Réservations, contrats signés par QR code, entretien des véhicules et facturation en dirhams : tout ce qu'une agence gère chaque jour, dans un seul outil en français, en arabe et en anglais.",
+    "sections": [
+      {
+        "h2": "Pensé pour la réalité des agences marocaines",
+        "paragraphs": [
+          "Beaucoup d'agences au Maroc travaillent encore avec un cahier, des tableurs Excel et des contrats papier. Les logiciels étrangers, eux, sont souvent facturés en euros, au véhicule, et ne tiennent pas compte des habitudes locales.",
+          "KimiFleet part de votre quotidien : une équipe qui communique par WhatsApp, des clients touristes et MRE en haute saison, plusieurs agences dans plusieurs villes, et des prix en dirhams."
+        ],
+        "bullets": [
+          "Prix et factures en dirhams (MAD)",
+          "Interface en français, en arabe et en anglais",
+          "Plusieurs agences et plusieurs villes dans un seul compte",
+          "Support basé à Agadir, joignable sur WhatsApp"
+        ]
+      },
+      {
+        "h2": "Tout ce qu'il faut pour gérer une agence de location",
+        "paragraphs": [
+          "Le tableau de bord réunit les opérations que vous gérez aujourd'hui sur des outils séparés. Chaque location est liée à un client, un véhicule, un contrat signé et une facture."
+        ],
+        "bullets": [
+          "Gestion de flotte : statut de chaque véhicule (disponible, réservé, loué, en entretien)",
+          "Réservations et planning des locations",
+          "Contrat de location signé par le client sur son téléphone, par QR code",
+          "Suivi de l'entretien selon le kilométrage",
+          "Factures prêtes à imprimer et suivi des paiements partiels",
+          "Fichier clients avec historique des locations",
+          "Gestion d'équipe avec des droits par rôle"
+        ]
+      },
+      {
+        "h2": "Un site de réservation et une application mobile inclus",
+        "paragraphs": [
+          "Chaque agence reçoit son propre site de réservation en ligne, à ses couleurs, où les clients consultent la flotte et envoient leurs demandes. L'application mobile permet à votre équipe de gérer les locations, les véhicules, les clients et les factures depuis un téléphone, avec des notifications pour les événements importants."
+        ]
+      },
+      {
+        "h2": "Un prix simple, en dirhams, sans facturation au véhicule",
+        "paragraphs": [
+          "KimiFleet se paie par période : 700 MAD pour 3 mois ou 1 300 MAD pour 6 mois. Le nombre d'agences, de véhicules et de contrats est illimité, quel que soit le plan. Une agence de 10 voitures et un réseau de 200 véhicules paient le même prix."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "KimiFleet fonctionne-t-il dans toutes les villes du Maroc ?",
+        "a": "Oui. Le logiciel fonctionne en ligne, depuis un ordinateur ou un téléphone. Vous pouvez gérer plusieurs agences dans des villes différentes depuis le même compte."
+      },
+      {
+        "q": "Mes données sont-elles séparées de celles des autres agences ?",
+        "a": "Oui. Les données de chaque agence sont isolées de celles des autres comptes grâce à une architecture multi-tenant, et tous les échanges sont protégés par HTTPS."
+      },
+      {
+        "q": "Puis-je importer mes véhicules et mes clients existants ?",
+        "a": "Vous pouvez ajouter vos véhicules, vos clients et votre historique directement dans le tableau de bord. Notre équipe peut vous accompagner au démarrage sur WhatsApp."
+      }
+    ],
+    "cta": {
+      "title": "Modernisez votre agence de location",
+      "text": "Créez votre compte et gérez votre première location en quelques minutes.",
+      "button": "Créer mon compte"
+    }
+  },
+  "digitalContract": {
+    "breadcrumb": "Contrat de location digital",
+    "eyebrow": "Fini les contrats papier",
+    "h1": "Contrat de location de voiture digital, signé par QR code",
+    "intro": "Avec KimiFleet, le client signe son contrat de location sur son propre téléphone : vous affichez un QR code, il le scanne, il signe avec le doigt. La signature est enregistrée avec la location, dans votre tableau de bord. Plus de papiers égarés, plus de contrats illisibles, et un historique complet pour chaque client.",
+    "sections": [
+      {
+        "h2": "Comment fonctionne la signature par QR code",
+        "paragraphs": [
+          "La signature se fait en quelques secondes au comptoir, sans application à installer pour le client."
+        ],
+        "steps": [
+          "Vous créez la location dans le tableau de bord : client, véhicule, dates et prix.",
+          "Un QR code s'affiche à l'écran.",
+          "Le client le scanne avec son téléphone et signe avec le doigt.",
+          "La signature est enregistrée avec la location ; le lien de signature expire et ne peut servir qu'une fois."
+        ]
+      },
+      {
+        "h2": "Ce que le contrat digital change pour votre agence",
+        "paragraphs": [
+          "Un contrat papier se perd, se déchire ou reste dans la boîte à gants. Un contrat digital est rattaché à la location, au client et au véhicule, et il reste consultable à tout moment par votre équipe."
+        ],
+        "bullets": [
+          "Chaque location signée est retrouvée en quelques secondes",
+          "Historique des locations et des signatures par client",
+          "Moins de litiges : la location et la signature sont liées",
+          "Moins d'impression, moins d'archivage papier"
+        ]
+      },
+      {
+        "h2": "Du contrat à la facture, sans ressaisie",
+        "paragraphs": [
+          "La location signée sert ensuite à la facturation : la facture reprend la location, se règle en une ou plusieurs fois, et s'imprime directement depuis le tableau de bord. Les paiements partiels et le reste à payer sont suivis automatiquement.",
+          "Votre équipe peut aussi gérer les locations depuis l'application mobile KimiFleet, même en déplacement."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Le client doit-il installer une application ?",
+        "a": "Non. Le QR code ouvre une page web sur le téléphone du client, qui signe directement à l'écran."
+      },
+      {
+        "q": "Que se passe-t-il si le lien de signature est partagé ?",
+        "a": "Chaque lien de signature est unique, expire après un délai court et ne peut être utilisé qu'une seule fois."
+      },
+      {
+        "q": "Le nombre de contrats est-il limité ?",
+        "a": "Non. Les contrats et les signatures QR sont illimités dans tous les plans KimiFleet."
+      }
+    ],
+    "cta": {
+      "title": "Passez au contrat de location digital",
+      "text": "Créez votre compte et faites signer votre prochaine location par QR code.",
+      "button": "Créer mon compte"
+    }
+  },
+  "pricing": {
+    "breadcrumb": "Tarifs",
+    "eyebrow": "Tarifs en dirhams",
+    "h1": "Tarifs du logiciel de location de voiture KimiFleet",
+    "intro": "Un seul prix, toutes les fonctionnalités : KimiFleet se paie par période de 3 ou 6 mois, en dirhams, sans facturation au véhicule ni à l'agence. Le site de réservation, l'application mobile et les contrats signés par QR code sont inclus dans chaque plan.",
+    "sections": [
+      {
+        "h2": "Ce qui est inclus dans chaque plan",
+        "bullets": [
+          "Agences et véhicules illimités",
+          "Contrats et signatures QR illimités",
+          "Site de réservation en ligne pour chaque agence",
+          "Application mobile pour votre équipe",
+          "Suivi de l'entretien, facturation et suivi des paiements",
+          "Gestion d'équipe avec droits par rôle",
+          "Support client inclus, sur WhatsApp"
+        ]
+      },
+      {
+        "h2": "Pourquoi un prix fixe plutôt qu'un prix par véhicule",
+        "paragraphs": [
+          "La plupart des logiciels de location facturent chaque véhicule, souvent en euros. Votre facture augmente à chaque voiture achetée, précisément au moment où vous investissez.",
+          "Avec KimiFleet, le prix ne dépend ni du nombre de véhicules ni du nombre d'agences. Vous connaissez le coût exact pour toute la période, et vous pouvez agrandir votre flotte sans changer de plan."
+        ]
+      },
+      {
+        "h2": "Facturation et renouvellement",
+        "paragraphs": [
+          "Le plan est réglé une fois pour la période choisie. Avant la fin de la période, vous recevez un rappel pour renouveler. Le plan de 6 mois revient à environ 217 MAD par mois, soit 100 MAD d'économie par rapport à deux plans de 3 mois."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Y a-t-il des frais cachés ?",
+        "a": "Non. Le prix du plan comprend toutes les fonctionnalités, sans limite d'agences, de véhicules ou de contrats."
+      },
+      {
+        "q": "Comment payer mon abonnement ?",
+        "a": "Contactez-nous sur WhatsApp au +212 773 273 153 : nous vous indiquons les moyens de paiement disponibles et activons votre plan."
+      },
+      {
+        "q": "Puis-je passer du plan 3 mois au plan 6 mois ?",
+        "a": "Oui, au moment du renouvellement, vous choisissez le plan qui vous convient."
+      }
+    ],
+    "cta": {
+      "title": "Prêt à commencer ?",
+      "text": "Créez votre compte et choisissez votre plan.",
+      "button": "Créer mon compte"
+    }
+  },
+  "common": {
+    "home": "Accueil",
+    "related": "À lire aussi",
+    "faq_title": "Questions fréquentes",
+    "whatsapp": "Parler à l'équipe sur WhatsApp"
+  }
+}

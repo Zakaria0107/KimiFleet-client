@@ -1,0 +1,262 @@
+{
+  "bookingWebsite": {
+    "breadcrumb": "Booking website",
+    "eyebrow": "Included in every plan",
+    "h1": "A booking website for your car rental agency",
+    "intro": "With KimiFleet, every car rental agency gets its own online booking website at your-agency.kimifleet.com. Customers browse your vehicles, check available dates and send you a booking request, in French, English or Arabic. No developer and no hosting to manage: the website updates itself from your fleet.",
+    "sections": [
+      {
+        "h2": "Your fleet online, always up to date",
+        "paragraphs": [
+          "The booking website shows the vehicles you already manage in the KimiFleet dashboard: photos, make, model, daily price and availability. When you add a car, change a price or send a vehicle to maintenance, the website follows immediately.",
+          "You never keep two lists up to date, and customers never book a car that is already rented or at the garage."
+        ],
+        "bullets": [
+          "Vehicle catalogue with photos and daily prices",
+          "A detail page for every car",
+          "Availability check before the request",
+          "Mobile-friendly, where your customers book"
+        ]
+      },
+      {
+        "h2": "Booking requests land straight in your dashboard",
+        "paragraphs": [
+          "The customer creates an account, picks dates and sends the request. The booking appears instantly in your dashboard, linked to the vehicle and the customer, with the amount calculated from your daily price.",
+          "Your team handles it like any other rental: key handover, QR-signed agreement, invoice. Customers follow their bookings in their \"My bookings\" area and can cancel a request themselves."
+        ],
+        "bullets": [
+          "Customer accounts with booking history",
+          "Amount calculated automatically from the number of days",
+          "Customers can cancel from their account",
+          "Payment happens at the agency, as it does today"
+        ]
+      },
+      {
+        "h2": "Your agency's branding, in three languages",
+        "paragraphs": [
+          "The website uses your logo, banner and welcome text. It is available in French, English and Arabic, which helps with tourists and with Moroccans living abroad who rent during the summer.",
+          "The contact page shows your address, phone number and a WhatsApp button, the channel your customers already use."
+        ],
+        "bullets": [
+          "Custom logo, banner and welcome text",
+          "French, English and Arabic",
+          "WhatsApp button, phone and agency address",
+          "Terms and privacy pages included"
+        ]
+      },
+      {
+        "h2": "Why a booking website instead of a Facebook page",
+        "paragraphs": [
+          "A Facebook page or WhatsApp group shows your cars but never says whether they are free. Conversations spread across several phones and requests get lost.",
+          "With a booking website connected to your rental management software, every request is recorded, every customer has an account and your team sees everything in one place. Keep your social media to get known, and share your booking website link there."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does the booking website cost extra?",
+        "a": "No. The booking website is included in every KimiFleet plan at no extra cost."
+      },
+      {
+        "q": "Can my customers pay online?",
+        "a": "Not yet: the customer sends a booking request, and payment happens at the agency when they collect the vehicle, as you do today."
+      },
+      {
+        "q": "Do I have to enter my vehicles twice?",
+        "a": "No. The website shows the fleet from your KimiFleet dashboard directly. Any change appears online immediately."
+      },
+      {
+        "q": "What is my website's address?",
+        "a": "Your website is at your-agency.kimifleet.com, where \"your-agency\" is the identifier chosen for your agency."
+      }
+    ],
+    "cta": {
+      "title": "Put your fleet online this week",
+      "text": "Create your account and add your vehicles: your booking website is ready.",
+      "button": "Create my account"
+    }
+  },
+  "moroccoSoftware": {
+    "breadcrumb": "Car rental software Morocco",
+    "eyebrow": "Built in Morocco, for Morocco",
+    "h1": "Car rental management software for agencies in Morocco",
+    "intro": "KimiFleet is car rental software based in Agadir and built for Moroccan agencies. Bookings, QR-signed agreements, vehicle maintenance and invoicing in dirhams: everything an agency handles every day, in one tool, in French, Arabic and English.",
+    "sections": [
+      {
+        "h2": "Built for how Moroccan agencies actually work",
+        "paragraphs": [
+          "Many agencies in Morocco still run on a notebook, Excel spreadsheets and paper contracts. Foreign software is often billed in euros, per vehicle, and ignores local habits.",
+          "KimiFleet starts from your day-to-day: a team that talks on WhatsApp, tourist and diaspora customers in high season, several branches in several cities, and prices in dirhams."
+        ],
+        "bullets": [
+          "Prices and invoices in dirhams (MAD)",
+          "Interface in French, Arabic and English",
+          "Several branches and cities in one account",
+          "Support based in Agadir, reachable on WhatsApp"
+        ]
+      },
+      {
+        "h2": "Everything you need to run a rental agency",
+        "paragraphs": [
+          "The dashboard brings together the work you handle today in separate tools. Every rental is linked to a customer, a vehicle, a signed agreement and an invoice."
+        ],
+        "bullets": [
+          "Fleet management: status of every vehicle (available, reserved, rented, in maintenance)",
+          "Bookings and rental schedule",
+          "Rental agreement signed by the customer on their phone, via QR code",
+          "Maintenance tracking based on mileage",
+          "Print-ready invoices and partial payment tracking",
+          "Customer records with rental history",
+          "Team management with role-based permissions"
+        ]
+      },
+      {
+        "h2": "A booking website and a mobile app included",
+        "paragraphs": [
+          "Every agency gets its own branded online booking website, where customers browse the fleet and send requests. The mobile app lets your team manage rentals, vehicles, customers and invoices from a phone, with notifications for important events."
+        ]
+      },
+      {
+        "h2": "Simple pricing in dirhams, never per vehicle",
+        "paragraphs": [
+          "KimiFleet is paid per period: 700 MAD for 3 months or 1,300 MAD for 6 months. Branches, vehicles and agreements are unlimited on every plan. An agency with 10 cars and a network with 200 vehicles pay the same price."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does KimiFleet work in every city in Morocco?",
+        "a": "Yes. The software runs online, from a computer or a phone. You can manage branches in different cities from the same account."
+      },
+      {
+        "q": "Is my data kept separate from other agencies?",
+        "a": "Yes. Each agency's data is isolated from other accounts by our multi-tenant architecture, and all traffic is protected with HTTPS."
+      },
+      {
+        "q": "Can I bring in my existing vehicles and customers?",
+        "a": "You can add your vehicles, customers and history directly in the dashboard. Our team can help you get started on WhatsApp."
+      }
+    ],
+    "cta": {
+      "title": "Modernize your rental agency",
+      "text": "Create your account and handle your first rental in minutes.",
+      "button": "Create my account"
+    }
+  },
+  "digitalContract": {
+    "breadcrumb": "Digital rental agreement",
+    "eyebrow": "No more paper contracts",
+    "h1": "Digital car rental agreement, signed by QR code",
+    "intro": "With KimiFleet, customers sign their rental agreement on their own phone: you show a QR code, they scan it and sign with a finger. The signature is saved with the rental in your dashboard. No more lost paperwork or unreadable contracts, and a complete history for every customer.",
+    "sections": [
+      {
+        "h2": "How QR code signing works",
+        "paragraphs": [
+          "Signing takes a few seconds at the counter, and the customer does not install any app."
+        ],
+        "steps": [
+          "Create the rental in the dashboard: customer, vehicle, dates and price.",
+          "A QR code appears on screen.",
+          "The customer scans it with their phone and signs with a finger.",
+          "The signature is saved with the rental; the signing link expires and works only once."
+        ]
+      },
+      {
+        "h2": "What a digital agreement changes for your agency",
+        "paragraphs": [
+          "A paper contract gets lost, torn or left in the glovebox. A digital agreement is attached to the rental, the customer and the vehicle, and your team can look it up at any time."
+        ],
+        "bullets": [
+          "Find any signed rental in seconds",
+          "Rental and signature history for every customer",
+          "Fewer disputes: rental and signature are linked",
+          "Less printing and paper filing"
+        ]
+      },
+      {
+        "h2": "From agreement to invoice, without retyping",
+        "paragraphs": [
+          "The signed rental then drives invoicing: the invoice takes the rental details, can be paid in one or several instalments, and prints straight from the dashboard. Partial payments and the balance due are tracked automatically.",
+          "Your team can also manage rentals from the KimiFleet mobile app, even on the move."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does the customer need to install an app?",
+        "a": "No. The QR code opens a web page on the customer's phone, where they sign directly on screen."
+      },
+      {
+        "q": "What if the signing link is shared?",
+        "a": "Each signing link is unique, expires after a short time and can be used only once."
+      },
+      {
+        "q": "Is the number of agreements limited?",
+        "a": "No. Agreements and QR signatures are unlimited on every KimiFleet plan."
+      }
+    ],
+    "cta": {
+      "title": "Switch to digital rental agreements",
+      "text": "Create your account and have your next rental signed by QR code.",
+      "button": "Create my account"
+    }
+  },
+  "pricing": {
+    "breadcrumb": "Pricing",
+    "eyebrow": "Prices in dirhams",
+    "h1": "KimiFleet car rental software pricing",
+    "intro": "One price, every feature: KimiFleet is paid per 3- or 6-month period, in dirhams, never per vehicle or per branch. The booking website, the mobile app and QR-signed agreements are included in every plan.",
+    "sections": [
+      {
+        "h2": "What every plan includes",
+        "bullets": [
+          "Unlimited branches and vehicles",
+          "Unlimited agreements and QR signatures",
+          "An online booking website for every branch",
+          "Mobile app for your team",
+          "Maintenance tracking, invoicing and payment tracking",
+          "Team management with role-based permissions",
+          "Customer support included, on WhatsApp"
+        ]
+      },
+      {
+        "h2": "Why a fixed price instead of a price per vehicle",
+        "paragraphs": [
+          "Most rental software charges per vehicle, often in euros. Your bill grows with every car you buy, exactly when you are investing.",
+          "With KimiFleet, the price depends on neither the number of vehicles nor the number of branches. You know the exact cost for the whole period and can grow your fleet without changing plans."
+        ]
+      },
+      {
+        "h2": "Billing and renewal",
+        "paragraphs": [
+          "The plan is paid once for the chosen period. Before it ends, you get a reminder to renew. The 6-month plan works out at about 217 MAD per month, saving 100 MAD compared with two 3-month plans."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Are there hidden fees?",
+        "a": "No. The plan price includes every feature, with no limit on branches, vehicles or agreements."
+      },
+      {
+        "q": "How do I pay for my subscription?",
+        "a": "Contact us on WhatsApp at +212 773 273 153: we will tell you the available payment methods and activate your plan."
+      },
+      {
+        "q": "Can I switch from the 3-month to the 6-month plan?",
+        "a": "Yes, when you renew you choose the plan that suits you."
+      }
+    ],
+    "cta": {
+      "title": "Ready to start?",
+      "text": "Create your account and choose your plan.",
+      "button": "Create my account"
+    }
+  },
+  "common": {
+    "home": "Home",
+    "related": "Read next",
+    "faq_title": "Frequently asked questions",
+    "whatsapp": "Talk to the team on WhatsApp"
+  }
+}

@@ -3,12 +3,15 @@ import { initReactI18next } from "react-i18next";
 
 import enTranslation from "./locales/en.json";
 import frTranslation from "./locales/fr.json";
+import enPages from "./locales/pages.en.json";
+import frPages from "./locales/pages.fr.json";
 import { DEFAULT_LANG, type Lang } from "./seo/routes";
 
 // Arabic (locales/ar.json) is not served yet: it needs its own /ar/ URLs and RTL prerendering.
+// Page content for the SEO pages (seo/routes.ts CONTENT_PAGES) lives in pages.<lang>.json, under `pages`.
 const resources = {
-  fr: { translation: frTranslation },
-  en: { translation: enTranslation },
+  fr: { translation: { ...frTranslation, pages: frPages } },
+  en: { translation: { ...enTranslation, pages: enPages } },
 };
 
 /**

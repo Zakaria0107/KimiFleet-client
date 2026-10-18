@@ -9,9 +9,14 @@ import { Routes, Route } from "react-router-dom";
 import { ROUTES, type PageId } from "./seo/routes";
 
 // Lazy load pages for code splitting. Keep in sync with PAGE_MODULES in seo/routes.ts.
+const ContentPage = lazy(() => import("./pages/ContentPage"));
 const pages: Record<PageId, ReturnType<typeof lazy>> = {
   home: lazy(() => import("./pages/Index")),
   privacy: lazy(() => import("./pages/PrivacyPolicy")),
+  bookingWebsite: ContentPage,
+  moroccoSoftware: ContentPage,
+  digitalContract: ContentPage,
+  pricing: ContentPage,
 };
 const NotFound = lazy(() => import("./pages/NotFound"));
 
