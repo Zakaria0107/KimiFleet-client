@@ -53,10 +53,9 @@ const ContentPage = () => {
                   {t("pages.common.home")}
                 </a>
               </li>
-              <li aria-hidden="true">
-                <ChevronRight size={14} />
-              </li>
-              <li className="text-gray-200" aria-current="page">
+              {/* The separator sits inside the item so the list has exactly two items, like the BreadcrumbList data. */}
+              <li className="flex items-center gap-2 text-gray-200" aria-current="page">
+                <ChevronRight size={14} aria-hidden="true" className="text-gray-400" />
                 {content.breadcrumb}
               </li>
             </ol>

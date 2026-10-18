@@ -14,9 +14,9 @@
   },
   "hero": {
     "badge": "Conçu pour les agences de location de voitures",
-    "title": "Logiciel de gestion de location de voitures au Maroc",
-    "subtitle": "KimiFleet remplace les tableurs et les contrats papier : réservations, contrats de location signés par QR code, entretien des véhicules et facturation, dans un seul logiciel pour votre agence.",
-    "cta": "Moderniser ma flotte",
+    "title": "Logiciel de gestion pour agences de location de voitures",
+    "subtitle": "KimiFleet remplace les tableurs et les contrats papier : réservations, contrats de location signés par QR code, entretien des véhicules et facturation, dans un seul logiciel pour votre agence au Maroc.",
+    "cta": "Voir les tarifs",
     "trial": "Commencer mon essai gratuit"
   },
   "problem": {
@@ -42,18 +42,20 @@
     "real_time_desc": "Synchronisez instantanément les réservations et les mises à jour de statut dans toutes vos agences opérationnelles.",
     "feature_1": "Administration centralisée de l'agence.",
     "feature_2": "Visibilité opérationnelle en temps réel.",
-    "feature_3": "Isolation des données multi-agences."
+    "feature_3": "Isolation des données multi-agences.",
+    "screenshot_alt": "Tableau de bord KimiFleet : tendance des revenus et indicateurs de la flotte"
   },
   "fleet": {
     "badge": "Gestion de flotte et d'actifs",
     "title": "Gestion de flotte et suivi de l'entretien des véhicules",
     "subtitle": "Suivez chaque véhicule de l'immatriculation à la cession. Recevez des alertes d'entretien automatiques basées sur le kilométrage pour maintenir votre flotte en parfait état.",
-    "odometer_title": "Suivi intelligent du compteur",
-    "odometer_desc": "Les mises à jour automatisées garantissent que vous ne manquez jamais un intervalle d'entretien critique.",
+    "odometer_title": "Alertes d'entretien selon le kilométrage",
+    "odometer_desc": "Votre équipe saisit le kilométrage de chaque véhicule ; KimiFleet vous alerte automatiquement avant chaque entretien.",
     "alerts_title": "Alertes prédictives",
     "alerts_desc": "Planification automatisée de la maintenance selon les intervalles d'entretien recommandés par le constructeur.",
     "resale_title": "Stratégie de revente",
-    "resale_desc": "L'historique d'entretien documenté garantit une valeur de revente plus élevée pour chaque véhicule."
+    "resale_desc": "L'historique d'entretien documenté garantit une valeur de revente plus élevée pour chaque véhicule.",
+    "screenshot_alt": "Tableau d'entretien KimiFleet avec le kilométrage et les tâches en attente"
   },
   "finance": {
     "badge": "Supervision financière",
@@ -67,7 +69,8 @@
     "auto_gen": "Généré automatiquement",
     "billed_to": "Facturé automatiquement à",
     "account": "Compte d'entreprise",
-    "cta": "Explorer les outils financiers"
+    "cta": "Explorer les outils financiers",
+    "powered_by": "Généré par KimiFleet"
   },
   "map": {
     "badge": "Intelligence opérationnelle",
@@ -92,7 +95,10 @@
     "scale_title": "Développez-vous en toute confiance",
     "scale_desc": "Gérez 10 ou 1 000 véhicules dans plusieurs villes en toute simplicité.",
     "revenue_title": "Revenus protégés",
-    "revenue_desc": "Ne perdez jamais un enregistrement de paiement ou un détail de contrat grâce à notre historique 100% numérique."
+    "revenue_desc": "Ne perdez jamais un enregistrement de paiement ou un détail de contrat grâce à notre historique 100 % numérique.",
+    "morocco_before": "Votre agence est au Maroc ? Découvrez notre ",
+    "morocco_link": "logiciel de location de voiture au Maroc",
+    "morocco_after": ", avec des prix en dirhams et une interface en français, en arabe et en anglais."
   },
   "process": {
     "badge": "Flux d'automatisation",

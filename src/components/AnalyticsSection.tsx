@@ -3,12 +3,13 @@ import { motion } from "framer-motion";
 import { BarChart3 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { ClientOnly } from "./ClientOnly";
+import { formatAmount, formatPercent } from "@/lib/format";
 
 // Recharts is browser-only and heavy: load it after hydration, outside the main chunk.
 const AnalyticsChart = lazy(() => import("./AnalyticsChart"));
 
 const AnalyticsSection = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   return (
     <section id="analytics" className="py-32 bg-white border-t border-gray-100">
       <div className="container mx-auto px-4">
@@ -38,11 +39,11 @@ const AnalyticsSection = () => {
             <div className="flex gap-6 mt-8">
               <div>
                 <p className="text-sm text-gray-500 mb-1">{t("analytics.avg_utilization")}</p>
-                <p className="font-display font-bold text-3xl text-gray-900">84.2%</p>
+                <p className="font-display font-bold text-3xl text-gray-900">{formatPercent(0.842, i18n.language)}</p>
               </div>
               <div className="w-px bg-gray-200" />
               <div>
-                <p className="text-3xl font-bold text-gray-900">+12%</p>
+                <p className="text-3xl font-bold text-gray-900">{formatPercent(0.12, i18n.language, { signed: true })}</p>
                 <p className="text-sm text-gray-500 mt-1">{t("analytics.revenue_growth")}</p>
               </div>
             </div>
@@ -61,8 +62,8 @@ const AnalyticsSection = () => {
                 <p className="text-xs text-gray-400">{t("analytics.weekly_performance")}</p>
               </div>
               <div className="text-right">
-                <p className="font-display font-bold text-xl text-gray-900">42,500.00 {t("common.mad")}</p>
-                <p className="text-xs text-green-600 font-medium">+15.2% {t("analytics.vs_last_week")}</p>
+                <p className="font-display font-bold text-xl text-gray-900">{formatAmount(42500, i18n.language)} {t("common.mad")}</p>
+                <p className="text-xs text-green-600 font-medium">{formatPercent(0.152, i18n.language, { signed: true })} {t("analytics.vs_last_week")}</p>
               </div>
             </div>
 

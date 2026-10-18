@@ -39,12 +39,12 @@ export const ROUTES: SeoRoute[] = [
     page: "home",
     lang: "fr",
     path: "/fr/",
-    title: "Logiciel de location de voiture au Maroc | KimiFleet",
+    title: "Logiciel de gestion de location de voitures | KimiFleet",
     description:
       "Logiciel de gestion pour agences de location de voitures au Maroc : contrats digitaux signés par QR code, réservations, entretien et facturation. Essai gratuit.",
     ogImageAlt: "KimiFleet, logiciel de gestion de location de voitures",
     jsonLd: ["Organization", "SoftwareApplication", "FAQPage"],
-    lastmod: "2026-10-17",
+    lastmod: "2026-10-18",
   },
   {
     page: "home",
@@ -55,7 +55,7 @@ export const ROUTES: SeoRoute[] = [
       "Car rental management software for rental agencies: QR-signed digital contracts, bookings, vehicle maintenance and invoicing in one place. Start your free trial.",
     ogImageAlt: "KimiFleet car rental management software",
     jsonLd: ["Organization", "SoftwareApplication", "FAQPage"],
-    lastmod: "2026-10-17",
+    lastmod: "2026-10-18",
   },
   {
     page: "privacy",
@@ -104,7 +104,7 @@ export const ROUTES: SeoRoute[] = [
     page: "moroccoSoftware",
     lang: "fr",
     path: "/fr/logiciel-location-voiture-maroc",
-    title: "Gestion d'agence de location de voitures au Maroc | KimiFleet",
+    title: "Logiciel de location de voiture au Maroc | KimiFleet",
     description:
       "Logiciel de gestion conçu pour les agences de location de voitures au Maroc : prix en MAD, contrats signés par QR code, multi-agences, en français et arabe.",
     ogImageAlt: "KimiFleet, logiciel de gestion de location de voitures",

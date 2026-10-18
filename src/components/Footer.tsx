@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div>
             <div className="flex items-start gap-2 mb-6 p-0 -mt-10">
-              <img src="/logo.png" alt="Kimifleet" className="h-32 w-auto" />
+              <img src="/logo.png" alt="KimiFleet" className="h-32 w-auto" />
             </div>
             <p className="text-gray-400 font-body text-sm leading-relaxed mb-6">
               {t("footer.desc")}
@@ -84,7 +84,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-gray-500 font-body text-sm">
-            © {new Date().getFullYear()} Kimifleet. {t("footer.rights")}
+            © {new Date().getFullYear()} KimiFleet. {t("footer.rights")}
           </p>
           <div className="flex items-center gap-6">
             <a href={pathFor("privacy", lang)} className="text-gray-500 font-body text-sm hover:text-blue-400 transition-colors">

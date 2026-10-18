@@ -58,7 +58,7 @@ const CommandCenterSection = () => {
 
             <img
               src={commandImg}
-              alt="KimiFleet dashboard overview with revenue trends and fleet KPIs"
+              alt={t("solution.screenshot_alt")}
               className="relative z-10 w-full h-auto rounded-3xl shadow-2xl border border-white/10"
             />
 

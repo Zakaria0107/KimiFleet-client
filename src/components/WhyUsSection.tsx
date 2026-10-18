@@ -1,9 +1,12 @@
 import { motion } from "framer-motion";
 import { Shield, Rocket, Target, Zap } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { useLocation } from "react-router-dom";
+import { langFromPath, pathFor } from "@/seo/routes";
 
 const WhyUsSection = () => {
   const { t } = useTranslation();
+  const lang = langFromPath(useLocation().pathname);
   const features = [
     {
       icon: <Target className="text-blue-600" />,
@@ -60,6 +63,15 @@ const WhyUsSection = () => {
             </motion.div>
           ))}
         </div>
+
+        {/* Contextual link to the Morocco page (internal linking for "logiciel location voiture Maroc") */}
+        <p className="max-w-2xl mx-auto mt-12 text-center text-gray-600 leading-relaxed">
+          {t("benefits.morocco_before")}
+          <a href={pathFor("moroccoSoftware", lang)} className="font-semibold text-blue-600 underline underline-offset-4 hover:text-blue-700">
+            {t("benefits.morocco_link")}
+          </a>
+          {t("benefits.morocco_after")}
+        </p>
       </div>
     </section>
   );

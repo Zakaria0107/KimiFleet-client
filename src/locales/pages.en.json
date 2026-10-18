@@ -34,11 +34,11 @@
       {
         "h2": "Your agency's branding, in three languages",
         "paragraphs": [
-          "The website uses your logo, banner and welcome text. It is available in French, English and Arabic, which helps with tourists and with Moroccans living abroad who rent during the summer.",
+          "The website uses your colors, logo, banner and welcome text. It is available in French, English and Arabic, which helps with tourists and with Moroccans living abroad who rent during the summer.",
           "The contact page shows your address, phone number and a WhatsApp button, the channel your customers already use."
         ],
         "bullets": [
-          "Custom logo, banner and welcome text",
+          "Your colors, logo, banner and welcome text",
           "French, English and Arabic",
           "WhatsApp button, phone and agency address",
           "Terms and privacy pages included"
@@ -79,7 +79,7 @@
   "moroccoSoftware": {
     "breadcrumb": "Car rental software Morocco",
     "eyebrow": "Built in Morocco, for Morocco",
-    "h1": "Car rental management software for agencies in Morocco",
+    "h1": "Car rental software for Morocco, built for Moroccan agencies",
     "intro": "KimiFleet is car rental software based in Agadir and built for Moroccan agencies. Bookings, QR-signed agreements, vehicle maintenance and invoicing in dirhams: everything an agency handles every day, in one tool, in French, Arabic and English.",
     "sections": [
       {

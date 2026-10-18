@@ -2,10 +2,13 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Users } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { useLocation } from "react-router-dom";
+import { langFromPath, pathFor } from "@/seo/routes";
 import heroImg from "@/assets/hero-keys.webp";
 
 const HeroSection = ({ onContactOpen }: { onContactOpen?: () => void }) => {
   const { t } = useTranslation();
+  const lang = langFromPath(useLocation().pathname);
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -84,9 +87,7 @@ const HeroSection = ({ onContactOpen }: { onContactOpen?: () => void }) => {
           </a>
 
           <a
-            href="https://kimifleet.com/dashboard/"
-            target="_blank"
-            rel="noopener"
+            href={pathFor("pricing", lang)}
             className="bg-blue-600 text-white px-8 py-4 rounded-lg font-body font-bold text-lg hover:bg-blue-700 transition-all flex items-center justify-center gap-2 group shadow-xl"
           >
             {t("hero.cta")}

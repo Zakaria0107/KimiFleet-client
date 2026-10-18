@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
 import { FileText, CheckCircle2, TrendingUp } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { formatAmount } from "@/lib/format";
 
 const FinancialPulseSection = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const amount = (value: number) => `${formatAmount(value, i18n.language)} ${t("common.mad")}`;
   return (
     <section id="invoicing" className="py-32 bg-gray-50 overflow-hidden">
       <div className="container mx-auto px-4">
@@ -50,22 +52,22 @@ const FinancialPulseSection = () => {
                 </div>
                 <div className="text-right">
                   <p className="text-sm text-gray-400">{t("finance.amount_due")}</p>
-                  <p className="font-display font-bold text-3xl text-black">8,420.50 {t("common.mad")}</p>
+                  <p className="font-display font-bold text-3xl text-black">{amount(8420.5)}</p>
                 </div>
               </div>
 
               <div className="space-y-6">
                 <div className="flex justify-between items-center text-sm">
                   <span className="text-gray-500">{t("finance.base_rental")}</span>
-                  <span className="font-medium text-gray-900">3,500.00 {t("common.mad")}</span>
+                  <span className="font-medium text-gray-900">{amount(3500)}</span>
                 </div>
                 <div className="flex justify-between items-center text-sm">
                   <span className="text-gray-500">{t("finance.security_deposit")}</span>
-                  <span className="font-medium text-gray-900">4,500.00 {t("common.mad")}</span>
+                  <span className="font-medium text-gray-900">{amount(4500)}</span>
                 </div>
                 <div className="flex justify-between items-center text-sm">
                   <span className="text-gray-500">{t("finance.insurance")}</span>
-                  <span className="font-medium text-gray-900">420.50 {t("common.mad")}</span>
+                  <span className="font-medium text-gray-900">{amount(420.5)}</span>
                 </div>
               </div>
 
@@ -74,7 +76,7 @@ const FinancialPulseSection = () => {
                   <CheckCircle2 size={14} />
                   <span>{t("finance.auto_gen")}</span>
                 </div>
-                <p className="text-xs text-gray-400">Powered by Kimifleet</p>
+                <p className="text-xs text-gray-400">{t("finance.powered_by")}</p>
               </div>
             </div>
 

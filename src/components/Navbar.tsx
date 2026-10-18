@@ -66,7 +66,7 @@ const Navbar = ({ onContactOpen }: { onContactOpen?: () => void }) => {
             <div className="h-10 w-32 overflow-hidden flex items-center">
               <img
                 src="/logo2.png"
-                alt="Kimifleet"
+                alt="KimiFleet"
                 className={` h-32 object-cover transition-all duration-300 ${shouldShowWhite ? "" : "brightness-0 invert"
                   }`}
               />

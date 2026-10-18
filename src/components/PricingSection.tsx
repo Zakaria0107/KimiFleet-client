@@ -2,9 +2,10 @@ import { motion } from "framer-motion";
 import { Check, Sparkles } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { PLANS } from "@/data/pricing";
+import { formatNumber } from "@/lib/format";
 
 const PricingSection = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const features = [
     t("pricing.feature_1"),
@@ -70,7 +71,7 @@ const PricingSection = () => {
 
               <div className="flex items-baseline gap-2 mt-4 mb-1">
                 <span className={`text-5xl font-bold tracking-tight ${plan.highlighted ? "text-white" : "text-gray-900"}`}>
-                  {plan.price}
+                  {formatNumber(plan.price, i18n.language)}
                 </span>
                 <span className={plan.highlighted ? "text-gray-300" : "text-gray-500"}>{t("common.mad")}</span>
               </div>
