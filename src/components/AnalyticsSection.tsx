@@ -62,7 +62,7 @@ const AnalyticsSection = () => {
                 <p className="text-xs text-gray-400">{t("analytics.weekly_performance")}</p>
               </div>
               <div className="text-right">
-                <p className="font-display font-bold text-xl text-gray-900">{formatAmount(42500, i18n.language)} {t("common.mad")}</p>
+                <p className="font-display font-bold text-xl text-gray-900">{formatAmount(42500, i18n.language)}{"\u00a0"}{t("common.mad")}</p>
                 <p className="text-xs text-green-600 font-medium">{formatPercent(0.152, i18n.language, { signed: true })} {t("analytics.vs_last_week")}</p>
               </div>
             </div>

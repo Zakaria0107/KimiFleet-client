@@ -119,7 +119,7 @@
       {
         "h2": "Simple pricing in dirhams, never per vehicle",
         "paragraphs": [
-          "KimiFleet is paid per period: 700 MAD for 3 months or 1,300 MAD for 6 months. Branches, vehicles and agreements are unlimited on every plan. An agency with 10 cars and a network with 200 vehicles pay the same price."
+          "KimiFleet is paid per period: 700 MAD for 3 months or 1,300 MAD for 6 months. Branches, vehicles and agreements are unlimited on every plan. An agency with 10 cars and a network with 200 vehicles pay the same price."
         ]
       }
     ],
@@ -229,7 +229,7 @@
       {
         "h2": "Billing and renewal",
         "paragraphs": [
-          "The plan is paid once for the chosen period. Before it ends, you get a reminder to renew. The 6-month plan works out at about 217 MAD per month, saving 100 MAD compared with two 3-month plans."
+          "The plan is paid once for the chosen period. During the last 7 days of the period, a renewal reminder appears every day in your dashboard and in the mobile app. The 6-month plan works out at about 217 MAD per month, saving 100 MAD compared with two 3-month plans."
         ]
       }
     ],
@@ -251,7 +251,8 @@
       "title": "Ready to start?",
       "text": "Create your account and choose your plan.",
       "button": "Create my account"
-    }
+    },
+    "plans_title": "Choose your plan"
   },
   "common": {
     "home": "Home",

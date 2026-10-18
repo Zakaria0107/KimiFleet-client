@@ -5,7 +5,7 @@ import { formatAmount } from "@/lib/format";
 
 const FinancialPulseSection = () => {
   const { t, i18n } = useTranslation();
-  const amount = (value: number) => `${formatAmount(value, i18n.language)} ${t("common.mad")}`;
+  const amount = (value: number) => `${formatAmount(value, i18n.language)}\u00a0${t("common.mad")}`;
   return (
     <section id="invoicing" className="py-32 bg-gray-50 overflow-hidden">
       <div className="container mx-auto px-4">

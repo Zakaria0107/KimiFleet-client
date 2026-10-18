@@ -41,7 +41,7 @@ export const ROUTES: SeoRoute[] = [
     path: "/fr/",
     title: "Logiciel de gestion de location de voitures | KimiFleet",
     description:
-      "Logiciel de gestion pour agences de location de voitures au Maroc : contrats digitaux signés par QR code, réservations, entretien et facturation. Essai gratuit.",
+      "Logiciel de gestion pour agences de location de voitures au Maroc : contrats signés par QR code, réservations, entretien et facturation. Créez votre compte.",
     ogImageAlt: "KimiFleet, logiciel de gestion de location de voitures",
     jsonLd: ["Organization", "SoftwareApplication", "FAQPage"],
     lastmod: "2026-10-18",
@@ -52,7 +52,7 @@ export const ROUTES: SeoRoute[] = [
     path: "/en/",
     title: "Car Rental Management Software | KimiFleet",
     description:
-      "Car rental management software for rental agencies: QR-signed digital contracts, bookings, vehicle maintenance and invoicing in one place. Start your free trial.",
+      "Car rental management software for rental agencies: QR-signed digital contracts, bookings, vehicle maintenance and invoicing in one place. Create your account.",
     ogImageAlt: "KimiFleet car rental management software",
     jsonLd: ["Organization", "SoftwareApplication", "FAQPage"],
     lastmod: "2026-10-18",
@@ -150,7 +150,7 @@ export const ROUTES: SeoRoute[] = [
     path: "/fr/tarifs",
     title: "Tarifs du logiciel de location de voiture | KimiFleet",
     description:
-      "Tarifs KimiFleet en dirhams : 700 MAD pour 3 mois ou 1 300 MAD pour 6 mois. Agences, véhicules et contrats illimités, toutes les fonctionnalités incluses.",
+      "Tarifs KimiFleet en dirhams : 700 MAD pour 3 mois ou 1 300 MAD pour 6 mois. Agences, véhicules et contrats illimités, toutes les fonctionnalités incluses.",
     ogImageAlt: "KimiFleet, logiciel de gestion de location de voitures",
     jsonLd: ["Organization", "SoftwareApplication", "BreadcrumbList", "FAQPage"],
     lastmod: "2026-10-18",
@@ -161,7 +161,7 @@ export const ROUTES: SeoRoute[] = [
     path: "/en/pricing",
     title: "Car Rental Software Pricing in MAD | KimiFleet",
     description:
-      "KimiFleet pricing in dirhams: 700 MAD for 3 months or 1,300 MAD for 6 months. Unlimited branches, vehicles and agreements, every feature included.",
+      "KimiFleet pricing in dirhams: 700 MAD for 3 months or 1,300 MAD for 6 months. Unlimited branches, vehicles and agreements, every feature included.",
     ogImageAlt: "KimiFleet car rental management software",
     jsonLd: ["Organization", "SoftwareApplication", "BreadcrumbList", "FAQPage"],
     lastmod: "2026-10-18",

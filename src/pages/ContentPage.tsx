@@ -91,7 +91,7 @@ const ContentPage = () => {
         </div>
       </section>
 
-      {page === "pricing" && <PricingSection />}
+      {page === "pricing" && <PricingSection title={t("pages.pricing.plans_title")} />}
 
       {/* Sections */}
       <article className="py-16 md:py-20">

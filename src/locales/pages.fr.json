@@ -119,7 +119,7 @@
       {
         "h2": "Un prix simple, en dirhams, sans facturation au véhicule",
         "paragraphs": [
-          "KimiFleet se paie par période : 700 MAD pour 3 mois ou 1 300 MAD pour 6 mois. Le nombre d'agences, de véhicules et de contrats est illimité, quel que soit le plan. Une agence de 10 voitures et un réseau de 200 véhicules paient le même prix."
+          "KimiFleet se paie par période : 700 MAD pour 3 mois ou 1 300 MAD pour 6 mois. Le nombre d'agences, de véhicules et de contrats est illimité, quel que soit le plan. Une agence de 10 voitures et un réseau de 200 véhicules paient le même prix."
         ]
       }
     ],
@@ -229,7 +229,7 @@
       {
         "h2": "Facturation et renouvellement",
         "paragraphs": [
-          "Le plan est réglé une fois pour la période choisie. Avant la fin de la période, vous recevez un rappel pour renouveler. Le plan de 6 mois revient à environ 217 MAD par mois, soit 100 MAD d'économie par rapport à deux plans de 3 mois."
+          "Le plan est réglé une fois pour la période choisie. Pendant les 7 derniers jours de la période, un rappel de renouvellement s'affiche chaque jour dans votre tableau de bord et sur l'application mobile. Le plan de 6 mois revient à environ 217 MAD par mois, soit 100 MAD d'économie par rapport à deux plans de 3 mois."
         ]
       }
     ],
@@ -251,7 +251,8 @@
       "title": "Prêt à commencer ?",
       "text": "Créez votre compte et choisissez votre plan.",
       "button": "Créer mon compte"
-    }
+    },
+    "plans_title": "Choisissez votre plan"
   },
   "common": {
     "home": "Accueil",

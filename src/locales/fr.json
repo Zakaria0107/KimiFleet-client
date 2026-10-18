@@ -17,7 +17,7 @@
     "title": "Logiciel de gestion pour agences de location de voitures",
     "subtitle": "KimiFleet remplace les tableurs et les contrats papier : réservations, contrats de location signés par QR code, entretien des véhicules et facturation, dans un seul logiciel pour votre agence au Maroc.",
     "cta": "Voir les tarifs",
-    "trial": "Commencer mon essai gratuit"
+    "trial": "Créer mon compte"
   },
   "problem": {
     "badge": "Inefficacité opérationnelle",
@@ -121,8 +121,8 @@
     "plan3_name": "Plan 3 mois",
     "plan6_name": "Plan 6 mois",
     "best_value": "Meilleure offre",
-    "savings": "Économisez 100 MAD par rapport au plan 3 mois",
-    "per_month": "≈ {{amount}} MAD / mois",
+    "savings": "Économisez 100 MAD par rapport au plan 3 mois",
+    "per_month": "≈ {{amount}} MAD / mois",
     "feature_1": "Entreprises/agences illimitées",
     "feature_2": "Véhicules illimités",
     "feature_3": "Accès complet au tableau de bord",

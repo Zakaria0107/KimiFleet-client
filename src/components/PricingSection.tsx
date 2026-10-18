@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { PLANS } from "@/data/pricing";
 import { formatNumber } from "@/lib/format";
 
-const PricingSection = () => {
+const PricingSection = ({ title }: { title?: string } = {}) => {
   const { t, i18n } = useTranslation();
 
   const features = [
@@ -38,7 +38,7 @@ const PricingSection = () => {
             <span>{t("pricing.badge")}</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
-            {t("pricing.title")}
+            {title ?? t("pricing.title")}
           </h2>
           <p className="text-gray-500 text-lg max-w-2xl mx-auto">
             {t("pricing.subtitle")}
@@ -69,11 +69,11 @@ const PricingSection = () => {
                 {plan.name}
               </h3>
 
-              <div className="flex items-baseline gap-2 mt-4 mb-1">
+              <div className="flex items-baseline gap-1 mt-4 mb-1">
                 <span className={`text-5xl font-bold tracking-tight ${plan.highlighted ? "text-white" : "text-gray-900"}`}>
                   {formatNumber(plan.price, i18n.language)}
                 </span>
-                <span className={plan.highlighted ? "text-gray-300" : "text-gray-500"}>{t("common.mad")}</span>
+                <span className={plan.highlighted ? "text-gray-300" : "text-gray-500"}>{"\u00a0"}{t("common.mad")}</span>
               </div>
               <p className={`text-xs mb-2 ${plan.highlighted ? "text-gray-400" : "text-gray-400"}`}>
                 {t("pricing.per_month", { amount: plan.perMonth })}

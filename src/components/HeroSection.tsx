@@ -78,7 +78,7 @@ const HeroSection = ({ onContactOpen }: { onContactOpen?: () => void }) => {
           className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
         >
           <a
-            href="https://kimifleet.com/dashboard/"
+            href="https://kimifleet.com/dashboard/signup"
             target="_blank"
             rel="noopener"
             className="bg-white text-black px-8 py-4 rounded-lg font-body font-bold text-base tracking-tight hover:bg-white/90 transition-all shadow-lg"
