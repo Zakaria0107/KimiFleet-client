@@ -19,7 +19,6 @@ const pages: Record<PageId, ReturnType<typeof lazy>> = {
   digitalContract: ContentPage,
   pricing: ContentPage,
   terms: LegalPage,
-  legalNotice: LegalPage,
 };
 const NotFound = lazy(() => import("./pages/NotFound"));
 

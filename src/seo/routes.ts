@@ -22,8 +22,7 @@ export type PageId =
   | "moroccoSoftware"
   | "digitalContract"
   | "pricing"
-  | "terms"
-  | "legalNotice";
+  | "terms";
 
 /** Pages rendered by ContentPage from the `pages.<id>` content in src/locales/pages.<lang>.json. */
 export const CONTENT_PAGES = ["bookingWebsite", "moroccoSoftware", "digitalContract", "pricing"] as const;
@@ -179,7 +178,7 @@ export const ROUTES: SeoRoute[] = [
     jsonLd: ["Organization", "SoftwareApplication", "BreadcrumbList", "FAQPage"],
     lastmod: "2026-10-18",
   },
-  // Legal pages (terms of service, legal notice). Kept `noindex` for now, so they stay out of
+  // Terms of service (FR/EN). Kept `noindex` for now, so they stay out of
   // search results and the sitemap while the wording is being finalised.
   // To index them once the final legal text is in: delete the `noindex: true` lines below,
   // update `lastmod`, rebuild (they are then added to sitemap.xml automatically), and
@@ -207,18 +206,6 @@ export const ROUTES: SeoRoute[] = [
     lastmod: "2026-10-18",
     noindex: true,
   },
-  // French only: the legal notice is required for the French-language site.
-  {
-    page: "legalNotice",
-    lang: "fr",
-    path: "/fr/mentions-legales",
-    title: "Mentions légales | KimiFleet",
-    description: "Mentions légales du site KimiFleet : éditeur, contact et hébergement.",
-    ogImageAlt: "KimiFleet, logiciel de gestion de location de voitures",
-    jsonLd: ["Organization", "BreadcrumbList"],
-    lastmod: "2026-10-18",
-    noindex: true,
-  },
 ];
 
 /** Prerendered to dist/404.html and served by nginx for unknown URLs. */
@@ -236,7 +223,6 @@ export const PAGE_MODULES: Record<PageId | "notFound", string> = {
   digitalContract: "src/pages/ContentPage.tsx",
   pricing: "src/pages/ContentPage.tsx",
   terms: "src/pages/LegalPage.tsx",
-  legalNotice: "src/pages/LegalPage.tsx",
   notFound: "src/pages/NotFound.tsx",
 };
 

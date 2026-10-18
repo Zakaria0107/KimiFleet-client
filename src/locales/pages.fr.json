@@ -309,27 +309,5 @@
         "text": "Les présentes conditions sont régies par le droit marocain."
       }
     ]
-  },
-  "legalNotice": {
-    "breadcrumb": "Mentions légales",
-    "h1": "Mentions légales",
-    "sections": [
-      {
-        "h2": "Éditeur du site",
-        "text": "Zakaria Bijaddigune, développeur indépendant, Agadir, Maroc."
-      },
-      {
-        "h2": "Directeur de la publication",
-        "text": "Zakaria Bijaddigune."
-      },
-      {
-        "h2": "Contact",
-        "text": "E-mail : zakariabijaddigune1234@gmail.com. Téléphone et WhatsApp : +212 773 273 153."
-      },
-      {
-        "h2": "Hébergement",
-        "text": "Serveur : DigitalOcean, LLC, 105 Edgeview Drive, Suite 425, Broomfield, CO 80021, États-Unis. Diffusion du site (CDN), DNS et stockage des fichiers : Cloudflare, Inc., 101 Townsend Street, San Francisco, CA 94107, États-Unis."
-      }
-    ]
   }
 }

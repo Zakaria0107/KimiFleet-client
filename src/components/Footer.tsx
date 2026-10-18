@@ -94,12 +94,6 @@ const Footer = () => {
             <a href={pathFor("terms", lang)} className="text-gray-500 font-body text-sm hover:text-blue-400 transition-colors">
               {t("footer.terms")}
             </a>
-            {/* The legal notice exists in French only. */}
-            {lang === "fr" && (
-              <a href={pathFor("legalNotice", "fr")} className="text-gray-500 font-body text-sm hover:text-blue-400 transition-colors">
-                {t("footer.legal_notice")}
-              </a>
-            )}
             <a href={homePath} className="text-gray-500 font-body text-sm hover:text-blue-400 transition-colors">
               {t("footer.solutions")}
             </a>

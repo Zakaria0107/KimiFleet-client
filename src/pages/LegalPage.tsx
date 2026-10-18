@@ -14,7 +14,7 @@ interface LegalContent {
 }
 
 /**
- * Legal pages (terms of service, legal notice). The text comes from `pages.<id>` in
+ * Legal pages (terms of service). The text comes from `pages.<id>` in
  * src/locales/pages.<lang>.json.
  */
 const LegalPage = () => {
