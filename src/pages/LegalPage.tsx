@@ -8,13 +8,14 @@ import { findRoute, pathFor } from "@/seo/routes";
 interface LegalContent {
   breadcrumb: string;
   h1: string;
-  notice: string;
+  /** Optional banner above the text, e.g. while a page is still a draft. */
+  notice?: string;
   sections: { h2: string; text: string }[];
 }
 
 /**
  * Legal pages (terms of service, legal notice). The text comes from `pages.<id>` in
- * src/locales/pages.<lang>.json and is placeholder content until validated by legal counsel.
+ * src/locales/pages.<lang>.json.
  */
 const LegalPage = () => {
   const { t } = useTranslation();
@@ -48,10 +49,12 @@ const LegalPage = () => {
 
       <article className="py-16">
         <div className="container mx-auto px-6 lg:px-12 max-w-3xl">
-          <p className="flex gap-3 items-start rounded-xl border border-amber-300 bg-amber-50 px-5 py-4 mb-12 font-body text-sm text-amber-900 leading-relaxed">
-            <FileWarning size={18} className="shrink-0 mt-0.5" aria-hidden="true" />
-            {content.notice}
-          </p>
+          {content.notice && (
+            <p className="flex gap-3 items-start rounded-xl border border-amber-300 bg-amber-50 px-5 py-4 mb-12 font-body text-sm text-amber-900 leading-relaxed">
+              <FileWarning size={18} className="shrink-0 mt-0.5" aria-hidden="true" />
+              {content.notice}
+            </p>
+          )}
           <div className="space-y-10">
             {content.sections.map((section) => (
               <section key={section.h2}>

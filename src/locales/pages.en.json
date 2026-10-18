@@ -263,39 +263,50 @@
   "terms": {
     "breadcrumb": "Terms of service",
     "h1": "Terms of service",
-    "notice": "Document in preparation. Sections marked \"To be validated\" are provisional texts, to be completed and validated with legal counsel before final publication.",
     "sections": [
       {
-        "h2": "1. Purpose",
-        "text": "[To be validated] Describe the purpose of these terms: access to the KimiFleet software (dashboard, agency booking website, mobile app) for car rental agencies."
+        "h2": "1. The service",
+        "text": "KimiFleet is management software for car rental agencies: a dashboard, the agency's booking website and a mobile app. It is provided by Zakaria Bijaddigune, an independent developer based in Agadir, Morocco."
       },
       {
         "h2": "2. Account and access",
-        "text": "[To be validated] Specify how accounts are created, responsibility for login credentials, and team member accounts with their roles and access rights."
+        "text": "The agency creates its account on kimifleet.com and is responsible for its login credentials and for the access it gives to its team members."
       },
       {
         "h2": "3. Subscription and payment",
-        "text": "[To be validated] Available plans: 3 months (700 MAD) or 6 months (1,300 MAD). After signup, the KimiFleet team contacts the customer on WhatsApp to confirm the plan and payment. To specify: accepted payment methods, invoicing, applicable taxes."
+        "text": "Two plans are available: 3 months for 700 MAD or 6 months for 1,300 MAD. After signup, the plan and payment are confirmed with the agency on WhatsApp."
       },
       {
-        "h2": "4. End of period and renewal",
-        "text": "[To be validated] During the last 7 days of the period, a renewal reminder appears in the dashboard and the mobile app. To specify: what happens at the end of the period without renewal."
+        "h2": "4. Renewal",
+        "text": "During the last 7 days of the period, a renewal reminder appears in the dashboard and in the mobile app."
       },
       {
-        "h2": "5. Customer data and data export",
-        "text": "[To be validated] Specify who owns the data entered by the agency (vehicles, customers, rentals). The dashboard currently exports customers, vehicles and maintenance records as CSV. To specify: data retention and deletion after the contract ends."
+        "h2": "5. The agency's data",
+        "text": "The data entered by the agency (vehicles, customers, rentals) belongs to the agency. It can export its customers, vehicles and maintenance records as CSV from the dashboard at any time. Other data (rentals, invoices) can be provided on request."
       },
       {
-        "h2": "6. Termination",
-        "text": "[To be validated] Specify termination conditions for the customer and for KimiFleet, and the applicable notice periods."
+        "h2": "6. Data about the agency's customers",
+        "text": "The agency stores personal data about its own customers in KimiFleet (identity, contact details, ID documents, driving licences). The agency is responsible for collecting and using this data in line with Moroccan law, including law 09-08. The provider processes this data only to provide the service, does not use it for any other purpose and does not sell it."
       },
       {
-        "h2": "7. Liability",
-        "text": "[To be validated] Limitation of liability to be drafted with legal counsel."
+        "h2": "7. Rental agreements and conditions",
+        "text": "KimiFleet is a tool. The agency sets its own rental conditions and remains solely responsible for the content of its agreements, its prices and its relationship with its customers."
       },
       {
-        "h2": "8. Applicable law",
-        "text": "[To be validated] Moroccan law. Competent court to be specified."
+        "h2": "8. End of the subscription",
+        "text": "Either the agency or the provider can end the subscription at the end of a period. The agency's data is kept and remains exportable. For any request about deleting its data, the agency can contact the provider."
+      },
+      {
+        "h2": "9. Service availability",
+        "text": "The provider does its best to keep the service available, without guaranteeing continuous or uninterrupted operation. Interruptions may occur, for example for maintenance or after an incident. The provider's liability is limited to the amount paid by the agency for the current period."
+      },
+      {
+        "h2": "10. Changes to these terms",
+        "text": "The provider may update these terms. Agencies are informed of any significant change before it takes effect."
+      },
+      {
+        "h2": "11. Applicable law",
+        "text": "These terms are governed by Moroccan law."
       }
     ]
   }

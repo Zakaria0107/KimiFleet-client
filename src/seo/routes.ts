@@ -179,8 +179,8 @@ export const ROUTES: SeoRoute[] = [
     jsonLd: ["Organization", "SoftwareApplication", "BreadcrumbList", "FAQPage"],
     lastmod: "2026-10-18",
   },
-  // Legal pages: placeholder content marked "À valider" until reviewed by legal counsel.
-  // They are `noindex` so the placeholder text does not appear in search results.
+  // Legal pages (terms of service, legal notice). Kept `noindex` for now, so they stay out of
+  // search results and the sitemap while the wording is being finalised.
   // To index them once the final legal text is in: delete the `noindex: true` lines below,
   // update `lastmod`, rebuild (they are then added to sitemap.xml automatically), and
   // request indexing in Google Search Console.
@@ -213,7 +213,7 @@ export const ROUTES: SeoRoute[] = [
     lang: "fr",
     path: "/fr/mentions-legales",
     title: "Mentions légales | KimiFleet",
-    description: "Mentions légales du site KimiFleet : éditeur, immatriculation, contact et hébergement.",
+    description: "Mentions légales du site KimiFleet : éditeur, contact et hébergement.",
     ogImageAlt: "KimiFleet, logiciel de gestion de location de voitures",
     jsonLd: ["Organization", "BreadcrumbList"],
     lastmod: "2026-10-18",

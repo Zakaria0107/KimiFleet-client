@@ -263,66 +263,72 @@
   "terms": {
     "breadcrumb": "Conditions générales",
     "h1": "Conditions générales d'utilisation",
-    "notice": "Document en préparation. Les sections marquées « À valider » sont des textes provisoires, à compléter et valider avec un conseil juridique avant publication définitive.",
     "sections": [
       {
-        "h2": "1. Objet",
-        "text": "[À valider] Décrire l'objet des présentes conditions : l'accès au logiciel KimiFleet (tableau de bord, site de réservation de l'agence, application mobile) par les agences de location de voitures."
+        "h2": "1. Le service",
+        "text": "KimiFleet est un logiciel de gestion pour les agences de location de voitures : tableau de bord, site de réservation de l'agence et application mobile. Il est fourni par Zakaria Bijaddigune, développeur indépendant basé à Agadir, Maroc."
       },
       {
         "h2": "2. Compte et accès",
-        "text": "[À valider] Préciser les conditions de création du compte, la responsabilité des identifiants de connexion, et les comptes des membres d'équipe avec leurs rôles et droits d'accès."
+        "text": "L'agence crée son compte sur kimifleet.com et reste responsable de ses identifiants de connexion, ainsi que des accès qu'elle donne aux membres de son équipe."
       },
       {
         "h2": "3. Abonnement et paiement",
-        "text": "[À valider] Plans disponibles : 3 mois (700 MAD) ou 6 mois (1 300 MAD). Après l'inscription, l'équipe KimiFleet contacte le client sur WhatsApp pour confirmer le plan et le paiement. À préciser : moyens de paiement acceptés, facturation, taxes applicables."
+        "text": "Deux plans sont proposés : 3 mois pour 700 MAD ou 6 mois pour 1 300 MAD. Après l'inscription, le plan et le paiement sont confirmés avec l'agence sur WhatsApp."
       },
       {
-        "h2": "4. Fin de période et renouvellement",
-        "text": "[À valider] Pendant les 7 derniers jours de la période, un rappel de renouvellement s'affiche dans le tableau de bord et l'application mobile. À préciser : ce qui se passe à l'échéance en l'absence de renouvellement."
+        "h2": "4. Renouvellement",
+        "text": "Pendant les 7 derniers jours de la période, un rappel de renouvellement s'affiche dans le tableau de bord et dans l'application mobile."
       },
       {
-        "h2": "5. Données clients et export des données",
-        "text": "[À valider] Préciser à qui appartiennent les données saisies par l'agence (véhicules, clients, locations). Le tableau de bord permet aujourd'hui d'exporter en CSV les clients, les véhicules et les entretiens. À préciser : conservation et suppression des données après la fin du contrat."
+        "h2": "5. Les données de l'agence",
+        "text": "Les données saisies par l'agence (véhicules, clients, locations) lui appartiennent. Elle peut exporter à tout moment ses clients, ses véhicules et ses entretiens au format CSV depuis le tableau de bord. Les autres données (locations, factures) peuvent être fournies sur demande."
       },
       {
-        "h2": "6. Résiliation",
-        "text": "[À valider] Préciser les conditions de résiliation par le client et par KimiFleet, ainsi que les délais applicables."
+        "h2": "6. Données des clients de l'agence",
+        "text": "L'agence enregistre dans KimiFleet des données personnelles de ses propres clients (identité, coordonnées, pièces d'identité, permis de conduire). Elle est responsable de leur collecte et de leur utilisation conformément à la loi marocaine, notamment la loi 09-08. L'éditeur traite ces données uniquement pour fournir le service, ne les utilise pas à d'autres fins et ne les vend pas."
       },
       {
-        "h2": "7. Responsabilité",
-        "text": "[À valider] Limites de responsabilité à rédiger avec un conseil juridique."
+        "h2": "7. Contrats et conditions de location",
+        "text": "KimiFleet est un outil. L'agence fixe ses propres conditions de location et reste seule responsable du contenu de ses contrats, de ses tarifs et de ses relations avec ses clients."
       },
       {
-        "h2": "8. Droit applicable",
-        "text": "[À valider] Droit marocain. Tribunal compétent à préciser."
+        "h2": "8. Fin de l'abonnement",
+        "text": "L'agence comme l'éditeur peuvent mettre fin à l'abonnement à la fin d'une période. Les données de l'agence restent conservées et exportables. Pour toute demande concernant la suppression de ses données, l'agence peut contacter l'éditeur."
+      },
+      {
+        "h2": "9. Disponibilité du service",
+        "text": "L'éditeur fait de son mieux pour que le service reste accessible, sans garantir un fonctionnement continu ou sans interruption. Des interruptions peuvent survenir, notamment pour la maintenance ou en cas d'incident. La responsabilité de l'éditeur est limitée au montant payé par l'agence pour la période en cours."
+      },
+      {
+        "h2": "10. Modification des conditions",
+        "text": "L'éditeur peut modifier ces conditions. Les agences sont informées de tout changement important avant son entrée en vigueur."
+      },
+      {
+        "h2": "11. Droit applicable",
+        "text": "Les présentes conditions sont régies par le droit marocain."
       }
     ]
   },
   "legalNotice": {
     "breadcrumb": "Mentions légales",
     "h1": "Mentions légales",
-    "notice": "Document en préparation. Les informations marquées « À compléter » doivent être renseignées et validées avant publication définitive.",
     "sections": [
       {
         "h2": "Éditeur du site",
-        "text": "Raison sociale : [À compléter]. Forme juridique : [À compléter]. Capital social : [À compléter]. Siège social : [À compléter : adresse complète]."
-      },
-      {
-        "h2": "Immatriculation",
-        "text": "ICE : [À compléter]. Registre de commerce (RC) : [À compléter]. Identifiant fiscal (IF) : [À compléter]."
+        "text": "Zakaria Bijaddigune, développeur indépendant, Agadir, Maroc."
       },
       {
         "h2": "Directeur de la publication",
-        "text": "[À compléter : nom et fonction]."
+        "text": "Zakaria Bijaddigune."
       },
       {
         "h2": "Contact",
-        "text": "E-mail : contact@kimifleet.com. Téléphone et WhatsApp : +212 773 273 153."
+        "text": "E-mail : zakariabijaddigune1234@gmail.com. Téléphone et WhatsApp : +212 773 273 153."
       },
       {
         "h2": "Hébergement",
-        "text": "[À compléter : nom, adresse et contact de l'hébergeur du site]."
+        "text": "Serveur : DigitalOcean, LLC, 105 Edgeview Drive, Suite 425, Broomfield, CO 80021, États-Unis. Diffusion du site (CDN), DNS et stockage des fichiers : Cloudflare, Inc., 101 Townsend Street, San Francisco, CA 94107, États-Unis."
       }
     ]
   }
