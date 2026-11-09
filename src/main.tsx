@@ -4,6 +4,9 @@ import { AppProviders, AppRoutes } from "./App.tsx";
 import "./index.css";
 import { createI18n } from "./i18n.ts";
 import { langFromPath } from "./seo/routes.ts";
+import { initAnalytics } from "./lib/analytics.ts";
+
+initAnalytics();
 
 const app = (
   <AppProviders i18n={createI18n(langFromPath(window.location.pathname))}>
